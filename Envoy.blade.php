@@ -2,8 +2,8 @@
 
 <?php
 	$local_dir = "/mnt/c/Users/ethan/Code/braceyourself.solutions";
-	$last_commit_msg = shell_exec("cd $local_dir && git log -1 --pretty=%B");
-	$last_commit_msg = str_replace(' ', '_', $last_commit_msg);
+//	$last_commit_msg = shell_exec("cd $local_dir && git log -1 --pretty=%B");
+//	$last_commit_msg = str_replace(' ', '_', $last_commit_msg);
 
 	$site_name = 'braceyourself.solutions';
 	$repo = "/var/git/$site_name.git";
@@ -11,7 +11,7 @@
 	$var_www_releases_APP_NAME = "/var/www/releases/$site_name";
 	$var_www_APP_NAME_app = $var_www_APP_NAME.'/app';
 
-	$release = date('Y-M-d_H:i:s')."-$last_commit_msg";
+	$release = date('Y-M-d_H:i:s');
 ?>
 
 
