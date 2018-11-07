@@ -6,13 +6,13 @@
 
             <div id="text">
                 <span>
-                    YouImagine.
+                    Imagine.
                 </span>
                 <span>
-                    WeBuild.
+                    Build.
                 </span>
                 <span>
-                    AllEnjoy.
+                    Enjoy.
                 </span>
             </div>
 

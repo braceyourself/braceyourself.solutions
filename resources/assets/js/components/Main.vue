@@ -1,6 +1,7 @@
 <template>
     <div>
         <navbar></navbar>
+        <!--<logo></logo>-->
         <router-view id="router-view"/>
         <bottom></bottom>
     </div>
@@ -9,7 +10,7 @@
 <style scoped>
     #router-view {
         margin-top: 60px;
-        padding: 30px 0 0;
+        /*padding: 30px 0 0;*/
         min-height: 85vh;
     }
 </style>
@@ -20,6 +21,7 @@
 		components: {
 			'navbar': require('./partials/Nav'),
 			'bottom': require('./partials/Footer'),
+			'logo': require('./partials/Logo'),
 		},
 		// name: "Main",
 		// data() {

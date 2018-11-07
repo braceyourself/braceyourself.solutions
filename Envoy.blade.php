@@ -124,7 +124,7 @@ git push
 @task('npm')
 	cd {{ $var_www_releases_APP_NAME }}/{{$release}}
 	npm install
-	npm run dev
+	npm run prod
 @endtask
 
 
@@ -156,7 +156,7 @@ git push
 
 @task('clear_cache')
 	cd {{ $var_www_releases_APP_NAME }}/"{{ $release }}";
-	php artisan passport:keys --force
+	{{--php artisan passport:keys --force--}}
 	php artisan key:generate --force
 
 	php artisan config:clear

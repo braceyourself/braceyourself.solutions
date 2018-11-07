@@ -5,7 +5,7 @@
         <div id="nav-color"></div>
         <div id="nav-links">
             <div class="navbar-header ">
-                <router-link to="/about" class="btn btn-primary">about</router-link>
+                <router-link to="/" class="btn btn-primary">about</router-link>
                 <router-link to="/contact" class="btn btn-primary">contact</router-link>
 
             </div>
