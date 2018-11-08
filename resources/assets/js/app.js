@@ -11,6 +11,8 @@ window.Vue = Vue;
 
 import store from './vuex/index'
 import router from './router';
+import moment from 'moment'
+import VueMarkdown from 'vue-markdown'
 
 
 
@@ -24,11 +26,15 @@ Vue.mixin({
 			return this.$store.getters.auth
 		},
 
+
 	},
 	methods:{
 		flash(message, type = 'info') {
             console.error("flash tool is not configured.")
 		},
+		moment(){
+			return new moment
+		}
 	}
 });
 
@@ -37,7 +43,7 @@ const app = new Vue({
 	router,
 	store,
 	components:{
-		'vue':require('./components/Main')
+		'vue':require('./components/Main'),
 	},
 	created(){
 		window.onresize = ()=>{

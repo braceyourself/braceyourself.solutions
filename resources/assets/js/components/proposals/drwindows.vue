@@ -140,7 +140,7 @@
             <h2>Logo redesign</h2>
             <p>
                 There are many reasons to refresh a company logo.
-                <a :href="logo_link">This article</a> details a few of those reasons.
+                <a :href="logo_redesign_link">This article</a> details a few of those reasons.
             </p>
             <hr>
 
@@ -148,117 +148,116 @@
         </div>
 
         <div class="page color-primary" id="phase1-timeline">
-            <h1>Phase 1 Timeline</h1>
-
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>Start</th>
-                    <th>Finish</th>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h2>Data Migration</h2>
-                        <ul>
-                            <li>Create Virtual Server for website hosting</li>
-                            <li>Create database</li>
-                            <li>Migrate data</li>
-                        </ul>
-
-                        <p>
-                            Will require input from you detailing specific business processes in order to better
-                            understand
-                            what is needed in the database design.
-                        </p>
-                        <p>
-                            We will also need to review the types of data that your workbooks contain.
-                        </p>
+            <h1>Timeline</h1>
 
 
-                        <h2>Result</h2>
-                        <p>Your data will be backed up to a live database</p>
-                    </td>
+            <div v-for="row in timeline" class="row">
+                <div class="col col-8">
+                    <vue-markdown>{{row.item}}</vue-markdown>
 
-                    <td>12/1</td>
-                    <td>12/15</td>
-
-                </tr>
-
-
-                <tr>
-                    <td>
-                        <h2>New Site</h2>
-
-                        <ul>
-                            <li>Consult with designer</li>
-                            <li>Implement design</li>
-                            <li>Migrate/Create content for website (services, info, ect..)</li>
-                        </ul>
-
-                        <h2>Result</h2>
-                        <p>The new <a href="mydrwindows.com">mydrwindows.com</a> website will be live</p>
-                    </td>
-                    <td>1/1</td>
-                    <td>2/1</td>
-                </tr>
-
-            </table>
+                </div>
+                <div class="col col-2 flex-center">{{row.start}}</div>
+                <div class="col col-2 flex-center">{{row.end}}</div>
+            </div>
 
         </div>
 
-        <div class="page" id="phase2-timeline">
 
-            <h1>Phase 2 Timeline</h1>
-
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>Start</th>
-                    <th>Finish</th>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h2></h2>
-                        <ul></ul>
+        <vue-markdown class="page color-secondary" id="terms">
+# Terms
 
 
-                        <!--<h2>Result</h2>-->
-                        <p></p>
-                    </td>
-
-                    <td></td>
-                    <td></td>
-
-                </tr>
+        </vue-markdown>
 
 
-            </table>
+        <vue-markdown class="page color-primary" id="costs">
+# Costs
+            <div v-for="row in timeline">
 
-
-        </div>
-
-        <div class="page color-secondary" id="terms">
-            <h1>Terms</h1>
-        </div>
-
-
-        <div class="page color-primary" id="costs">
-            <h1>Costs</h1>
-            <p></p>
-        </div>
+            </div>
+        </vue-markdown>
 
     </div>
 
 </template>
 
 <script>
+	import VueMarkdown from 'vue-markdown';
+
 	export default {
 		name: "drwindows",
 		data() {
 			return {
-				//
+				timeline: [
+					{
+						item: "### Item",
+						start: "Start",
+						end: "Finish",
+					},
+					{
+						title:"Data Migration",
+						item: `
+## Phase 1
+### Data Migration
+- Create Virtual Server for website hosting
+- Create database
+- Migrate data
+
+Will require input from you detailing specific business processes in order to better understand what is needed in the database design.
+
+We will also need to review the types of data that your workbooks contain.
+
+### Result
+
+Your data will be backed up to a live database
+						`,
+						start: "12/1",
+						end:"12/15",
+                        cost:2000,
+					},
+					{
+						title:"Enable New Website",
+						item: `
+## Phase 2
+### New Site
+- Consult with designer
+- Implement design
+- Migrate/Create content for website (services, info, ect..)
+
+### Result
+The new mydrwindows.com website will be live
+						`,
+						start:"12/15",
+						end: "1/1",
+                        cost:2000
+					},
+
+					{
+						title:"Feature: User Authentication",
+						item: `
+
+## Phase 3
+### User Authentication
+- Enable admin login
+    - create service request for clients
+    - add new clients, addresses, partners, ect..
+    - view/edit entire database with simple interface
+- and Clients
+    - to schedule service
+    - view history
+    - update information
+
+### Result
+Anyone who chooses will be able to create an account with Dr Windows.
+You will be able to create accounts for anyone you choose.
+You will be able to set the role of any user. (partner, client, other)
+						`,
+						start: "1/1",
+						end: "2/1",
+                        cost:5000
+					},
+				],
+
 			};
 		},
 
@@ -285,7 +284,7 @@
 			//
 		},
 		computed: {
-			logo_link() {
+			logo_redesign_link() {
 				return "https://www.forbes.com/sites/gabrielshaoolian/2017/02/07/logo-redesign-what-to-consider-when-its-time-for-a-brand-update/#7aff49d93e99";
 			},
 			//
@@ -293,6 +292,7 @@
 
 		props: {},
 		components: {
+			'vue-markdown': VueMarkdown,
 			'logo': require('../partials/Logo'),
 		},
 		watch: {},
@@ -334,13 +334,38 @@
     .page {
         font-size: 18px;
         padding: 50px;
-        /*min-height: 100vh;*/
+
+
         strong {
             font-size: 25px;
         }
 
         h1 {
             text-decoration: underline;
+        }
+
+        .col {
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        .row {
+            .col:nth-child(1) {
+                background-color: $color-primary-dark;
+            }
+            .col:nth-child(2) {
+                background-color: $color-primary-light;
+                color: $color-primary-dark;
+            }
+            .col:nth-child(3) {
+                background-color: $color-primary-dark;
+            }
+        }
+
+
+
+        @media (max-width: 764px){
+            padding:15px;
         }
     }
 
@@ -369,36 +394,5 @@
     #potential-new-features {
         @extend .color-secondary
     }
-
-    .page {
-        table {
-            td, th {
-                padding: 10px;
-            }
-
-            td {
-                border-bottom: 1px solid black;
-            }
-
-            tr {
-                th:nth-child(1), td:nth-child(1) {
-                    width: 50%;
-                    background-color: $color-primary-dark;
-                }
-                th:nth-child(2), td:nth-child(2) {
-
-                    background-color: $color-primary-light;
-                    color: $color-primary-dark;
-                    max-width: 20px;
-                }
-                th:nth-child(3), td:nth-child(3) {
-
-                    background-color: $color-primary-dark;
-                    max-width: 20px;
-                }
-            }
-        }
-    }
-
 
 </style>
