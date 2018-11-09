@@ -26,15 +26,14 @@ Vue.mixin({
 			return this.$store.getters.auth
 		},
 
-
 	},
 	methods:{
 		flash(message, type = 'info') {
             console.error("flash tool is not configured.")
 		},
 		moment(){
-			return new moment
-		}
+			return require('moment');
+		},
 	}
 });
 

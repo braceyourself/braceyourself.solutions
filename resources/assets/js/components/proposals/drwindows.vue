@@ -17,14 +17,23 @@
             <p>First of all, Thank you for this opportunity!</p>
 
             <p>
+                My experience with Dr Windows and the window cleaning business make {{Sender.company}}
+                a perfect fit for this project. As I look through websites of your competitors, I believe
+                {{Sender.company}} can make Dr Windows <strong>stand out</strong> as an excellent option for residential
+                and commercial business in {{client.company}}' operating states.
+            </p>
+
+            <p>
                 In this proposal, I will detail the current problems you are facing and the solutions that will solve
                 these problems.
-                I will also provide a few ideas for improvement and process optimization.
+                Throughout the process I will also provide ideas for improvement and process optimization.
             </p>
             <p>
-                How far we take this is completely up to you. Your input will be required at every step of this process
+                Your input will be required at every step of this process
                 to ensure that the final product is everything you need it to be.
             </p>
+
+            <p>I am confident that the value brought to {{client.company}} by </p>
 
         </div>
 
@@ -53,6 +62,7 @@
                     <li>Implement a design that will be accessible from all devices</li>
                 </ul>
 
+
                 <hr>
                 <h2>Web Presence is Lacking</h2>
                 <ul><strong>Solution</strong>
@@ -61,6 +71,8 @@
                     <li>Update Facebook profile</li>
                     <li>Add Dr Windows to Google Maps</li>
                 </ul>
+
+
 
                 <hr>
                 <h2>Current data management is wasting time</h2>
@@ -85,7 +97,7 @@
         </div>
 
 
-        <div class="page" id="potential-new-features">
+        <div class="page" id="potential-new-features" style="display: none;">
             <h1>Potential Website Features</h1>
             <p>
                 The sky is the limit on what you are able to do with technology. <br>
@@ -147,35 +159,193 @@
 
         </div>
 
-        <div class="page color-primary" id="phase1-timeline">
-            <h1>Timeline</h1>
+        <div class="page color-secondary" id="phase1-timeline">
+            <h1 class="text-center">Timeline</h1>
 
+            <div class="text-center">
+                <p>This timeline is an estimated proposal of working times. Some projects could take more, or less, time.</p>
+                <p>Deadlines are estimated based on acceptance of this proposal.</p>
+
+            </div>
+
+            <div class="row">
+                <h4 class="col col-1">Phase</h4>
+                <h2 class="col col-7">Description</h2>
+                <h2 class="col col-2 flex-center">Estimated Start Date</h2>
+                <h2 class="col col-2 flex-center">Estimated Completion</h2>
+            </div>
 
             <div v-for="row in timeline" class="row">
-                <div class="col col-8">
-                    <vue-markdown>{{row.item}}</vue-markdown>
-
+                <div class="col col-1">
+                    <h2>
+                        {{timeline.indexOf(row) + 1}}
+                    </h2>
                 </div>
-                <div class="col col-2 flex-center">{{row.start}}</div>
-                <div class="col col-2 flex-center">{{row.end}}</div>
+                <div class="col col-7">
+                    <vue-markdown>{{row.item}}</vue-markdown>
+                </div>
+                <div class="col col-2 flex-center">{{row.start.format('MMM D Y')}}</div>
+                <div class="col col-2 flex-center">{{row.end.format('MMM D Y')}}</div>
             </div>
 
         </div>
 
 
-        <vue-markdown class="page color-secondary" id="terms">
-# Terms
 
 
-        </vue-markdown>
+        <div class="page color-primary" id="costs">
+            <h1 class="text-center">Costs</h1>
+            <p class="text-center">
+                The following Items correspond with the timeline phases outlined above.
+            </p>
 
-
-        <vue-markdown class="page color-primary" id="costs">
-# Costs
-            <div v-for="row in timeline">
-
+            <div class="row">
+                <h4 class="col col-1">Phase</h4>
+                <h2 class="col">Item</h2>
+                <h5 class="col col-1">Due at Start</h5>
+                <h5 class="col col-1">Due at Completion</h5>
+                <h5 class="col col-2">Total</h5>
             </div>
-        </vue-markdown>
+
+            <div class="row" v-for="row in timeline">
+                <div class="col col-1">{{timeline.indexOf(row) + 1}}</div>
+                <div class="col">{{row.title}}</div>
+                <div class="col col-1">${{row.start_cost}}</div>
+                <div class="col col-1">${{row.end_cost}}</div>
+                <div class="col col-2">${{row.start_cost + row.end_cost}}</div>
+            </div>
+
+            <div class="row">
+                <div class="col " style="text-align: right">Total:</div>
+                <div class="col col-2 " style="text-align: center">${{timeline_row_total_cost}}</div>
+            </div>
+            <hr>
+
+            <h1 class="text-center">Recurring Costs</h1>
+
+            <div class="row">
+                <h2 class="col"></h2>
+                <h5 class="col col-2">Monthly</h5>
+                <h5 class="col col-2">Yearly</h5>
+            </div>
+
+
+            <div v-for="row in recurring_costs" class="row">
+                <div class="col">
+                    <h2>{{row.item}}</h2>
+                    <p class="text-center" v-if="row.description">{{row.description}}</p>
+                </div>
+                <h5 class="col col-2">${{row.monthly}}</h5>
+                <h5 class="col col-2">${{yearly(row)}}</h5>
+            </div>
+            <div class="row">
+                <div class="col " style="text-align: right">Total:</div>
+                <div class="col col-2 " style="text-align: center">${{total_recurring_costs}}</div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="page color-secondary" id="terms" style="text-align:center">
+            <h1>Terms</h1>
+            <vue-markdown >
+### Authorization
+{{client.company}} is engaging {{Sender.company}}, as an independent contractor for the project outlined
+above.
+Summarized as
+__**the Development, deployment, hosting, & support of new and redesigned {{client.company}} Website**__
+
+---
+
+### Completion
+{{client.company}} and {{Sender.company}} will collaborate to complete the project in a timely manner.
+{{Sender.company}} agrees to work expeditiously to complete the project no later than {{launch_date}}
+(depending on date of acceptance of agreement)
+
+---
+
+### Payment
+Fees to {{Sender.company}} are due in accordance with the above listed pricing table. Fees for monthly
+services will be invoices on the 1st business day of each calendar month, and are due on a net-30 basis.
+
+---
+
+### Assignment of Project
+{{Sender.company}} reserves the right to assign subcontractors to this project to insure the right fit for
+the job as well as on-time completion.
+
+---
+
+### Revision During Execution
+{{client.company}} may be charged additional fees if it decides to make changes to the agreed upon project
+scope and objectives. Small modifications may be acceptable.
+
+---
+
+
+### Legal & License
+{{Sender.company}} warrants that the functionality contained in this project will meet {{client.company}}
+requirements and that the operation will be reasonably error-free.
+
+The entire risk as to the quality and performance of the project is with {{client.company}}. In no event
+will {{Sender.company}} be liable to {{client.company}} or any third party for any damages, including any
+lost profits, lost savings or other incidental, consequential or special damages arising out of the
+operation of or inability to operate the website, even if {{Sender.company}} has been advised of the
+possibility of such damages.
+If any provision of this agreement shall be unlawful, void, or for any reason unenforceable, then that
+provision shall be deemed severable from this agreement and shall not affect the validity and enforceability
+of any remaining provisions.
+
+---
+
+### Copyrights & Trademarks
+{{client.company}} represents to {{Sender.company}} and unconditionally guarantees that any elements
+furnished to {{Sender.company}} for inclusion in the project are owned by {{client.company}}, or that
+{{client.company}} has permission from the rightful owner to use each of these elements, and will hold
+harmless, protect, and defend {{Sender.company}} and its subcontractors from any claim or suit arising from
+the use of such elements furnished by {{client.company}}.
+
+---
+
+### Copyright to Project
+{{Sender.company}} guarantees that all aspects of design and construction of the project will be disclosed
+to {{client.company}} upon completion, and full code, copyrights and ownership will be the sole property of
+{{client.company}}. {{Sender.company}} retains the right to display graphics and other design elements as
+examples of its work in its portfolio.
+
+---
+
+### Sole Agreement
+The agreement contained in this Contract constitutes the sole agreement between {{Sender.company}} and
+{{client.company}} regarding this project. Any additional work not specified in this contract must be
+authorized by a written change order. All prices specified in this contract will be honored for three (6)
+months after both parties sign this contract. Continued services after that time will require a new
+agreement.
+
+---
+
+### Initial Payment & Refund Policy
+This agreement begins with an initial payment indicated in the pricing table above. If {{client.company}}
+halts work and applies for a refund within 4 days, work completed shall be billed at the hourly rate of
+{{Hourly.Rate}}, and deducted from the initial payment, the balance of which shall be returned to
+{{client.company}}. If, at the time of the request for refund, work has been completed beyond the amount
+covered by the initial payment, {{client.company}} shall be liable to pay for all work completed at the
+hourly rate stated above. No portion of this initial payment will be refunded unless requested within 4 days
+of signing this contract.
+
+---
+
+### Acceptance
+
+If all parties are in agreement of these terms, {{Sender.company}} will provide a printed copy of this proposal
+for both parties to review and sign.
+Contact Ethan Brace if these terms are acceptable or to request alternative terms.
+
+            </vue-markdown>
+        </div>
 
     </div>
 
@@ -183,24 +353,50 @@
 
 <script>
 	import VueMarkdown from 'vue-markdown';
+	import moment from 'moment'
 
 	export default {
 		name: "drwindows",
 		data() {
 			return {
-				timeline: [
+				recurring_costs:[
+                    {
+						item:"First Year of Support",
+						description:'Hosting and Support for 2019',
+						monthly:0,
+
+                    },
+                    {
+                    	item:"Support starting 2020",
+                        description:'Maintain server and website. Optimize as necessary.',
+						monthly:20,
+                    },
 					{
-						item: "### Item",
-						start: "Start",
-						end: "Finish",
-					},
+						item:"Hosting",
+						description:'',
+						monthly:15,
+					}
+                ],
+
+
+                Hourly:{
+					Rate: "$100/hr",
+                },
+
+				Sender: {
+					company:"Brace Yourself Solutions"
+                },
+				client: {
+					company:"Dr Windows"
+                },
+				timeline: [
 					{
 						title:"Data Migration",
 						item: `
-## Phase 1
 ### Data Migration
 - Create Virtual Server for website hosting
 - Create database
+- Clean (parse) data into an organized structure
 - Migrate data
 
 Will require input from you detailing specific business processes in order to better understand what is needed in the database design.
@@ -208,35 +404,38 @@ Will require input from you detailing specific business processes in order to be
 We will also need to review the types of data that your workbooks contain.
 
 ### Result
-
+A private server will be set up and configured specifically for Dr Windows Operations
 Your data will be backed up to a live database
+You will be provided access to this server and database
 						`,
-						start: "12/1",
-						end:"12/15",
-                        cost:2000,
+						start:moment('2018-12-01'),
+						end:moment('2018-12-30'),
+                        start_cost:1500,
+						end_cost:1500,
 					},
 					{
 						title:"Enable New Website",
 						item: `
-## Phase 2
 ### New Site
 - Consult with designer
 - Implement design
+    - Build website coding and backend
+    - Consult with
 - Migrate/Create content for website (services, info, ect..)
 
 ### Result
 The new mydrwindows.com website will be live
 						`,
-						start:"12/15",
-						end: "1/1",
-                        cost:2000
+						start: moment('2019-01-01'),
+						end:moment('2019-02-01'),
+                        start_cost:1500,
+						end_cost:1500
 					},
 
 					{
 						title:"Feature: User Authentication",
 						item: `
 
-## Phase 3
 ### User Authentication
 - Enable admin login
     - create service request for clients
@@ -252,9 +451,10 @@ Anyone who chooses will be able to create an account with Dr Windows.
 You will be able to create accounts for anyone you choose.
 You will be able to set the role of any user. (partner, client, other)
 						`,
-						start: "1/1",
-						end: "2/1",
-                        cost:5000
+						start: moment('2019-02-01'),
+						end: moment('2019-03-01'),
+                        start_cost:3000,
+						end_cost:3000
 					},
 				],
 
@@ -281,9 +481,29 @@ You will be able to set the role of any user. (partner, client, other)
 		beforeDestroy() {},
 		destroyed() {},
 		methods: {
-			//
+            yearly(recurring_cost){
+                return recurring_cost.monthly * 12;
+            }
 		},
 		computed: {
+			launch_date() {
+				return this.timeline[this.timeline.length - 1].end.format('MMM D Y')
+            },
+
+			total_recurring_costs() {
+				let total = 0;
+				_.forEach(this.recurring_costs, item =>{
+                    total += this.yearly(item);
+                });
+                return total;
+            },
+			timeline_row_total_cost() {
+                let total = 0;
+                _.forEach(this.timeline, row =>{
+					total += row.start_cost + row.end_cost;
+                })
+                return total;
+            },
 			logo_redesign_link() {
 				return "https://www.forbes.com/sites/gabrielshaoolian/2017/02/07/logo-redesign-what-to-consider-when-its-time-for-a-brand-update/#7aff49d93e99";
 			},
@@ -342,6 +562,7 @@ You will be able to set the role of any user. (partner, client, other)
 
         h1 {
             text-decoration: underline;
+            text-align: center;
         }
 
         .col {
@@ -350,6 +571,13 @@ You will be able to set the role of any user. (partner, client, other)
         }
 
         .row {
+
+            h1, h2, h3, h4, h5{
+                margin:0;
+                text-align:center;
+                vertical-align: center;
+
+            }
             .col:nth-child(1) {
                 background-color: $color-primary-dark;
             }
@@ -359,6 +587,16 @@ You will be able to set the role of any user. (partner, client, other)
             }
             .col:nth-child(3) {
                 background-color: $color-primary-dark;
+                text-align:center;
+            }
+            .col:nth-child(4) {
+                background-color: $color-primary-light;
+                color: $color-primary-dark;
+                text-align:center;
+            }
+            .col:nth-child(5) {
+                background-color: $color-primary-dark;
+                text-align:center;
             }
         }
 
@@ -395,4 +633,12 @@ You will be able to set the role of any user. (partner, client, other)
         @extend .color-secondary
     }
 
+    @media print{
+        *{
+            color:black;
+        }
+        .page, .no-split{
+            page-break-after: always;
+        }
+    }
 </style>
