@@ -33,7 +33,7 @@
                 to ensure that the final product is everything you need it to be.
             </p>
 
-            <p>I am confident that the value brought to {{client.company}} by </p>
+            <p>I am confident that the value brought to {{client.company}} by implementing these solutions will far outweigh the cost.</p>
 
         </div>
 
