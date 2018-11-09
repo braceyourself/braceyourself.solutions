@@ -416,11 +416,11 @@ You will be provided access to this server and database
 					{
 						title:"Enable New Website",
 						item: `
-### New Site
+### New Website
 - Consult with designer
 - Implement design
     - Build website coding and backend
-    - Consult with
+    - Consult with Dr Windows to build website to specifications
 - Migrate/Create content for website (services, info, ect..)
 
 ### Result
