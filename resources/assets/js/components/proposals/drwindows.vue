@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <div class="print-page">
             <logo/>
             <div class="page" id="title-page">
@@ -17,23 +16,16 @@
                 <vue-markdown class="text-center">
 Thank you for this opportunity!
 
-My experience with Dr Windows and the window cleaning business makes {{sender.company}}
-a perfect fit for this project. As I look through websites of your competitors, I believe
-{{sender.company}} can make Dr Windows **stand out** as an excellent option for residential
-and commercial business in {{client.company}}' operating states.
+I firmly believe that my experience with Dr Windows and the window cleaning business will make {{sender.company}} a perfect fit for this project.
 
-In this proposal, I will detail the current problems you are facing and the solutions that will solve these problems.
-Throughout the process I will also provide ideas for improvement and process optimization.
+As I look through websites of your competitors, I believe {{sender.company}} can make Dr Windows **stand out** as an excellent option for residential and commercial business in {{client.company}}' operating states.
 
+In this proposal I will detail the current problems you are facing and the solutions that will solve these problems. Throughout the process I will also provide ideas for improvement and process optimization.
 
-Your input will be required at every step of this process
-to ensure that the final product is everything you need it to be.
+Your input will be required at every step of this process to ensure that the final product is everything you need it to be.
 
-I am confident that the value brought to {{client.company}} by
+I am confident that the value brought to {{client.company}} by implementing these solutions will far outweigh the cost.
                 </vue-markdown>
-
-
-
             </div>
 
         </div>
@@ -466,11 +458,11 @@ You will be provided access to this server and database
 					{
 						title:"Enable New Website",
 						item: `
-### New Site
+### New Website
 - Consult with designer
 - Implement design
     - Build website coding and backend
-    - Consult with
+    - Consult with Dr Windows to build website to specifications
 - Migrate/Create content for website (services, info, ect..)
 
 ### Result

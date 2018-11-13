@@ -84113,14 +84113,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -84163,7 +84155,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				end_cost: 1500
 			}, {
 				title: "Enable New Website",
-				item: '\n### New Site\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live\n\t\t\t\t\t\t',
+				item: '\n### New Website\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with Dr Windows to build website to specifications\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live\n\t\t\t\t\t\t',
 				start: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-01-01'),
 				end: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-02-01'),
 				start_cost: 1500,
@@ -103213,15 +103205,15 @@ var render = function() {
           [
             _c("vue-markdown", { staticClass: "text-center" }, [
               _vm._v(
-                "\nThank you for this opportunity!\n\nMy experience with Dr Windows and the window cleaning business makes " +
+                "\nThank you for this opportunity!\n\nI firmly believe that my experience with Dr Windows and the window cleaning business will make " +
                   _vm._s(_vm.sender.company) +
-                  "\na perfect fit for this project. As I look through websites of your competitors, I believe\n" +
+                  " a perfect fit for this project.\n\nAs I look through websites of your competitors, I believe " +
                   _vm._s(_vm.sender.company) +
-                  " can make Dr Windows **stand out** as an excellent option for residential\nand commercial business in " +
+                  " can make Dr Windows **stand out** as an excellent option for residential and commercial business in " +
                   _vm._s(_vm.client.company) +
-                  "' operating states.\n\nIn this proposal, I will detail the current problems you are facing and the solutions that will solve these problems.\nThroughout the process I will also provide ideas for improvement and process optimization.\n\n\nYour input will be required at every step of this process\nto ensure that the final product is everything you need it to be.\n\nI am confident that the value brought to " +
+                  "' operating states.\n\nIn this proposal I will detail the current problems you are facing and the solutions that will solve these problems. Throughout the process I will also provide ideas for improvement and process optimization.\n\nYour input will be required at every step of this process to ensure that the final product is everything you need it to be.\n\nI am confident that the value brought to " +
                   _vm._s(_vm.client.company) +
-                  " by\n                "
+                  " by implementing these solutions will far outweigh the cost.\n                "
               )
             ])
           ],

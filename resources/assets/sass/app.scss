@@ -83,7 +83,7 @@ input{
         border:none !important;
     }
     .color-primary, .color-secondary {
-        background-color: white !important;
+        //background-color: white !important;
     }
     #terms{
         font-size: 15px;
@@ -93,13 +93,16 @@ input{
         font-size: 15px;
     }
     #introduction{
-        font-size: 20px;
+        font-size: 25px;
+    }
+    #signatures{
+        display:flex;
     }
     .noprint{
         display:none;
     }
     .print-only {
-        display: initial;
+        display: inherit;
     }
 
     @each $item in 5,6,7,8,9{
@@ -119,7 +122,7 @@ input{
     .print-page{
         height:100%;
         //vertical-align: middle;
-        padding-top:30px;
+        //padding-top:30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -152,6 +155,6 @@ input{
         width:100%;
         padding:10px;
         border-bottom: solid 1px black;
-        background-color:$color-primary-dark
+        //background-color:$color-primary-dark
     }
 }

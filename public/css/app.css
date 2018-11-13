@@ -10577,11 +10577,6 @@ body {
     border: none !important;
   }
 
-  .color-primary,
-  .color-secondary {
-    background-color: white !important;
-  }
-
   #terms {
     font-size: 15px;
   }
@@ -10591,7 +10586,13 @@ body {
   }
 
   #introduction {
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  #signatures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .noprint {
@@ -10599,7 +10600,7 @@ body {
   }
 
   .print-only {
-    display: initial;
+    display: inherit;
   }
 
   * {
@@ -10609,7 +10610,6 @@ body {
 
   .print-page {
     height: 100%;
-    padding-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10652,7 +10652,6 @@ body {
     width: 100%;
     padding: 10px;
     border-bottom: solid 1px black;
-    background-color: #4b636e;
   }
 }
 
