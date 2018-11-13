@@ -1,44 +1,46 @@
 <template>
     <div>
-        <logo/>
 
-
-        <div class="page" id="title-page">
-            <div class="flex-center">
-                <h1 style="text-decoration: underline">Proposal of Website Redesign and Business Integration</h1>
-                <div>
-                    <h4>Prepared For Dr Windows</h4>
+        <div class="print-page">
+            <logo/>
+            <div class="page" id="title-page">
+                <div class="flex-center">
+                    <h1 style="text-decoration: underline">Proposal of Website Redesign and Business Integration</h1>
+                    <div>
+                        <h4>Prepared For Dr Windows</h4>
+                    </div>
                 </div>
             </div>
+
+            <div class="page flex-center" id="introduction">
+                <!--<h1>Intro</h1>-->
+                <vue-markdown class="text-center">
+Thank you for this opportunity!
+
+My experience with Dr Windows and the window cleaning business makes {{sender.company}}
+a perfect fit for this project. As I look through websites of your competitors, I believe
+{{sender.company}} can make Dr Windows **stand out** as an excellent option for residential
+and commercial business in {{client.company}}' operating states.
+
+In this proposal, I will detail the current problems you are facing and the solutions that will solve these problems.
+Throughout the process I will also provide ideas for improvement and process optimization.
+
+
+Your input will be required at every step of this process
+to ensure that the final product is everything you need it to be.
+
+I am confident that the value brought to {{client.company}} by
+                </vue-markdown>
+
+
+
+            </div>
+
         </div>
 
-        <div class="page flex-center" id="introduction">
-            <!--<h1>Intro</h1>-->
-            <p>First of all, Thank you for this opportunity!</p>
-
-            <p>
-                My experience with Dr Windows and the window cleaning business make {{Sender.company}}
-                a perfect fit for this project. As I look through websites of your competitors, I believe
-                {{Sender.company}} can make Dr Windows <strong>stand out</strong> as an excellent option for residential
-                and commercial business in {{client.company}}' operating states.
-            </p>
-
-            <p>
-                In this proposal, I will detail the current problems you are facing and the solutions that will solve
-                these problems.
-                Throughout the process I will also provide ideas for improvement and process optimization.
-            </p>
-            <p>
-                Your input will be required at every step of this process
-                to ensure that the final product is everything you need it to be.
-            </p>
-
-            <p>I am confident that the value brought to {{client.company}} by </p>
-
-        </div>
 
 
-        <div class="page" id="project-goals">
+        <div class="page page-break-before" id="project-goals">
             <h1>Overall Goals</h1>
             <ul>
                 <li><strong>Grow</strong> client base by increasing the web presence of Dr Windows</li>
@@ -159,7 +161,7 @@
 
         </div>
 
-        <div class="page color-secondary" id="phase1-timeline">
+        <div class="page color-secondary page-break-before" id="phase1-timeline">
             <h1 class="text-center">Timeline</h1>
 
             <div class="text-center">
@@ -201,15 +203,17 @@
 
             <div class="row">
                 <h4 class="col col-1">Phase</h4>
-                <h2 class="col">Item</h2>
-                <h5 class="col col-1">Due at Start</h5>
-                <h5 class="col col-1">Due at Completion</h5>
+                <h4 class="col"></h4>
+                <h6 class="col col-1">Due at Start</h6>
+                <h6 class="col col-1">Due at Completion</h6>
                 <h5 class="col col-2">Total</h5>
             </div>
 
             <div class="row" v-for="row in timeline">
                 <div class="col col-1">{{timeline.indexOf(row) + 1}}</div>
-                <div class="col">{{row.title}}</div>
+                <div class="col text-center">
+                    <h2>{{row.title}}</h2>
+                </div>
                 <div class="col col-1">${{row.start_cost}}</div>
                 <div class="col col-1">${{row.end_cost}}</div>
                 <div class="col col-2">${{row.start_cost + row.end_cost}}</div>
@@ -249,11 +253,13 @@
 
 
 
-        <div class="page color-secondary" id="terms" style="text-align:center">
-            <h1>Terms</h1>
-            <vue-markdown >
+        <div class="page color-secondary page-break-before scale-5" id="terms" style="text-align:center">
+            <vue-markdown>
+# __Terms__
+
+
 ### Authorization
-{{client.company}} is engaging {{Sender.company}}, as an independent contractor for the project outlined
+{{client.company}} is engaging {{sender.company}}, as an independent contractor for the project outlined
 above.
 Summarized as
 __**the Development, deployment, hosting, & support of new and redesigned {{client.company}} Website**__
@@ -261,65 +267,75 @@ __**the Development, deployment, hosting, & support of new and redesigned {{clie
 ---
 
 ### Completion
-{{client.company}} and {{Sender.company}} will collaborate to complete the project in a timely manner.
-{{Sender.company}} agrees to work expeditiously to complete the project no later than {{launch_date}}
+{{client.company}} and {{sender.company}} will collaborate to complete the project in a timely manner.
+{{sender.company}} agrees to work expeditiously to complete the project no later than {{launch_date}}
 (depending on date of acceptance of agreement)
 
 ---
 
 ### Payment
-Fees to {{Sender.company}} are due in accordance with the above listed pricing table. Fees for monthly
+Fees to {{sender.company}} are due in accordance with the above listed pricing table. Fees for monthly
 services will be invoices on the 1st business day of each calendar month, and are due on a net-30 basis.
 
 ---
 
 ### Assignment of Project
-{{Sender.company}} reserves the right to assign subcontractors to this project to insure the right fit for
+{{sender.company}} reserves the right to assign subcontractors to this project to insure the right fit
+for
 the job as well as on-time completion.
 
 ---
 
 ### Revision During Execution
-{{client.company}} may be charged additional fees if it decides to make changes to the agreed upon project
+{{client.company}} may be charged additional fees if it decides to make changes to the agreed upon
+project
 scope and objectives. Small modifications may be acceptable.
 
 ---
 
 
 ### Legal & License
-{{Sender.company}} warrants that the functionality contained in this project will meet {{client.company}}
+{{sender.company}} warrants that the functionality contained in this project will meet
+{{client.company}}
 requirements and that the operation will be reasonably error-free.
 
 The entire risk as to the quality and performance of the project is with {{client.company}}. In no event
-will {{Sender.company}} be liable to {{client.company}} or any third party for any damages, including any
+will {{sender.company}} be liable to {{client.company}} or any third party for any damages, including
+any
 lost profits, lost savings or other incidental, consequential or special damages arising out of the
-operation of or inability to operate the website, even if {{Sender.company}} has been advised of the
+operation of or inability to operate the website, even if {{sender.company}} has been advised of the
 possibility of such damages.
 If any provision of this agreement shall be unlawful, void, or for any reason unenforceable, then that
-provision shall be deemed severable from this agreement and shall not affect the validity and enforceability
+provision shall be deemed severable from this agreement and shall not affect the validity and
+enforceability
 of any remaining provisions.
 
 ---
 
 ### Copyrights & Trademarks
-{{client.company}} represents to {{Sender.company}} and unconditionally guarantees that any elements
-furnished to {{Sender.company}} for inclusion in the project are owned by {{client.company}}, or that
+{{client.company}} represents to {{sender.company}} and unconditionally guarantees that any elements
+furnished to {{sender.company}} for inclusion in the project are owned by {{client.company}}, or that
 {{client.company}} has permission from the rightful owner to use each of these elements, and will hold
-harmless, protect, and defend {{Sender.company}} and its subcontractors from any claim or suit arising from
+harmless, protect, and defend {{sender.company}} and its subcontractors from any claim or suit arising
+from
 the use of such elements furnished by {{client.company}}.
 
+
 ---
+            </vue-markdown>
+
+            <vue-markdown class="print-page">
 
 ### Copyright to Project
-{{Sender.company}} guarantees that all aspects of design and construction of the project will be disclosed
+{{sender.company}} guarantees that all aspects of design and construction of the project will be disclosed
 to {{client.company}} upon completion, and full code, copyrights and ownership will be the sole property of
-{{client.company}}. {{Sender.company}} retains the right to display graphics and other design elements as
+{{client.company}}. {{sender.company}} retains the right to display graphics and other design elements as
 examples of its work in its portfolio.
 
 ---
 
 ### Sole Agreement
-The agreement contained in this Contract constitutes the sole agreement between {{Sender.company}} and
+The agreement contained in this Contract constitutes the sole agreement between {{sender.company}} and
 {{client.company}} regarding this project. Any additional work not specified in this contract must be
 authorized by a written change order. All prices specified in this contract will be honored for three (6)
 months after both parties sign this contract. Continued services after that time will require a new
@@ -337,14 +353,48 @@ hourly rate stated above. No portion of this initial payment will be refunded un
 of signing this contract.
 
 ---
+</vue-markdown>
+
+<vue-markdown class="noprint">
+### Acceptance
+
+If all parties are in agreement of these terms, {{sender.company}} will provide a printed copy of this proposal
+for both parties to review and sign.
+Contact Ethan Brace if these terms are acceptable or to request alternative terms.
+</vue-markdown>
+
+<vue-markdown class="print-only">
 
 ### Acceptance
 
-If all parties are in agreement of these terms, {{Sender.company}} will provide a printed copy of this proposal
-for both parties to review and sign.
-Contact Ethan Brace if these terms are acceptable or to request alternative terms.
+This agreement becomes effective when signed by parties of {{sender.company}} and {{client.company}}
 
-            </vue-markdown>
+</vue-markdown>
+        </div>
+
+        <div id="signatures" class="flex-center print-only">
+            <div class="row">
+                <div class="col">
+                    <span class="sign-here">
+                        <i>{{client.company}}</i>
+                    </span>
+                    <span class="sign-here">
+                        <i>Date</i>
+                    </span>
+
+                </div>
+                <div class="col">
+                    <span class="sign-here">
+                        <i>{{sender.company}}</i>
+                    </span>
+                    <span class="sign-here">
+                        <i>Date</i>
+                    </span>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -383,7 +433,7 @@ Contact Ethan Brace if these terms are acceptable or to request alternative term
 					Rate: "$100/hr",
                 },
 
-				Sender: {
+				sender: {
 					company:"Brace Yourself Solutions"
                 },
 				client: {
@@ -572,7 +622,7 @@ You will be able to set the role of any user. (partner, client, other)
 
         .row {
 
-            h1, h2, h3, h4, h5{
+            h1, h2, h3, h4, h5, h6{
                 margin:0;
                 text-align:center;
                 vertical-align: center;
@@ -632,13 +682,29 @@ You will be able to set the role of any user. (partner, client, other)
     #potential-new-features {
         @extend .color-secondary
     }
+    #signatures{
+        padding:50px 0;
+        .col{
+            h1{
+                text-decoration: underline;
+            }
+            width: 42vw;
+            text-align: center;
+            font-size: 28px;
 
-    @media print{
-        *{
-            color:black;
-        }
-        .page, .no-split{
-            page-break-after: always;
+            .sign-here{
+                text-align:left;
+                border-bottom: black 1px solid;
+                padding-top: 49px;
+                width: 100%;
+                display: block;
+                i{
+                    position: relative;
+                    top: 40px;
+                }
+            }
+
         }
     }
+
 </style>

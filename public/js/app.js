@@ -1902,7 +1902,7 @@
             try {
                 oldLocale = globalLocale._abbr;
                 var aliasedRequire = require;
-                __webpack_require__(406)("./" + name);
+                __webpack_require__(376)("./" + name);
                 getSetGlobalLocale(oldLocale);
             } catch (e) {}
         }
@@ -7382,13 +7382,13 @@ for (i = 0; i < letters.length; i++) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(376)
+  __webpack_require__(377)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(378)
+var __vue_script__ = __webpack_require__(379)
 /* template */
-var __vue_template__ = __webpack_require__(379)
+var __vue_template__ = __webpack_require__(380)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -18635,7 +18635,7 @@ var normalizeComponent = __webpack_require__(5)
 /* script */
 var __vue_script__ = __webpack_require__(251)
 /* template */
-var __vue_template__ = __webpack_require__(380)
+var __vue_template__ = __webpack_require__(381)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -19394,13 +19394,13 @@ module.exports = Token;
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(390)
+  __webpack_require__(391)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(392)
+var __vue_script__ = __webpack_require__(393)
 /* template */
-var __vue_template__ = __webpack_require__(401)
+var __vue_template__ = __webpack_require__(402)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -19445,13 +19445,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(393)
+  __webpack_require__(394)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(395)
+var __vue_script__ = __webpack_require__(396)
 /* template */
-var __vue_template__ = __webpack_require__(396)
+var __vue_template__ = __webpack_require__(397)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -19496,13 +19496,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(397)
+  __webpack_require__(398)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(399)
+var __vue_script__ = __webpack_require__(400)
 /* template */
-var __vue_template__ = __webpack_require__(400)
+var __vue_template__ = __webpack_require__(401)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -38515,159 +38515,6 @@ module.exports = {
 /* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(382)
-}
-var normalizeComponent = __webpack_require__(5)
-/* script */
-var __vue_script__ = __webpack_require__(384)
-/* template */
-var __vue_template__ = __webpack_require__(385)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-10e9c534"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/About.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-10e9c534", Component.options)
-  } else {
-    hotAPI.reload("data-v-10e9c534", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(386)
-}
-var normalizeComponent = __webpack_require__(5)
-/* script */
-var __vue_script__ = __webpack_require__(388)
-/* template */
-var __vue_template__ = __webpack_require__(389)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-43b63039"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Contact.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-43b63039", Component.options)
-  } else {
-    hotAPI.reload("data-v-43b63039", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(402)
-}
-var normalizeComponent = __webpack_require__(5)
-/* script */
-var __vue_script__ = __webpack_require__(404)
-/* template */
-var __vue_template__ = __webpack_require__(405)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-6f9c7cb0"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/proposals/Logo.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6f9c7cb0", Component.options)
-  } else {
-    hotAPI.reload("data-v-6f9c7cb0", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 79 */
-/***/ (function(module, exports, __webpack_require__) {
-
 //! moment.js locale configuration
 
 ;(function (global, factory) {
@@ -38742,7 +38589,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 80 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38881,7 +38728,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 81 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38944,7 +38791,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 82 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39007,7 +38854,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 83 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39133,7 +38980,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 84 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39196,7 +39043,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 85 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39304,7 +39151,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 86 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39367,7 +39214,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 87 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39476,7 +39323,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 88 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39612,7 +39459,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 89 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39706,7 +39553,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 90 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39768,7 +39615,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 91 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39891,7 +39738,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 92 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40014,7 +39861,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 93 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40126,7 +39973,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 94 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40281,7 +40128,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 95 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40373,7 +40220,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 96 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40556,7 +40403,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 97 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40623,7 +40470,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 98 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40707,7 +40554,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 99 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40771,7 +40618,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 100 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40851,7 +40698,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 101 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40931,7 +40778,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 102 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41011,7 +40858,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 103 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41114,7 +40961,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 104 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41218,7 +41065,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 105 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41289,7 +41136,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 106 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41356,7 +41203,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 107 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41427,7 +41274,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 108 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41498,7 +41345,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 109 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41564,7 +41411,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 110 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41635,7 +41482,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 111 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41710,7 +41557,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 112 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41806,7 +41653,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 113 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41902,7 +41749,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 114 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41989,7 +41836,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 115 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42073,7 +41920,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 116 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42143,7 +41990,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 117 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42253,7 +42100,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 118 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42366,7 +42213,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 119 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42430,7 +42277,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 120 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42517,7 +42364,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 121 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42595,7 +42442,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 122 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42677,7 +42524,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 123 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42756,7 +42603,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 124 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42836,7 +42683,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 125 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42917,7 +42764,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 126 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43044,7 +42891,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 127 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43172,7 +43019,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 128 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43273,7 +43120,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 129 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43401,7 +43248,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 130 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43559,7 +43406,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 131 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43673,7 +43520,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 132 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43772,7 +43619,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 133 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43858,7 +43705,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 134 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43994,7 +43841,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 135 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44067,7 +43914,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 136 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44163,7 +44010,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 137 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44249,7 +44096,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 138 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44342,7 +44189,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 139 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44433,7 +44280,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 140 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44547,7 +44394,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 141 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44677,7 +44524,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 142 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44762,7 +44609,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 143 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44853,7 +44700,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 144 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44993,7 +44840,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 145 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45067,7 +44914,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 146 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45189,7 +45036,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 147 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45290,7 +45137,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 148 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45406,7 +45253,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 149 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45474,7 +45321,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 150 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45568,7 +45415,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 151 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45653,7 +45500,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 152 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45761,7 +45608,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 153 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45925,7 +45772,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 154 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46011,7 +45858,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 155 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46097,7 +45944,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 156 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46161,7 +46008,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 157 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46258,7 +46105,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 158 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46324,7 +46171,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 159 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46451,7 +46298,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 160 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46542,7 +46389,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 161 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46633,7 +46480,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 162 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46697,7 +46544,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 163 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46825,7 +46672,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 164 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46955,7 +46802,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 165 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47024,7 +46871,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 166 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47089,7 +46936,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 167 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47168,7 +47015,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 168 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47354,7 +47201,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 169 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47456,7 +47303,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 170 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47520,7 +47367,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 171 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47595,7 +47442,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 172 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47755,7 +47602,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 173 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -47932,7 +47779,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 174 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48004,7 +47851,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 175 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48119,7 +47966,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 176 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48234,7 +48081,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 177 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48326,7 +48173,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 178 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48399,7 +48246,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 179 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48462,7 +48309,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 180 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48595,7 +48442,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 181 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48688,7 +48535,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 182 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48759,7 +48606,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 183 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48879,7 +48726,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 184 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -48950,7 +48797,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 185 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49016,7 +48863,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 186 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49142,7 +48989,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 187 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -49240,7 +49087,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 188 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49335,7 +49182,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 189 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49397,7 +49244,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 190 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49459,7 +49306,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 191 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js language configuration
@@ -49582,7 +49429,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 192 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49737,7 +49584,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 193 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49839,7 +49686,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 194 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49901,7 +49748,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 195 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -49963,7 +49810,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 196 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -50046,7 +49893,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 197 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -50118,7 +49965,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 198 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -50182,7 +50029,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 199 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -50296,7 +50143,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 200 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -50403,7 +50250,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 201 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -50507,6 +50354,159 @@ module.exports = Component.exports
     return zhTw;
 
 })));
+
+
+/***/ }),
+/* 199 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(383)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(385)
+/* template */
+var __vue_template__ = __webpack_require__(386)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-10e9c534"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/About.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-10e9c534", Component.options)
+  } else {
+    hotAPI.reload("data-v-10e9c534", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(387)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(389)
+/* template */
+var __vue_template__ = __webpack_require__(390)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-43b63039"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Contact.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-43b63039", Component.options)
+  } else {
+    hotAPI.reload("data-v-43b63039", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(403)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(405)
+/* template */
+var __vue_template__ = __webpack_require__(406)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-6f9c7cb0"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/proposals/Logo.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6f9c7cb0", Component.options)
+  } else {
+    hotAPI.reload("data-v-6f9c7cb0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
 
 
 /***/ }),
@@ -83202,7 +83202,7 @@ __WEBPACK_IMPORTED_MODULE_1_lodash___default.a.forEach(pages, function (p) {
 	var path = '/' + p;
 
 	try {
-		component = __webpack_require__(381)("./" + _.upperFirst(p));
+		component = __webpack_require__(382)("./" + _.upperFirst(p));
 	} catch (e) {
 		component = __webpack_require__(27);
 	}
@@ -83703,7 +83703,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.flex-center[data-v-6a19b4a0] {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.flex-center p[data-v-6a19b4a0] {\n    text-align: center;\n}\n.color-primary[data-v-6a19b4a0], #introduction[data-v-6a19b4a0], #problems[data-v-6a19b4a0] {\n  background-color: #2196f3;\n  color: ghostwhite;\n}\n.color-secondary[data-v-6a19b4a0], #title-page[data-v-6a19b4a0], #project-goals[data-v-6a19b4a0], #potential-new-features[data-v-6a19b4a0] {\n  background-color: #757575;\n  color: ghostwhite;\n}\n.color-secondary a[data-v-6a19b4a0], #title-page a[data-v-6a19b4a0], #project-goals a[data-v-6a19b4a0], #potential-new-features a[data-v-6a19b4a0] {\n    color: #81d5ff;\n}\n.page[data-v-6a19b4a0] {\n  font-size: 18px;\n  padding: 50px;\n}\n.page strong[data-v-6a19b4a0] {\n    font-size: 25px;\n}\n.page h1[data-v-6a19b4a0] {\n    text-decoration: underline;\n    text-align: center;\n}\n.page .col[data-v-6a19b4a0] {\n    padding: 10px;\n    border-bottom: 1px solid black;\n}\n.page .row h1[data-v-6a19b4a0], .page .row h2[data-v-6a19b4a0], .page .row h3[data-v-6a19b4a0], .page .row h4[data-v-6a19b4a0], .page .row h5[data-v-6a19b4a0] {\n    margin: 0;\n    text-align: center;\n    vertical-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(1) {\n    background-color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(2) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(3) {\n    background-color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(4) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(5) {\n    background-color: #4b636e;\n    text-align: center;\n}\n@media (max-width: 764px) {\n.page[data-v-6a19b4a0] {\n      padding: 15px;\n}\n}\n#title-page[data-v-6a19b4a0] {\n  padding: 50px 0;\n  min-height: auto;\n}\n#introduction[data-v-6a19b4a0] {\n  min-height: auto;\n}\n#introduction p[data-v-6a19b4a0] {\n    max-width: 50%;\n}\n@media print {\n*[data-v-6a19b4a0] {\n    color: black;\n}\n.page[data-v-6a19b4a0], .no-split[data-v-6a19b4a0] {\n    page-break-after: always;\n}\n}\n", ""]);
+exports.push([module.i, "\n.flex-center[data-v-6a19b4a0] {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.flex-center p[data-v-6a19b4a0] {\n    text-align: center;\n}\n.color-primary[data-v-6a19b4a0], #introduction[data-v-6a19b4a0], #problems[data-v-6a19b4a0] {\n  background-color: #2196f3;\n  color: ghostwhite;\n}\n.color-secondary[data-v-6a19b4a0], #title-page[data-v-6a19b4a0], #project-goals[data-v-6a19b4a0], #potential-new-features[data-v-6a19b4a0] {\n  background-color: #757575;\n  color: ghostwhite;\n}\n.color-secondary a[data-v-6a19b4a0], #title-page a[data-v-6a19b4a0], #project-goals a[data-v-6a19b4a0], #potential-new-features a[data-v-6a19b4a0] {\n    color: #81d5ff;\n}\n.page[data-v-6a19b4a0] {\n  font-size: 18px;\n  padding: 50px;\n}\n.page strong[data-v-6a19b4a0] {\n    font-size: 25px;\n}\n.page h1[data-v-6a19b4a0] {\n    text-decoration: underline;\n    text-align: center;\n}\n.page .col[data-v-6a19b4a0] {\n    padding: 10px;\n    border-bottom: 1px solid black;\n}\n.page .row h1[data-v-6a19b4a0], .page .row h2[data-v-6a19b4a0], .page .row h3[data-v-6a19b4a0], .page .row h4[data-v-6a19b4a0], .page .row h5[data-v-6a19b4a0], .page .row h6[data-v-6a19b4a0] {\n    margin: 0;\n    text-align: center;\n    vertical-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(1) {\n    background-color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(2) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(3) {\n    background-color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(4) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(5) {\n    background-color: #4b636e;\n    text-align: center;\n}\n@media (max-width: 764px) {\n.page[data-v-6a19b4a0] {\n      padding: 15px;\n}\n}\n#title-page[data-v-6a19b4a0] {\n  padding: 50px 0;\n  min-height: auto;\n}\n#introduction[data-v-6a19b4a0] {\n  min-height: auto;\n}\n#introduction p[data-v-6a19b4a0] {\n    max-width: 50%;\n}\n#signatures[data-v-6a19b4a0] {\n  padding: 50px 0;\n}\n#signatures .col[data-v-6a19b4a0] {\n    width: 42vw;\n    text-align: center;\n    font-size: 28px;\n}\n#signatures .col h1[data-v-6a19b4a0] {\n      text-decoration: underline;\n}\n#signatures .col .sign-here[data-v-6a19b4a0] {\n      text-align: left;\n      border-bottom: black 1px solid;\n      padding-top: 49px;\n      width: 100%;\n      display: block;\n}\n#signatures .col .sign-here i[data-v-6a19b4a0] {\n        position: relative;\n        top: 40px;\n}\n", ""]);
 
 // exports
 
@@ -83718,6 +83718,56 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_markdown___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_markdown__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -84098,7 +84148,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				Rate: "$100/hr"
 			},
 
-			Sender: {
+			sender: {
 				company: "Brace Yourself Solutions"
 			},
 			client: {
@@ -102750,10 +102800,278 @@ function startsWithTodoMarkdown(token) {
 /* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var map = {
+	"./af": 76,
+	"./af.js": 76,
+	"./ar": 77,
+	"./ar-dz": 78,
+	"./ar-dz.js": 78,
+	"./ar-kw": 79,
+	"./ar-kw.js": 79,
+	"./ar-ly": 80,
+	"./ar-ly.js": 80,
+	"./ar-ma": 81,
+	"./ar-ma.js": 81,
+	"./ar-sa": 82,
+	"./ar-sa.js": 82,
+	"./ar-tn": 83,
+	"./ar-tn.js": 83,
+	"./ar.js": 77,
+	"./az": 84,
+	"./az.js": 84,
+	"./be": 85,
+	"./be.js": 85,
+	"./bg": 86,
+	"./bg.js": 86,
+	"./bm": 87,
+	"./bm.js": 87,
+	"./bn": 88,
+	"./bn.js": 88,
+	"./bo": 89,
+	"./bo.js": 89,
+	"./br": 90,
+	"./br.js": 90,
+	"./bs": 91,
+	"./bs.js": 91,
+	"./ca": 92,
+	"./ca.js": 92,
+	"./cs": 93,
+	"./cs.js": 93,
+	"./cv": 94,
+	"./cv.js": 94,
+	"./cy": 95,
+	"./cy.js": 95,
+	"./da": 96,
+	"./da.js": 96,
+	"./de": 97,
+	"./de-at": 98,
+	"./de-at.js": 98,
+	"./de-ch": 99,
+	"./de-ch.js": 99,
+	"./de.js": 97,
+	"./dv": 100,
+	"./dv.js": 100,
+	"./el": 101,
+	"./el.js": 101,
+	"./en-au": 102,
+	"./en-au.js": 102,
+	"./en-ca": 103,
+	"./en-ca.js": 103,
+	"./en-gb": 104,
+	"./en-gb.js": 104,
+	"./en-ie": 105,
+	"./en-ie.js": 105,
+	"./en-il": 106,
+	"./en-il.js": 106,
+	"./en-nz": 107,
+	"./en-nz.js": 107,
+	"./eo": 108,
+	"./eo.js": 108,
+	"./es": 109,
+	"./es-do": 110,
+	"./es-do.js": 110,
+	"./es-us": 111,
+	"./es-us.js": 111,
+	"./es.js": 109,
+	"./et": 112,
+	"./et.js": 112,
+	"./eu": 113,
+	"./eu.js": 113,
+	"./fa": 114,
+	"./fa.js": 114,
+	"./fi": 115,
+	"./fi.js": 115,
+	"./fo": 116,
+	"./fo.js": 116,
+	"./fr": 117,
+	"./fr-ca": 118,
+	"./fr-ca.js": 118,
+	"./fr-ch": 119,
+	"./fr-ch.js": 119,
+	"./fr.js": 117,
+	"./fy": 120,
+	"./fy.js": 120,
+	"./gd": 121,
+	"./gd.js": 121,
+	"./gl": 122,
+	"./gl.js": 122,
+	"./gom-latn": 123,
+	"./gom-latn.js": 123,
+	"./gu": 124,
+	"./gu.js": 124,
+	"./he": 125,
+	"./he.js": 125,
+	"./hi": 126,
+	"./hi.js": 126,
+	"./hr": 127,
+	"./hr.js": 127,
+	"./hu": 128,
+	"./hu.js": 128,
+	"./hy-am": 129,
+	"./hy-am.js": 129,
+	"./id": 130,
+	"./id.js": 130,
+	"./is": 131,
+	"./is.js": 131,
+	"./it": 132,
+	"./it.js": 132,
+	"./ja": 133,
+	"./ja.js": 133,
+	"./jv": 134,
+	"./jv.js": 134,
+	"./ka": 135,
+	"./ka.js": 135,
+	"./kk": 136,
+	"./kk.js": 136,
+	"./km": 137,
+	"./km.js": 137,
+	"./kn": 138,
+	"./kn.js": 138,
+	"./ko": 139,
+	"./ko.js": 139,
+	"./ky": 140,
+	"./ky.js": 140,
+	"./lb": 141,
+	"./lb.js": 141,
+	"./lo": 142,
+	"./lo.js": 142,
+	"./lt": 143,
+	"./lt.js": 143,
+	"./lv": 144,
+	"./lv.js": 144,
+	"./me": 145,
+	"./me.js": 145,
+	"./mi": 146,
+	"./mi.js": 146,
+	"./mk": 147,
+	"./mk.js": 147,
+	"./ml": 148,
+	"./ml.js": 148,
+	"./mn": 149,
+	"./mn.js": 149,
+	"./mr": 150,
+	"./mr.js": 150,
+	"./ms": 151,
+	"./ms-my": 152,
+	"./ms-my.js": 152,
+	"./ms.js": 151,
+	"./mt": 153,
+	"./mt.js": 153,
+	"./my": 154,
+	"./my.js": 154,
+	"./nb": 155,
+	"./nb.js": 155,
+	"./ne": 156,
+	"./ne.js": 156,
+	"./nl": 157,
+	"./nl-be": 158,
+	"./nl-be.js": 158,
+	"./nl.js": 157,
+	"./nn": 159,
+	"./nn.js": 159,
+	"./pa-in": 160,
+	"./pa-in.js": 160,
+	"./pl": 161,
+	"./pl.js": 161,
+	"./pt": 162,
+	"./pt-br": 163,
+	"./pt-br.js": 163,
+	"./pt.js": 162,
+	"./ro": 164,
+	"./ro.js": 164,
+	"./ru": 165,
+	"./ru.js": 165,
+	"./sd": 166,
+	"./sd.js": 166,
+	"./se": 167,
+	"./se.js": 167,
+	"./si": 168,
+	"./si.js": 168,
+	"./sk": 169,
+	"./sk.js": 169,
+	"./sl": 170,
+	"./sl.js": 170,
+	"./sq": 171,
+	"./sq.js": 171,
+	"./sr": 172,
+	"./sr-cyrl": 173,
+	"./sr-cyrl.js": 173,
+	"./sr.js": 172,
+	"./ss": 174,
+	"./ss.js": 174,
+	"./sv": 175,
+	"./sv.js": 175,
+	"./sw": 176,
+	"./sw.js": 176,
+	"./ta": 177,
+	"./ta.js": 177,
+	"./te": 178,
+	"./te.js": 178,
+	"./tet": 179,
+	"./tet.js": 179,
+	"./tg": 180,
+	"./tg.js": 180,
+	"./th": 181,
+	"./th.js": 181,
+	"./tl-ph": 182,
+	"./tl-ph.js": 182,
+	"./tlh": 183,
+	"./tlh.js": 183,
+	"./tr": 184,
+	"./tr.js": 184,
+	"./tzl": 185,
+	"./tzl.js": 185,
+	"./tzm": 186,
+	"./tzm-latn": 187,
+	"./tzm-latn.js": 187,
+	"./tzm.js": 186,
+	"./ug-cn": 188,
+	"./ug-cn.js": 188,
+	"./uk": 189,
+	"./uk.js": 189,
+	"./ur": 190,
+	"./ur.js": 190,
+	"./uz": 191,
+	"./uz-latn": 192,
+	"./uz-latn.js": 192,
+	"./uz.js": 191,
+	"./vi": 193,
+	"./vi.js": 193,
+	"./x-pseudo": 194,
+	"./x-pseudo.js": 194,
+	"./yo": 195,
+	"./yo.js": 195,
+	"./zh-cn": 196,
+	"./zh-cn.js": 196,
+	"./zh-hk": 197,
+	"./zh-hk.js": 197,
+	"./zh-tw": 198,
+	"./zh-tw.js": 198
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 376;
+
+/***/ }),
+/* 377 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(377);
+var content = __webpack_require__(378);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -102773,7 +103091,7 @@ if(false) {
 }
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -102787,7 +103105,7 @@ exports.push([module.i, "\n.header[data-v-21adbbbe] {\n  top: -67px;\n  position
 
 
 /***/ }),
-/* 378 */
+/* 379 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -102838,7 +103156,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -102873,339 +103191,365 @@ if (false) {
 }
 
 /***/ }),
-/* 380 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("logo"),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "page flex-center", attrs: { id: "introduction" } },
-        [
-          _c("p", [_vm._v("First of all, Thank you for this opportunity!")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n                My experience with Dr Windows and the window cleaning business make " +
-                _vm._s(_vm.Sender.company) +
-                "\n                a perfect fit for this project. As I look through websites of your competitors, I believe\n                " +
-                _vm._s(_vm.Sender.company) +
-                " can make Dr Windows "
-            ),
-            _c("strong", [_vm._v("stand out")]),
-            _vm._v(
-              " as an excellent option for residential\n                and commercial business in " +
-                _vm._s(_vm.client.company) +
-                "' operating states.\n            "
-            )
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "print-page" },
+      [
+        _c("logo"),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "page flex-center", attrs: { id: "introduction" } },
+          [
+            _c("vue-markdown", { staticClass: "text-center" }, [
+              _vm._v(
+                "\nThank you for this opportunity!\n\nMy experience with Dr Windows and the window cleaning business makes " +
+                  _vm._s(_vm.sender.company) +
+                  "\na perfect fit for this project. As I look through websites of your competitors, I believe\n" +
+                  _vm._s(_vm.sender.company) +
+                  " can make Dr Windows **stand out** as an excellent option for residential\nand commercial business in " +
+                  _vm._s(_vm.client.company) +
+                  "' operating states.\n\nIn this proposal, I will detail the current problems you are facing and the solutions that will solve these problems.\nThroughout the process I will also provide ideas for improvement and process optimization.\n\n\nYour input will be required at every step of this process\nto ensure that the final product is everything you need it to be.\n\nI am confident that the value brought to " +
+                  _vm._s(_vm.client.company) +
+                  " by\n                "
+              )
+            ])
+          ],
+          1
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "page",
+        staticStyle: { display: "none" },
+        attrs: { id: "potential-new-features" }
+      },
+      [
+        _c("h1", [_vm._v("Potential Website Features")]),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("h1", [_vm._v("Other Considerations")]),
+        _vm._v(" "),
+        _c("h2", [_vm._v("Logo redesign")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                There are many reasons to refresh a company logo.\n                "
+          ),
+          _c("a", { attrs: { href: _vm.logo_redesign_link } }, [
+            _vm._v("This article")
           ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n                In this proposal, I will detail the current problems you are facing and the solutions that will solve\n                these problems.\n                Throughout the process I will also provide ideas for improvement and process optimization.\n            "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n                Your input will be required at every step of this process\n                to ensure that the final product is everything you need it to be.\n            "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "I am confident that the value brought to " +
-                _vm._s(_vm.client.company) +
-                " by "
-            )
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "page",
-          staticStyle: { display: "none" },
-          attrs: { id: "potential-new-features" }
-        },
-        [
-          _c("h1", [_vm._v("Potential Website Features")]),
-          _vm._v(" "),
-          _vm._m(3),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _vm._m(4),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("h1", [_vm._v("Other Considerations")]),
-          _vm._v(" "),
-          _c("h2", [_vm._v("Logo redesign")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n                There are many reasons to refresh a company logo.\n                "
-            ),
-            _c("a", { attrs: { href: _vm.logo_redesign_link } }, [
-              _vm._v("This article")
+          _vm._v(" details a few of those reasons.\n            ")
+        ]),
+        _vm._v(" "),
+        _c("hr")
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "page color-secondary page-break-before",
+        attrs: { id: "phase1-timeline" }
+      },
+      [
+        _c("h1", { staticClass: "text-center" }, [_vm._v("Timeline")]),
+        _vm._v(" "),
+        _vm._m(5),
+        _vm._v(" "),
+        _vm._m(6),
+        _vm._v(" "),
+        _vm._l(_vm.timeline, function(row) {
+          return _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col col-1" }, [
+              _c("h2", [
+                _vm._v(
+                  "\n                        " +
+                    _vm._s(_vm.timeline.indexOf(row) + 1) +
+                    "\n                    "
+                )
+              ])
             ]),
-            _vm._v(" details a few of those reasons.\n            ")
-          ]),
-          _vm._v(" "),
-          _c("hr")
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "page color-secondary",
-          attrs: { id: "phase1-timeline" }
-        },
-        [
-          _c("h1", { staticClass: "text-center" }, [_vm._v("Timeline")]),
-          _vm._v(" "),
-          _vm._m(5),
-          _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _vm._l(_vm.timeline, function(row) {
-            return _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col col-1" }, [
-                _c("h2", [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(_vm.timeline.indexOf(row) + 1) +
-                      "\n                    "
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col col-7" },
-                [_c("vue-markdown", [_vm._v(_vm._s(row.item))])],
-                1
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "col col-2 flex-center" }, [
-                _vm._v(_vm._s(row.start.format("MMM D Y")))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col col-2 flex-center" }, [
-                _vm._v(_vm._s(row.end.format("MMM D Y")))
-              ])
-            ])
-          })
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "page color-primary", attrs: { id: "costs" } },
-        [
-          _c("h1", { staticClass: "text-center" }, [_vm._v("Costs")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text-center" }, [
-            _vm._v(
-              "\n                The following Items correspond with the timeline phases outlined above.\n            "
-            )
-          ]),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _vm._l(_vm.timeline, function(row) {
-            return _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col col-1" }, [
-                _vm._v(_vm._s(_vm.timeline.indexOf(row) + 1))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col" }, [_vm._v(_vm._s(row.title))]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col col-1" }, [
-                _vm._v("$" + _vm._s(row.start_cost))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col col-1" }, [
-                _vm._v("$" + _vm._s(row.end_cost))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col col-2" }, [
-                _vm._v("$" + _vm._s(row.start_cost + row.end_cost))
-              ])
-            ])
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "col ", staticStyle: { "text-align": "right" } },
-              [_vm._v("Total:")]
-            ),
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass: "col col-2 ",
-                staticStyle: { "text-align": "center" }
-              },
-              [_vm._v("$" + _vm._s(_vm.timeline_row_total_cost))]
-            )
-          ]),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("h1", { staticClass: "text-center" }, [_vm._v("Recurring Costs")]),
-          _vm._v(" "),
-          _vm._m(8),
-          _vm._v(" "),
-          _vm._l(_vm.recurring_costs, function(row) {
-            return _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col" }, [
-                _c("h2", [_vm._v(_vm._s(row.item))]),
-                _vm._v(" "),
-                row.description
-                  ? _c("p", { staticClass: "text-center" }, [
-                      _vm._v(_vm._s(row.description))
-                    ])
-                  : _vm._e()
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticClass: "col col-2" }, [
-                _vm._v("$" + _vm._s(row.monthly))
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticClass: "col col-2" }, [
-                _vm._v("$" + _vm._s(_vm.yearly(row)))
-              ])
-            ])
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "col ", staticStyle: { "text-align": "right" } },
-              [_vm._v("Total:")]
+              { staticClass: "col col-7" },
+              [_c("vue-markdown", [_vm._v(_vm._s(row.item))])],
+              1
             ),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col col-2 ",
-                staticStyle: { "text-align": "center" }
-              },
-              [_vm._v("$" + _vm._s(_vm.total_recurring_costs))]
-            )
+            _c("div", { staticClass: "col col-2 flex-center" }, [
+              _vm._v(_vm._s(row.start.format("MMM D Y")))
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col col-2 flex-center" }, [
+              _vm._v(_vm._s(row.end.format("MMM D Y")))
+            ])
           ])
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "page color-secondary",
-          staticStyle: { "text-align": "center" },
-          attrs: { id: "terms" }
-        },
-        [
-          _c("h1", [_vm._v("Terms")]),
+        })
+      ],
+      2
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "page color-primary", attrs: { id: "costs" } },
+      [
+        _c("h1", { staticClass: "text-center" }, [_vm._v("Costs")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-center" }, [
+          _vm._v(
+            "\n                The following Items correspond with the timeline phases outlined above.\n            "
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(7),
+        _vm._v(" "),
+        _vm._l(_vm.timeline, function(row) {
+          return _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col col-1" }, [
+              _vm._v(_vm._s(_vm.timeline.indexOf(row) + 1))
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col text-center" }, [
+              _c("h2", [_vm._v(_vm._s(row.title))])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col col-1" }, [
+              _vm._v("$" + _vm._s(row.start_cost))
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col col-1" }, [
+              _vm._v("$" + _vm._s(row.end_cost))
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col col-2" }, [
+              _vm._v("$" + _vm._s(row.start_cost + row.end_cost))
+            ])
+          ])
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col ", staticStyle: { "text-align": "right" } },
+            [_vm._v("Total:")]
+          ),
           _vm._v(" "),
-          _c("vue-markdown", [
-            _vm._v(
-              "\n### Authorization\n" +
-                _vm._s(_vm.client.company) +
-                " is engaging " +
-                _vm._s(_vm.Sender.company) +
-                ", as an independent contractor for the project outlined\nabove.\nSummarized as\n__**the Development, deployment, hosting, & support of new and redesigned " +
-                _vm._s(_vm.client.company) +
-                " Website**__\n\n---\n\n### Completion\n" +
-                _vm._s(_vm.client.company) +
-                " and " +
-                _vm._s(_vm.Sender.company) +
-                " will collaborate to complete the project in a timely manner.\n" +
-                _vm._s(_vm.Sender.company) +
-                " agrees to work expeditiously to complete the project no later than " +
-                _vm._s(_vm.launch_date) +
-                "\n(depending on date of acceptance of agreement)\n\n---\n\n### Payment\nFees to " +
-                _vm._s(_vm.Sender.company) +
-                " are due in accordance with the above listed pricing table. Fees for monthly\nservices will be invoices on the 1st business day of each calendar month, and are due on a net-30 basis.\n\n---\n\n### Assignment of Project\n" +
-                _vm._s(_vm.Sender.company) +
-                " reserves the right to assign subcontractors to this project to insure the right fit for\nthe job as well as on-time completion.\n\n---\n\n### Revision During Execution\n" +
-                _vm._s(_vm.client.company) +
-                " may be charged additional fees if it decides to make changes to the agreed upon project\nscope and objectives. Small modifications may be acceptable.\n\n---\n\n\n### Legal & License\n" +
-                _vm._s(_vm.Sender.company) +
-                " warrants that the functionality contained in this project will meet " +
-                _vm._s(_vm.client.company) +
-                "\nrequirements and that the operation will be reasonably error-free.\n\nThe entire risk as to the quality and performance of the project is with " +
-                _vm._s(_vm.client.company) +
-                ". In no event\nwill " +
-                _vm._s(_vm.Sender.company) +
-                " be liable to " +
-                _vm._s(_vm.client.company) +
-                " or any third party for any damages, including any\nlost profits, lost savings or other incidental, consequential or special damages arising out of the\noperation of or inability to operate the website, even if " +
-                _vm._s(_vm.Sender.company) +
-                " has been advised of the\npossibility of such damages.\nIf any provision of this agreement shall be unlawful, void, or for any reason unenforceable, then that\nprovision shall be deemed severable from this agreement and shall not affect the validity and enforceability\nof any remaining provisions.\n\n---\n\n### Copyrights & Trademarks\n" +
-                _vm._s(_vm.client.company) +
-                " represents to " +
-                _vm._s(_vm.Sender.company) +
-                " and unconditionally guarantees that any elements\nfurnished to " +
-                _vm._s(_vm.Sender.company) +
-                " for inclusion in the project are owned by " +
-                _vm._s(_vm.client.company) +
-                ", or that\n" +
-                _vm._s(_vm.client.company) +
-                " has permission from the rightful owner to use each of these elements, and will hold\nharmless, protect, and defend " +
-                _vm._s(_vm.Sender.company) +
-                " and its subcontractors from any claim or suit arising from\nthe use of such elements furnished by " +
-                _vm._s(_vm.client.company) +
-                ".\n\n---\n\n### Copyright to Project\n" +
-                _vm._s(_vm.Sender.company) +
-                " guarantees that all aspects of design and construction of the project will be disclosed\nto " +
-                _vm._s(_vm.client.company) +
-                " upon completion, and full code, copyrights and ownership will be the sole property of\n" +
-                _vm._s(_vm.client.company) +
-                ". " +
-                _vm._s(_vm.Sender.company) +
-                " retains the right to display graphics and other design elements as\nexamples of its work in its portfolio.\n\n---\n\n### Sole Agreement\nThe agreement contained in this Contract constitutes the sole agreement between " +
-                _vm._s(_vm.Sender.company) +
-                " and\n" +
-                _vm._s(_vm.client.company) +
-                " regarding this project. Any additional work not specified in this contract must be\nauthorized by a written change order. All prices specified in this contract will be honored for three (6)\nmonths after both parties sign this contract. Continued services after that time will require a new\nagreement.\n\n---\n\n### Initial Payment & Refund Policy\nThis agreement begins with an initial payment indicated in the pricing table above. If " +
-                _vm._s(_vm.client.company) +
-                "\nhalts work and applies for a refund within 4 days, work completed shall be billed at the hourly rate of\n" +
-                _vm._s(_vm.Hourly.Rate) +
-                ", and deducted from the initial payment, the balance of which shall be returned to\n" +
-                _vm._s(_vm.client.company) +
-                ". If, at the time of the request for refund, work has been completed beyond the amount\ncovered by the initial payment, " +
-                _vm._s(_vm.client.company) +
-                " shall be liable to pay for all work completed at the\nhourly rate stated above. No portion of this initial payment will be refunded unless requested within 4 days\nof signing this contract.\n\n---\n\n### Acceptance\n\nIf all parties are in agreement of these terms, " +
-                _vm._s(_vm.Sender.company) +
-                " will provide a printed copy of this proposal\nfor both parties to review and sign.\nContact Ethan Brace if these terms are acceptable or to request alternative terms.\n\n            "
-            )
+          _c(
+            "div",
+            {
+              staticClass: "col col-2 ",
+              staticStyle: { "text-align": "center" }
+            },
+            [_vm._v("$" + _vm._s(_vm.timeline_row_total_cost))]
+          )
+        ]),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("h1", { staticClass: "text-center" }, [_vm._v("Recurring Costs")]),
+        _vm._v(" "),
+        _vm._m(8),
+        _vm._v(" "),
+        _vm._l(_vm.recurring_costs, function(row) {
+          return _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col" }, [
+              _c("h2", [_vm._v(_vm._s(row.item))]),
+              _vm._v(" "),
+              row.description
+                ? _c("p", { staticClass: "text-center" }, [
+                    _vm._v(_vm._s(row.description))
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("h5", { staticClass: "col col-2" }, [
+              _vm._v("$" + _vm._s(row.monthly))
+            ]),
+            _vm._v(" "),
+            _c("h5", { staticClass: "col col-2" }, [
+              _vm._v("$" + _vm._s(_vm.yearly(row)))
+            ])
           ])
-        ],
-        1
-      )
-    ],
-    1
-  )
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col ", staticStyle: { "text-align": "right" } },
+            [_vm._v("Total:")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col col-2 ",
+              staticStyle: { "text-align": "center" }
+            },
+            [_vm._v("$" + _vm._s(_vm.total_recurring_costs))]
+          )
+        ])
+      ],
+      2
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "page color-secondary page-break-before scale-5",
+        staticStyle: { "text-align": "center" },
+        attrs: { id: "terms" }
+      },
+      [
+        _c("vue-markdown", [
+          _vm._v(
+            "\n# __Terms__\n\n\n### Authorization\n" +
+              _vm._s(_vm.client.company) +
+              " is engaging " +
+              _vm._s(_vm.sender.company) +
+              ", as an independent contractor for the project outlined\nabove.\nSummarized as\n__**the Development, deployment, hosting, & support of new and redesigned " +
+              _vm._s(_vm.client.company) +
+              " Website**__\n\n---\n\n### Completion\n" +
+              _vm._s(_vm.client.company) +
+              " and " +
+              _vm._s(_vm.sender.company) +
+              " will collaborate to complete the project in a timely manner.\n" +
+              _vm._s(_vm.sender.company) +
+              " agrees to work expeditiously to complete the project no later than " +
+              _vm._s(_vm.launch_date) +
+              "\n(depending on date of acceptance of agreement)\n\n---\n\n### Payment\nFees to " +
+              _vm._s(_vm.sender.company) +
+              " are due in accordance with the above listed pricing table. Fees for monthly\nservices will be invoices on the 1st business day of each calendar month, and are due on a net-30 basis.\n\n---\n\n### Assignment of Project\n" +
+              _vm._s(_vm.sender.company) +
+              " reserves the right to assign subcontractors to this project to insure the right fit\nfor\nthe job as well as on-time completion.\n\n---\n\n### Revision During Execution\n" +
+              _vm._s(_vm.client.company) +
+              " may be charged additional fees if it decides to make changes to the agreed upon\nproject\nscope and objectives. Small modifications may be acceptable.\n\n---\n\n\n### Legal & License\n" +
+              _vm._s(_vm.sender.company) +
+              " warrants that the functionality contained in this project will meet\n" +
+              _vm._s(_vm.client.company) +
+              "\nrequirements and that the operation will be reasonably error-free.\n\nThe entire risk as to the quality and performance of the project is with " +
+              _vm._s(_vm.client.company) +
+              ". In no event\nwill " +
+              _vm._s(_vm.sender.company) +
+              " be liable to " +
+              _vm._s(_vm.client.company) +
+              " or any third party for any damages, including\nany\nlost profits, lost savings or other incidental, consequential or special damages arising out of the\noperation of or inability to operate the website, even if " +
+              _vm._s(_vm.sender.company) +
+              " has been advised of the\npossibility of such damages.\nIf any provision of this agreement shall be unlawful, void, or for any reason unenforceable, then that\nprovision shall be deemed severable from this agreement and shall not affect the validity and\nenforceability\nof any remaining provisions.\n\n---\n\n### Copyrights & Trademarks\n" +
+              _vm._s(_vm.client.company) +
+              " represents to " +
+              _vm._s(_vm.sender.company) +
+              " and unconditionally guarantees that any elements\nfurnished to " +
+              _vm._s(_vm.sender.company) +
+              " for inclusion in the project are owned by " +
+              _vm._s(_vm.client.company) +
+              ", or that\n" +
+              _vm._s(_vm.client.company) +
+              " has permission from the rightful owner to use each of these elements, and will hold\nharmless, protect, and defend " +
+              _vm._s(_vm.sender.company) +
+              " and its subcontractors from any claim or suit arising\nfrom\nthe use of such elements furnished by " +
+              _vm._s(_vm.client.company) +
+              ".\n\n\n---\n            "
+          )
+        ]),
+        _vm._v(" "),
+        _c("vue-markdown", { staticClass: "print-page" }, [
+          _vm._v(
+            "\n\n### Copyright to Project\n" +
+              _vm._s(_vm.sender.company) +
+              " guarantees that all aspects of design and construction of the project will be disclosed\nto " +
+              _vm._s(_vm.client.company) +
+              " upon completion, and full code, copyrights and ownership will be the sole property of\n" +
+              _vm._s(_vm.client.company) +
+              ". " +
+              _vm._s(_vm.sender.company) +
+              " retains the right to display graphics and other design elements as\nexamples of its work in its portfolio.\n\n---\n\n### Sole Agreement\nThe agreement contained in this Contract constitutes the sole agreement between " +
+              _vm._s(_vm.sender.company) +
+              " and\n" +
+              _vm._s(_vm.client.company) +
+              " regarding this project. Any additional work not specified in this contract must be\nauthorized by a written change order. All prices specified in this contract will be honored for three (6)\nmonths after both parties sign this contract. Continued services after that time will require a new\nagreement.\n\n---\n\n### Initial Payment & Refund Policy\nThis agreement begins with an initial payment indicated in the pricing table above. If " +
+              _vm._s(_vm.client.company) +
+              "\nhalts work and applies for a refund within 4 days, work completed shall be billed at the hourly rate of\n" +
+              _vm._s(_vm.Hourly.Rate) +
+              ", and deducted from the initial payment, the balance of which shall be returned to\n" +
+              _vm._s(_vm.client.company) +
+              ". If, at the time of the request for refund, work has been completed beyond the amount\ncovered by the initial payment, " +
+              _vm._s(_vm.client.company) +
+              " shall be liable to pay for all work completed at the\nhourly rate stated above. No portion of this initial payment will be refunded unless requested within 4 days\nof signing this contract.\n\n---\n"
+          )
+        ]),
+        _vm._v(" "),
+        _c("vue-markdown", { staticClass: "noprint" }, [
+          _vm._v(
+            "\n### Acceptance\n\nIf all parties are in agreement of these terms, " +
+              _vm._s(_vm.sender.company) +
+              " will provide a printed copy of this proposal\nfor both parties to review and sign.\nContact Ethan Brace if these terms are acceptable or to request alternative terms.\n"
+          )
+        ]),
+        _vm._v(" "),
+        _c("vue-markdown", { staticClass: "print-only" }, [
+          _vm._v(
+            "\n\n### Acceptance\n\nThis agreement becomes effective when signed by parties of " +
+              _vm._s(_vm.sender.company) +
+              " and " +
+              _vm._s(_vm.client.company) +
+              "\n\n"
+          )
+        ])
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "flex-center print-only", attrs: { id: "signatures" } },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c("span", { staticClass: "sign-here" }, [
+              _c("i", [_vm._v(_vm._s(_vm.client.company))])
+            ]),
+            _vm._v(" "),
+            _vm._m(9)
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c("span", { staticClass: "sign-here" }, [
+              _c("i", [_vm._v(_vm._s(_vm.sender.company))])
+            ]),
+            _vm._v(" "),
+            _vm._m(10)
+          ])
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -103226,33 +103570,37 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "page", attrs: { id: "project-goals" } }, [
-      _c("h1", [_vm._v("Overall Goals")]),
-      _vm._v(" "),
-      _c("ul", [
-        _c("li", [
-          _c("strong", [_vm._v("Grow")]),
-          _vm._v(" client base by increasing the web presence of Dr Windows")
-        ]),
+    return _c(
+      "div",
+      { staticClass: "page page-break-before", attrs: { id: "project-goals" } },
+      [
+        _c("h1", [_vm._v("Overall Goals")]),
         _vm._v(" "),
-        _c("li", [
-          _c("strong", [_vm._v("Increase revenue")]),
-          _vm._v(" by promoting company services - current and new")
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("strong", [_vm._v("Save")]),
-          _vm._v(" time by organizing and streamlining data management")
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("strong", [_vm._v("Strengthen")]),
-          _vm._v(
-            " trust of current and new clients by increasing transparency through a\n                    new client login\n                "
-          )
+        _c("ul", [
+          _c("li", [
+            _c("strong", [_vm._v("Grow")]),
+            _vm._v(" client base by increasing the web presence of Dr Windows")
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("strong", [_vm._v("Increase revenue")]),
+            _vm._v(" by promoting company services - current and new")
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("strong", [_vm._v("Save")]),
+            _vm._v(" time by organizing and streamlining data management")
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("strong", [_vm._v("Strengthen")]),
+            _vm._v(
+              " trust of current and new clients by increasing transparency through a\n                    new client login\n                "
+            )
+          ])
         ])
-      ])
-    ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -103438,11 +103786,11 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row" }, [
       _c("h4", { staticClass: "col col-1" }, [_vm._v("Phase")]),
       _vm._v(" "),
-      _c("h2", { staticClass: "col" }, [_vm._v("Item")]),
+      _c("h4", { staticClass: "col" }),
       _vm._v(" "),
-      _c("h5", { staticClass: "col col-1" }, [_vm._v("Due at Start")]),
+      _c("h6", { staticClass: "col col-1" }, [_vm._v("Due at Start")]),
       _vm._v(" "),
-      _c("h5", { staticClass: "col col-1" }, [_vm._v("Due at Completion")]),
+      _c("h6", { staticClass: "col col-1" }, [_vm._v("Due at Completion")]),
       _vm._v(" "),
       _c("h5", { staticClass: "col col-2" }, [_vm._v("Total")])
     ])
@@ -103458,6 +103806,18 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("h5", { staticClass: "col col-2" }, [_vm._v("Yearly")])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "sign-here" }, [_c("i", [_vm._v("Date")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "sign-here" }, [_c("i", [_vm._v("Date")])])
   }
 ]
 render._withStripped = true
@@ -103470,14 +103830,14 @@ if (false) {
 }
 
 /***/ }),
-/* 381 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./About": 76,
-	"./About.vue": 76,
-	"./Contact": 77,
-	"./Contact.vue": 77,
+	"./About": 199,
+	"./About.vue": 199,
+	"./Contact": 200,
+	"./Contact.vue": 200,
 	"./Home": 28,
 	"./Home.vue": 28,
 	"./Main": 41,
@@ -103488,8 +103848,8 @@ var map = {
 	"./partials/Logo.vue": 23,
 	"./partials/Nav": 42,
 	"./partials/Nav.vue": 42,
-	"./proposals/Logo": 78,
-	"./proposals/Logo.vue": 78,
+	"./proposals/Logo": 201,
+	"./proposals/Logo.vue": 201,
 	"./proposals/drwindows": 29,
 	"./proposals/drwindows.vue": 29
 };
@@ -103507,16 +103867,16 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 381;
+webpackContext.id = 382;
 
 /***/ }),
-/* 382 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(383);
+var content = __webpack_require__(384);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -103536,7 +103896,7 @@ if(false) {
 }
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -103550,7 +103910,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103598,7 +103958,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -103618,13 +103978,13 @@ if (false) {
 }
 
 /***/ }),
-/* 386 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(387);
+var content = __webpack_require__(388);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -103644,7 +104004,7 @@ if(false) {
 }
 
 /***/ }),
-/* 387 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -103658,7 +104018,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 388 */
+/* 389 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103707,7 +104067,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 389 */
+/* 390 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -103727,13 +104087,13 @@ if (false) {
 }
 
 /***/ }),
-/* 390 */
+/* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(391);
+var content = __webpack_require__(392);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -103753,7 +104113,7 @@ if(false) {
 }
 
 /***/ }),
-/* 391 */
+/* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -103767,7 +104127,7 @@ exports.push([module.i, "\n#router-view[data-v-2e13bc20] {\n    margin-top: 60px
 
 
 /***/ }),
-/* 392 */
+/* 393 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103832,13 +104192,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 393 */
+/* 394 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(394);
+var content = __webpack_require__(395);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -103858,7 +104218,7 @@ if(false) {
 }
 
 /***/ }),
-/* 394 */
+/* 395 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -103872,7 +104232,7 @@ exports.push([module.i, "\n.navbar[data-v-95a591c6] {\n  padding: 0;\n}\nnav[dat
 
 
 /***/ }),
-/* 395 */
+/* 396 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103936,7 +104296,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 396 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -103979,13 +104339,13 @@ if (false) {
 }
 
 /***/ }),
-/* 397 */
+/* 398 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(398);
+var content = __webpack_require__(399);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -104005,7 +104365,7 @@ if(false) {
 }
 
 /***/ }),
-/* 398 */
+/* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -104019,7 +104379,7 @@ exports.push([module.i, "\n#footer[data-v-96898ade] {\n  /*position: absolute;*/
 
 
 /***/ }),
-/* 399 */
+/* 400 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -104121,14 +104481,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 400 */
+/* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "noprint" }, [
     _c("div", { attrs: { id: "footer" } }, [
       _vm._m(0),
       _vm._v(" "),
@@ -104175,7 +104535,7 @@ if (false) {
 }
 
 /***/ }),
-/* 401 */
+/* 402 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -104205,13 +104565,13 @@ if (false) {
 }
 
 /***/ }),
-/* 402 */
+/* 403 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(403);
+var content = __webpack_require__(404);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -104231,7 +104591,7 @@ if(false) {
 }
 
 /***/ }),
-/* 403 */
+/* 404 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -104245,7 +104605,7 @@ exports.push([module.i, "\n.flex-center[data-v-6f9c7cb0] {\n  -webkit-box-orient
 
 
 /***/ }),
-/* 404 */
+/* 405 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -104264,7 +104624,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 405 */
+/* 406 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -104297,274 +104657,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-6f9c7cb0", module.exports)
   }
 }
-
-/***/ }),
-/* 406 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./af": 79,
-	"./af.js": 79,
-	"./ar": 80,
-	"./ar-dz": 81,
-	"./ar-dz.js": 81,
-	"./ar-kw": 82,
-	"./ar-kw.js": 82,
-	"./ar-ly": 83,
-	"./ar-ly.js": 83,
-	"./ar-ma": 84,
-	"./ar-ma.js": 84,
-	"./ar-sa": 85,
-	"./ar-sa.js": 85,
-	"./ar-tn": 86,
-	"./ar-tn.js": 86,
-	"./ar.js": 80,
-	"./az": 87,
-	"./az.js": 87,
-	"./be": 88,
-	"./be.js": 88,
-	"./bg": 89,
-	"./bg.js": 89,
-	"./bm": 90,
-	"./bm.js": 90,
-	"./bn": 91,
-	"./bn.js": 91,
-	"./bo": 92,
-	"./bo.js": 92,
-	"./br": 93,
-	"./br.js": 93,
-	"./bs": 94,
-	"./bs.js": 94,
-	"./ca": 95,
-	"./ca.js": 95,
-	"./cs": 96,
-	"./cs.js": 96,
-	"./cv": 97,
-	"./cv.js": 97,
-	"./cy": 98,
-	"./cy.js": 98,
-	"./da": 99,
-	"./da.js": 99,
-	"./de": 100,
-	"./de-at": 101,
-	"./de-at.js": 101,
-	"./de-ch": 102,
-	"./de-ch.js": 102,
-	"./de.js": 100,
-	"./dv": 103,
-	"./dv.js": 103,
-	"./el": 104,
-	"./el.js": 104,
-	"./en-au": 105,
-	"./en-au.js": 105,
-	"./en-ca": 106,
-	"./en-ca.js": 106,
-	"./en-gb": 107,
-	"./en-gb.js": 107,
-	"./en-ie": 108,
-	"./en-ie.js": 108,
-	"./en-il": 109,
-	"./en-il.js": 109,
-	"./en-nz": 110,
-	"./en-nz.js": 110,
-	"./eo": 111,
-	"./eo.js": 111,
-	"./es": 112,
-	"./es-do": 113,
-	"./es-do.js": 113,
-	"./es-us": 114,
-	"./es-us.js": 114,
-	"./es.js": 112,
-	"./et": 115,
-	"./et.js": 115,
-	"./eu": 116,
-	"./eu.js": 116,
-	"./fa": 117,
-	"./fa.js": 117,
-	"./fi": 118,
-	"./fi.js": 118,
-	"./fo": 119,
-	"./fo.js": 119,
-	"./fr": 120,
-	"./fr-ca": 121,
-	"./fr-ca.js": 121,
-	"./fr-ch": 122,
-	"./fr-ch.js": 122,
-	"./fr.js": 120,
-	"./fy": 123,
-	"./fy.js": 123,
-	"./gd": 124,
-	"./gd.js": 124,
-	"./gl": 125,
-	"./gl.js": 125,
-	"./gom-latn": 126,
-	"./gom-latn.js": 126,
-	"./gu": 127,
-	"./gu.js": 127,
-	"./he": 128,
-	"./he.js": 128,
-	"./hi": 129,
-	"./hi.js": 129,
-	"./hr": 130,
-	"./hr.js": 130,
-	"./hu": 131,
-	"./hu.js": 131,
-	"./hy-am": 132,
-	"./hy-am.js": 132,
-	"./id": 133,
-	"./id.js": 133,
-	"./is": 134,
-	"./is.js": 134,
-	"./it": 135,
-	"./it.js": 135,
-	"./ja": 136,
-	"./ja.js": 136,
-	"./jv": 137,
-	"./jv.js": 137,
-	"./ka": 138,
-	"./ka.js": 138,
-	"./kk": 139,
-	"./kk.js": 139,
-	"./km": 140,
-	"./km.js": 140,
-	"./kn": 141,
-	"./kn.js": 141,
-	"./ko": 142,
-	"./ko.js": 142,
-	"./ky": 143,
-	"./ky.js": 143,
-	"./lb": 144,
-	"./lb.js": 144,
-	"./lo": 145,
-	"./lo.js": 145,
-	"./lt": 146,
-	"./lt.js": 146,
-	"./lv": 147,
-	"./lv.js": 147,
-	"./me": 148,
-	"./me.js": 148,
-	"./mi": 149,
-	"./mi.js": 149,
-	"./mk": 150,
-	"./mk.js": 150,
-	"./ml": 151,
-	"./ml.js": 151,
-	"./mn": 152,
-	"./mn.js": 152,
-	"./mr": 153,
-	"./mr.js": 153,
-	"./ms": 154,
-	"./ms-my": 155,
-	"./ms-my.js": 155,
-	"./ms.js": 154,
-	"./mt": 156,
-	"./mt.js": 156,
-	"./my": 157,
-	"./my.js": 157,
-	"./nb": 158,
-	"./nb.js": 158,
-	"./ne": 159,
-	"./ne.js": 159,
-	"./nl": 160,
-	"./nl-be": 161,
-	"./nl-be.js": 161,
-	"./nl.js": 160,
-	"./nn": 162,
-	"./nn.js": 162,
-	"./pa-in": 163,
-	"./pa-in.js": 163,
-	"./pl": 164,
-	"./pl.js": 164,
-	"./pt": 165,
-	"./pt-br": 166,
-	"./pt-br.js": 166,
-	"./pt.js": 165,
-	"./ro": 167,
-	"./ro.js": 167,
-	"./ru": 168,
-	"./ru.js": 168,
-	"./sd": 169,
-	"./sd.js": 169,
-	"./se": 170,
-	"./se.js": 170,
-	"./si": 171,
-	"./si.js": 171,
-	"./sk": 172,
-	"./sk.js": 172,
-	"./sl": 173,
-	"./sl.js": 173,
-	"./sq": 174,
-	"./sq.js": 174,
-	"./sr": 175,
-	"./sr-cyrl": 176,
-	"./sr-cyrl.js": 176,
-	"./sr.js": 175,
-	"./ss": 177,
-	"./ss.js": 177,
-	"./sv": 178,
-	"./sv.js": 178,
-	"./sw": 179,
-	"./sw.js": 179,
-	"./ta": 180,
-	"./ta.js": 180,
-	"./te": 181,
-	"./te.js": 181,
-	"./tet": 182,
-	"./tet.js": 182,
-	"./tg": 183,
-	"./tg.js": 183,
-	"./th": 184,
-	"./th.js": 184,
-	"./tl-ph": 185,
-	"./tl-ph.js": 185,
-	"./tlh": 186,
-	"./tlh.js": 186,
-	"./tr": 187,
-	"./tr.js": 187,
-	"./tzl": 188,
-	"./tzl.js": 188,
-	"./tzm": 189,
-	"./tzm-latn": 190,
-	"./tzm-latn.js": 190,
-	"./tzm.js": 189,
-	"./ug-cn": 191,
-	"./ug-cn.js": 191,
-	"./uk": 192,
-	"./uk.js": 192,
-	"./ur": 193,
-	"./ur.js": 193,
-	"./uz": 194,
-	"./uz-latn": 195,
-	"./uz-latn.js": 195,
-	"./uz.js": 194,
-	"./vi": 196,
-	"./vi.js": 196,
-	"./x-pseudo": 197,
-	"./x-pseudo.js": 197,
-	"./yo": 198,
-	"./yo.js": 198,
-	"./zh-cn": 199,
-	"./zh-cn.js": 199,
-	"./zh-hk": 200,
-	"./zh-hk.js": 200,
-	"./zh-tw": 201,
-	"./zh-tw.js": 201
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number or string
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 406;
 
 /***/ }),
 /* 407 */

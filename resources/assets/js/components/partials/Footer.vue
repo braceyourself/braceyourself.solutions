@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="noprint">
         <div id="footer">
             <div class="column">
                 <a href="http://ethan.braceyourself.solutions/resume">resume</a>
