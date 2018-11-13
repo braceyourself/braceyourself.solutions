@@ -103471,7 +103471,7 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _c("vue-markdown", { staticClass: "print-page" }, [
+        _c("vue-markdown", { staticClass: "print-page pt-5" }, [
           _vm._v(
             "\n\n### Copyright to Project\n" +
               _vm._s(_vm.sender.company) +

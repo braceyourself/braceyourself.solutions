@@ -316,7 +316,7 @@ the use of such elements furnished by {{client.company}}.
 ---
             </vue-markdown>
 
-            <vue-markdown class="print-page">
+            <vue-markdown class="print-page pt-5">
 
 ### Copyright to Project
 {{sender.company}} guarantees that all aspects of design and construction of the project will be disclosed
