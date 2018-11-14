@@ -84161,7 +84161,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				end_cost: 1500
 			}, {
 				title: "Enable New Website",
-				item: '\n### New Website\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with Dr Windows to build website to specifications\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live.\nSEO ranking will begin to improve as traffic increases.\n\t\t\t\t\t\t',
+				item: '\n### New Website\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with Dr Windows to build website to specifications\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live.\nSEO ranking will begin to improve as traffic increases.\nNew website will include a separation between florida and \'northern\' clients\n\t\t\t\t\t\t',
 				start: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-01-01'),
 				end: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-02-01'),
 				start_cost: 1500,
@@ -103518,7 +103518,11 @@ var render = function() {
               _vm._s(_vm.sender.company) +
               " and " +
               _vm._s(_vm.client.company) +
-              ".\nAcceptance of these terms will apply to each phase when that phase has begun and not before.\n\n"
+              ".\nAcceptance of these terms will apply to each phase when/if that phase begins and not before. Each phase shall begin when written (email) approval by the below signed representative of " +
+              _vm._s(_vm.client.company) +
+              " has been given to " +
+              _vm._s(_vm.sender.company) +
+              ".\n\n"
           )
         ])
       ],
@@ -104646,31 +104650,6 @@ var staticRenderFns = [
     return _c("div", { staticClass: "header flex-center" }, [
       _c("span", { attrs: { id: "logo1" } }, [_vm._v("Brace")]),
       _vm._v(" "),
-      _c("span", { attrs: { id: "logo2" } }, [_vm._v("Yourself")]),
-      _vm._v(" "),
-      _c("span", { attrs: { id: "logo3" } }, [_vm._v("Solutions")]),
-      _vm._v(" "),
-      _c("span", { attrs: { id: "logo-bar" } })
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6f9c7cb0", module.exports)
-  }
-}
-
-/***/ }),
-/* 407 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ })
-/******/ ]);,
       _c("span", { attrs: { id: "logo2" } }, [_vm._v("Yourself")]),
       _vm._v(" "),
       _c("span", { attrs: { id: "logo3" } }, [_vm._v("Solutions")]),

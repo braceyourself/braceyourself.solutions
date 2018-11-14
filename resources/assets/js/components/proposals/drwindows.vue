@@ -362,7 +362,7 @@ of signing this contract.
 ### Acceptance
 
 This agreement becomes effective when signed by parties of {{sender.company}} and {{client.company}}.
-Acceptance of these terms will apply to each phase when that phase has begun and not before.
+Acceptance of these terms will apply to each phase when/if that phase begins and not before. Each phase shall begin when written (email) approval by the below signed representative of {{client.company}} has been given to {{sender.company}}.
 
 </vue-markdown>
 
@@ -474,6 +474,7 @@ You will be provided access to this server and database
 ### Result
 The new mydrwindows.com website will be live.
 SEO ranking will begin to improve as traffic increases.
+New website will include a separation between florida and 'northern' clients
 						`,
 						start: moment('2019-01-01'),
 						end:moment('2019-02-01'),
