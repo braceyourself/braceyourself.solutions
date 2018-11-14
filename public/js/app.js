@@ -84161,7 +84161,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				end_cost: 1500
 			}, {
 				title: "Enable New Website",
-				item: '\n### New Website\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with Dr Windows to build website to specifications\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live.\nSEO ranking will begin to improve as traffic increases.\nNew website will include a separation between florida and \'northern\' clients\n\t\t\t\t\t\t',
+				item: '\n### New Website\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with Dr Windows to build website to specifications\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live.\nSEO ranking will begin to improve as traffic increases.\nNew website will include a separation between florida and \'northern\' clients\nPaypal Integration will be added\n\t\t\t\t\t\t',
 				start: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-01-01'),
 				end: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-02-01'),
 				start_cost: 1500,

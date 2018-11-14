@@ -475,6 +475,7 @@ You will be provided access to this server and database
 The new mydrwindows.com website will be live.
 SEO ranking will begin to improve as traffic increases.
 New website will include a separation between florida and 'northern' clients
+Paypal Integration will be added
 						`,
 						start: moment('2019-01-01'),
 						end:moment('2019-02-01'),
