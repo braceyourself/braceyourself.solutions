@@ -83703,7 +83703,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.flex-center[data-v-6a19b4a0] {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.flex-center p[data-v-6a19b4a0] {\n    text-align: center;\n}\n.color-primary[data-v-6a19b4a0], #introduction[data-v-6a19b4a0], #problems[data-v-6a19b4a0] {\n  background-color: #2196f3;\n  color: ghostwhite;\n}\n.color-secondary[data-v-6a19b4a0], #title-page[data-v-6a19b4a0], #project-goals[data-v-6a19b4a0], #potential-new-features[data-v-6a19b4a0] {\n  background-color: #757575;\n  color: ghostwhite;\n}\n.color-secondary a[data-v-6a19b4a0], #title-page a[data-v-6a19b4a0], #project-goals a[data-v-6a19b4a0], #potential-new-features a[data-v-6a19b4a0] {\n    color: #81d5ff;\n}\n.page[data-v-6a19b4a0] {\n  font-size: 18px;\n  padding: 50px;\n}\n.page strong[data-v-6a19b4a0] {\n    font-size: 25px;\n}\n.page h1[data-v-6a19b4a0] {\n    text-decoration: underline;\n    text-align: center;\n}\n.page .col[data-v-6a19b4a0] {\n    padding: 10px;\n    border-bottom: 1px solid black;\n}\n.page .row h1[data-v-6a19b4a0], .page .row h2[data-v-6a19b4a0], .page .row h3[data-v-6a19b4a0], .page .row h4[data-v-6a19b4a0], .page .row h5[data-v-6a19b4a0], .page .row h6[data-v-6a19b4a0] {\n    margin: 0;\n    text-align: center;\n    vertical-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(1) {\n    background-color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(2) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(3) {\n    background-color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(4) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(5) {\n    background-color: #4b636e;\n    text-align: center;\n}\n@media (max-width: 764px) {\n.page[data-v-6a19b4a0] {\n      padding: 15px;\n}\n}\n#title-page[data-v-6a19b4a0] {\n  padding: 50px 0;\n  min-height: auto;\n}\n#introduction[data-v-6a19b4a0] {\n  min-height: auto;\n}\n#introduction p[data-v-6a19b4a0] {\n    max-width: 50%;\n}\n#signatures[data-v-6a19b4a0] {\n  padding: 50px 0;\n}\n#signatures .col[data-v-6a19b4a0] {\n    width: 42vw;\n    text-align: center;\n    font-size: 28px;\n}\n#signatures .col h1[data-v-6a19b4a0] {\n      text-decoration: underline;\n}\n#signatures .col .sign-here[data-v-6a19b4a0] {\n      text-align: left;\n      border-bottom: black 1px solid;\n      padding-top: 49px;\n      width: 100%;\n      display: block;\n}\n#signatures .col .sign-here i[data-v-6a19b4a0] {\n        position: relative;\n        top: 40px;\n}\n", ""]);
+exports.push([module.i, "\n.flex-center[data-v-6a19b4a0] {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.flex-center p[data-v-6a19b4a0] {\n    text-align: center;\n}\n.color-primary[data-v-6a19b4a0], #introduction[data-v-6a19b4a0], #problems[data-v-6a19b4a0] {\n  background-color: #2196f3;\n  color: ghostwhite;\n}\n.color-secondary[data-v-6a19b4a0], #title-page[data-v-6a19b4a0], #project-goals[data-v-6a19b4a0], #potential-new-features[data-v-6a19b4a0] {\n  background-color: #757575;\n  color: ghostwhite;\n}\n.color-secondary a[data-v-6a19b4a0], #title-page a[data-v-6a19b4a0], #project-goals a[data-v-6a19b4a0], #potential-new-features a[data-v-6a19b4a0] {\n    color: #81d5ff;\n}\n.page[data-v-6a19b4a0] {\n  font-size: 18px;\n  padding: 50px;\n}\n.page strong[data-v-6a19b4a0] {\n    font-size: 25px;\n}\n.page h1[data-v-6a19b4a0] {\n    text-decoration: underline;\n    text-align: center;\n}\n.page .col[data-v-6a19b4a0] {\n    padding: 10px;\n    border-bottom: 1px solid black;\n}\n.page .row h1[data-v-6a19b4a0], .page .row h2[data-v-6a19b4a0], .page .row h3[data-v-6a19b4a0], .page .row h4[data-v-6a19b4a0], .page .row h5[data-v-6a19b4a0], .page .row h6[data-v-6a19b4a0] {\n    margin: 0;\n    text-align: center;\n    vertical-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(1) {\n    background-color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(2) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(3) {\n    background-color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(4) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(5) {\n    background-color: #4b636e;\n    text-align: center;\n}\n@media (max-width: 764px) {\n.page[data-v-6a19b4a0] {\n      padding: 15px;\n}\n.page .row[data-v-6a19b4a0] {\n        min-width: 1000px;\n}\n.page .table-overflow[data-v-6a19b4a0] {\n        overflow-x: scroll;\n        padding-left: 11px;\n        -webkit-box-shadow: -2px 0 71px -5px black;\n                box-shadow: -2px 0 71px -5px black;\n}\n}\n#title-page[data-v-6a19b4a0] {\n  padding: 50px 0;\n  min-height: auto;\n}\n#introduction[data-v-6a19b4a0] {\n  min-height: auto;\n}\n#introduction p[data-v-6a19b4a0] {\n    max-width: 50%;\n}\n#signatures[data-v-6a19b4a0] {\n  padding: 50px 0;\n}\n#signatures .col[data-v-6a19b4a0] {\n    width: 42vw;\n    text-align: center;\n    font-size: 28px;\n}\n#signatures .col h1[data-v-6a19b4a0] {\n      text-decoration: underline;\n}\n#signatures .col .sign-here[data-v-6a19b4a0] {\n      text-align: left;\n      border-bottom: black 1px solid;\n      padding-top: 49px;\n      width: 100%;\n      display: block;\n}\n#signatures .col .sign-here i[data-v-6a19b4a0] {\n        position: relative;\n        top: 40px;\n}\n#proposal[data-v-6a19b4a0] {\n  overflow: hidden;\n}\n", ""]);
 
 // exports
 
@@ -83718,6 +83718,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_markdown___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_markdown__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -84155,7 +84172,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				end_cost: 1500
 			}, {
 				title: "Enable New Website",
-				item: '\n### New Website\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with Dr Windows to build website to specifications\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live\n\t\t\t\t\t\t',
+				item: '\n### New Website\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with Dr Windows to build website to specifications\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live.\nSEO ranking will begin to improve as traffic increases.\n\t\t\t\t\t\t',
 				start: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-01-01'),
 				end: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-02-01'),
 				start_cost: 1500,
@@ -103190,7 +103207,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "proposal" }, [
     _c(
       "div",
       { staticClass: "print-page" },
@@ -103274,142 +103291,157 @@ var render = function() {
         _vm._v(" "),
         _vm._m(5),
         _vm._v(" "),
-        _vm._m(6),
-        _vm._v(" "),
-        _vm._l(_vm.timeline, function(row) {
-          return _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col col-1" }, [
-              _c("h2", [
-                _vm._v(
-                  "\n                        " +
-                    _vm._s(_vm.timeline.indexOf(row) + 1) +
-                    "\n                    "
-                )
+        _c(
+          "div",
+          { staticClass: "table-overflow" },
+          [
+            _vm._m(6),
+            _vm._v(" "),
+            _vm._l(_vm.timeline, function(row) {
+              return _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col col-1" }, [
+                  _c("h2", [
+                    _vm._v(
+                      "\n                            " +
+                        _vm._s(_vm.timeline.indexOf(row) + 1) +
+                        "\n                        "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col col-7" },
+                  [_c("vue-markdown", [_vm._v(_vm._s(row.item))])],
+                  1
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col col-2 flex-center" }, [
+                  _vm._v(_vm._s(row.start.format("MMM D Y")))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col col-2 flex-center" }, [
+                  _vm._v(_vm._s(row.end.format("MMM D Y")))
+                ])
               ])
-            ]),
+            })
+          ],
+          2
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "page color-primary", attrs: { id: "costs" } }, [
+      _c("h1", { staticClass: "text-center" }, [_vm._v("Costs")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-center" }, [
+        _vm._v(
+          "\n                The following Items correspond with the timeline phases outlined above.\n            "
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "table-overflow" },
+        [
+          _vm._m(7),
+          _vm._v(" "),
+          _vm._l(_vm.timeline, function(row) {
+            return _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col col-1" }, [
+                _vm._v(_vm._s(_vm.timeline.indexOf(row) + 1))
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col text-center" }, [
+                _c("h2", [_vm._v(_vm._s(row.title))])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col col-1" }, [
+                _vm._v("$" + _vm._s(row.start_cost))
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col col-1" }, [
+                _vm._v("$" + _vm._s(row.end_cost))
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col col-2" }, [
+                _vm._v("$" + _vm._s(row.start_cost + row.end_cost))
+              ])
+            ])
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col ", staticStyle: { "text-align": "right" } },
+              [_vm._v("Total:")]
+            ),
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "col col-7" },
-              [_c("vue-markdown", [_vm._v(_vm._s(row.item))])],
-              1
+              {
+                staticClass: "col col-2 ",
+                staticStyle: { "text-align": "center" }
+              },
+              [_vm._v("$" + _vm._s(_vm.timeline_row_total_cost))]
+            )
+          ])
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("h1", { staticClass: "text-center" }, [_vm._v("Recurring Costs")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "table-overflow" },
+        [
+          _vm._m(8),
+          _vm._v(" "),
+          _vm._l(_vm.recurring_costs, function(row) {
+            return _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
+                _c("h2", [_vm._v(_vm._s(row.item))]),
+                _vm._v(" "),
+                row.description
+                  ? _c("p", { staticClass: "text-center" }, [
+                      _vm._v(_vm._s(row.description))
+                    ])
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticClass: "col col-2" }, [
+                _vm._v("$" + _vm._s(row.monthly))
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticClass: "col col-2" }, [
+                _vm._v("$" + _vm._s(_vm.yearly(row)))
+              ])
+            ])
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col ", staticStyle: { "text-align": "right" } },
+              [_vm._v("Total:")]
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "col col-2 flex-center" }, [
-              _vm._v(_vm._s(row.start.format("MMM D Y")))
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col col-2 flex-center" }, [
-              _vm._v(_vm._s(row.end.format("MMM D Y")))
-            ])
+            _c(
+              "div",
+              {
+                staticClass: "col col-2 ",
+                staticStyle: { "text-align": "center" }
+              },
+              [_vm._v("$" + _vm._s(_vm.total_recurring_costs))]
+            )
           ])
-        })
-      ],
-      2
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "page color-primary", attrs: { id: "costs" } },
-      [
-        _c("h1", { staticClass: "text-center" }, [_vm._v("Costs")]),
-        _vm._v(" "),
-        _c("p", { staticClass: "text-center" }, [
-          _vm._v(
-            "\n                The following Items correspond with the timeline phases outlined above.\n            "
-          )
-        ]),
-        _vm._v(" "),
-        _vm._m(7),
-        _vm._v(" "),
-        _vm._l(_vm.timeline, function(row) {
-          return _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col col-1" }, [
-              _vm._v(_vm._s(_vm.timeline.indexOf(row) + 1))
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col text-center" }, [
-              _c("h2", [_vm._v(_vm._s(row.title))])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col col-1" }, [
-              _vm._v("$" + _vm._s(row.start_cost))
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col col-1" }, [
-              _vm._v("$" + _vm._s(row.end_cost))
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col col-2" }, [
-              _vm._v("$" + _vm._s(row.start_cost + row.end_cost))
-            ])
-          ])
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col ", staticStyle: { "text-align": "right" } },
-            [_vm._v("Total:")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "col col-2 ",
-              staticStyle: { "text-align": "center" }
-            },
-            [_vm._v("$" + _vm._s(_vm.timeline_row_total_cost))]
-          )
-        ]),
-        _vm._v(" "),
-        _c("hr"),
-        _vm._v(" "),
-        _c("h1", { staticClass: "text-center" }, [_vm._v("Recurring Costs")]),
-        _vm._v(" "),
-        _vm._m(8),
-        _vm._v(" "),
-        _vm._l(_vm.recurring_costs, function(row) {
-          return _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col" }, [
-              _c("h2", [_vm._v(_vm._s(row.item))]),
-              _vm._v(" "),
-              row.description
-                ? _c("p", { staticClass: "text-center" }, [
-                    _vm._v(_vm._s(row.description))
-                  ])
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("h5", { staticClass: "col col-2" }, [
-              _vm._v("$" + _vm._s(row.monthly))
-            ]),
-            _vm._v(" "),
-            _c("h5", { staticClass: "col col-2" }, [
-              _vm._v("$" + _vm._s(_vm.yearly(row)))
-            ])
-          ])
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col ", staticStyle: { "text-align": "right" } },
-            [_vm._v("Total:")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "col col-2 ",
-              staticStyle: { "text-align": "center" }
-            },
-            [_vm._v("$" + _vm._s(_vm.total_recurring_costs))]
-          )
-        ])
-      ],
-      2
-    ),
+        ],
+        2
+      )
+    ]),
     _vm._v(" "),
     _c(
       "div",
@@ -103487,7 +103519,7 @@ var render = function() {
               _vm._s(_vm.client.company) +
               " regarding this project. Any additional work not specified in this contract must be\nauthorized by a written change order. All prices specified in this contract will be honored for three (6)\nmonths after both parties sign this contract. Continued services after that time will require a new\nagreement.\n\n---\n\n### Initial Payment & Refund Policy\nThis agreement begins with an initial payment indicated in the pricing table above. If " +
               _vm._s(_vm.client.company) +
-              "\nhalts work and applies for a refund within 4 days, work completed shall be billed at the hourly rate of\n" +
+              "\nhalts work and applies for a refund within 4 days of the current phase, work completed shall be billed at the hourly rate of\n" +
               _vm._s(_vm.Hourly.Rate) +
               ", and deducted from the initial payment, the balance of which shall be returned to\n" +
               _vm._s(_vm.client.company) +
@@ -103511,7 +103543,7 @@ var render = function() {
               _vm._s(_vm.sender.company) +
               " and " +
               _vm._s(_vm.client.company) +
-              "\n\n"
+              ".\nAcceptance of these terms will apply to each phase when that phase has begun and not before.\n\n"
           )
         ])
       ],
@@ -103662,6 +103694,12 @@ var staticRenderFns = [
               _c("li", [_vm._v("Addresses/Homes")]),
               _vm._v(" "),
               _c("li", [_vm._v("Invoices")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Appointment Reminders")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Receipts")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Calendar Integration")]),
               _vm._v(" "),
               _c("li", [_vm._v("ect..")])
             ])

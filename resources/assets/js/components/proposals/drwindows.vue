@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="proposal">
         <div class="print-page">
             <logo/>
             <div class="page" id="title-page">
@@ -80,6 +80,9 @@ I am confident that the value brought to {{client.company}} by implementing thes
                             <li>Clients</li>
                             <li>Addresses/Homes</li>
                             <li>Invoices</li>
+                            <li>Appointment Reminders</li>
+                            <li>Receipts</li>
+                            <li>Calendar Integration</li>
                             <li>ect..</li>
                         </ul>
                     </ul>
@@ -162,24 +165,27 @@ I am confident that the value brought to {{client.company}} by implementing thes
 
             </div>
 
-            <div class="row">
-                <h4 class="col col-1">Phase</h4>
-                <h2 class="col col-7">Description</h2>
-                <h2 class="col col-2 flex-center">Estimated Start Date</h2>
-                <h2 class="col col-2 flex-center">Estimated Completion</h2>
-            </div>
+            <div class="table-overflow">
+                <div class="row">
+                    <h4 class="col col-1">Phase</h4>
+                    <h2 class="col col-7">Description</h2>
+                    <h2 class="col col-2 flex-center">Estimated Start Date</h2>
+                    <h2 class="col col-2 flex-center">Estimated Completion</h2>
+                </div>
 
-            <div v-for="row in timeline" class="row">
-                <div class="col col-1">
-                    <h2>
-                        {{timeline.indexOf(row) + 1}}
-                    </h2>
+                <div v-for="row in timeline" class="row">
+                    <div class="col col-1">
+                        <h2>
+                            {{timeline.indexOf(row) + 1}}
+                        </h2>
+                    </div>
+                    <div class="col col-7">
+                        <vue-markdown>{{row.item}}</vue-markdown>
+                    </div>
+                    <div class="col col-2 flex-center">{{row.start.format('MMM D Y')}}</div>
+                    <div class="col col-2 flex-center">{{row.end.format('MMM D Y')}}</div>
                 </div>
-                <div class="col col-7">
-                    <vue-markdown>{{row.item}}</vue-markdown>
-                </div>
-                <div class="col col-2 flex-center">{{row.start.format('MMM D Y')}}</div>
-                <div class="col col-2 flex-center">{{row.end.format('MMM D Y')}}</div>
+
             </div>
 
         </div>
@@ -193,50 +199,57 @@ I am confident that the value brought to {{client.company}} by implementing thes
                 The following Items correspond with the timeline phases outlined above.
             </p>
 
-            <div class="row">
-                <h4 class="col col-1">Phase</h4>
-                <h4 class="col"></h4>
-                <h6 class="col col-1">Due at Start</h6>
-                <h6 class="col col-1">Due at Completion</h6>
-                <h5 class="col col-2">Total</h5>
-            </div>
 
-            <div class="row" v-for="row in timeline">
-                <div class="col col-1">{{timeline.indexOf(row) + 1}}</div>
-                <div class="col text-center">
-                    <h2>{{row.title}}</h2>
+            <div class="table-overflow">
+                <div class="row">
+                    <h4 class="col col-1">Phase</h4>
+                    <h4 class="col"></h4>
+                    <h6 class="col col-1">Due at Start</h6>
+                    <h6 class="col col-1">Due at Completion</h6>
+                    <h5 class="col col-2">Total</h5>
                 </div>
-                <div class="col col-1">${{row.start_cost}}</div>
-                <div class="col col-1">${{row.end_cost}}</div>
-                <div class="col col-2">${{row.start_cost + row.end_cost}}</div>
+
+                <div class="row" v-for="row in timeline">
+                    <div class="col col-1">{{timeline.indexOf(row) + 1}}</div>
+                    <div class="col text-center">
+                        <h2>{{row.title}}</h2>
+                    </div>
+                    <div class="col col-1">${{row.start_cost}}</div>
+                    <div class="col col-1">${{row.end_cost}}</div>
+                    <div class="col col-2">${{row.start_cost + row.end_cost}}</div>
+                </div>
+
+                <div class="row">
+                    <div class="col " style="text-align: right">Total:</div>
+                    <div class="col col-2 " style="text-align: center">${{timeline_row_total_cost}}</div>
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col " style="text-align: right">Total:</div>
-                <div class="col col-2 " style="text-align: center">${{timeline_row_total_cost}}</div>
-            </div>
             <hr>
 
             <h1 class="text-center">Recurring Costs</h1>
 
-            <div class="row">
-                <h2 class="col"></h2>
-                <h5 class="col col-2">Monthly</h5>
-                <h5 class="col col-2">Yearly</h5>
-            </div>
+            <div class="table-overflow">
 
-
-            <div v-for="row in recurring_costs" class="row">
-                <div class="col">
-                    <h2>{{row.item}}</h2>
-                    <p class="text-center" v-if="row.description">{{row.description}}</p>
+                <div class="row">
+                    <h2 class="col"></h2>
+                    <h5 class="col col-2">Monthly</h5>
+                    <h5 class="col col-2">Yearly</h5>
                 </div>
-                <h5 class="col col-2">${{row.monthly}}</h5>
-                <h5 class="col col-2">${{yearly(row)}}</h5>
-            </div>
-            <div class="row">
-                <div class="col " style="text-align: right">Total:</div>
-                <div class="col col-2 " style="text-align: center">${{total_recurring_costs}}</div>
+
+
+                <div v-for="row in recurring_costs" class="row">
+                    <div class="col">
+                        <h2>{{row.item}}</h2>
+                        <p class="text-center" v-if="row.description">{{row.description}}</p>
+                    </div>
+                    <h5 class="col col-2">${{row.monthly}}</h5>
+                    <h5 class="col col-2">${{yearly(row)}}</h5>
+                </div>
+                <div class="row">
+                    <div class="col " style="text-align: right">Total:</div>
+                    <div class="col col-2 " style="text-align: center">${{total_recurring_costs}}</div>
+                </div>
             </div>
 
 
@@ -337,7 +350,7 @@ agreement.
 
 ### Initial Payment & Refund Policy
 This agreement begins with an initial payment indicated in the pricing table above. If {{client.company}}
-halts work and applies for a refund within 4 days, work completed shall be billed at the hourly rate of
+halts work and applies for a refund within 4 days of the current phase, work completed shall be billed at the hourly rate of
 {{Hourly.Rate}}, and deducted from the initial payment, the balance of which shall be returned to
 {{client.company}}. If, at the time of the request for refund, work has been completed beyond the amount
 covered by the initial payment, {{client.company}} shall be liable to pay for all work completed at the
@@ -359,9 +372,13 @@ Contact Ethan Brace if these terms are acceptable or to request alternative term
 
 ### Acceptance
 
-This agreement becomes effective when signed by parties of {{sender.company}} and {{client.company}}
+This agreement becomes effective when signed by parties of {{sender.company}} and {{client.company}}.
+Acceptance of these terms will apply to each phase when that phase has begun and not before.
 
 </vue-markdown>
+
+
+
         </div>
 
         <div id="signatures" class="flex-center print-only">
@@ -466,7 +483,8 @@ You will be provided access to this server and database
 - Migrate/Create content for website (services, info, ect..)
 
 ### Result
-The new mydrwindows.com website will be live
+The new mydrwindows.com website will be live.
+SEO ranking will begin to improve as traffic increases.
 						`,
 						start: moment('2019-01-01'),
 						end:moment('2019-02-01'),
@@ -646,6 +664,14 @@ You will be able to set the role of any user. (partner, client, other)
 
         @media (max-width: 764px){
             padding:15px;
+            .row{
+                min-width: 1000px;
+            }
+            .table-overflow {
+                overflow-x: scroll;
+                padding-left: 11px;
+                box-shadow: -2px 0 71px -5px black;
+            }
         }
     }
 
@@ -697,6 +723,9 @@ You will be able to set the role of any user. (partner, client, other)
             }
 
         }
+    }
+    #proposal{
+        overflow: hidden;
     }
 
 </style>
