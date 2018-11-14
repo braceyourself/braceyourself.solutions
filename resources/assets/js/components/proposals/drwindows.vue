@@ -358,17 +358,6 @@ hourly rate stated above. No portion of this initial payment will be refunded un
 of signing this contract.
 
 ---
-</vue-markdown>
-
-<vue-markdown class="noprint">
-### Acceptance
-
-If all parties are in agreement of these terms, {{sender.company}} will provide a printed copy of this proposal
-for both parties to review and sign.
-Contact Ethan Brace if these terms are acceptable or to request alternative terms.
-</vue-markdown>
-
-<vue-markdown class="print-only">
 
 ### Acceptance
 

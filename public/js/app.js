@@ -84119,17 +84119,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -103525,21 +103514,7 @@ var render = function() {
               _vm._s(_vm.client.company) +
               ". If, at the time of the request for refund, work has been completed beyond the amount\ncovered by the initial payment, " +
               _vm._s(_vm.client.company) +
-              " shall be liable to pay for all work completed at the\nhourly rate stated above. No portion of this initial payment will be refunded unless requested within 4 days\nof signing this contract.\n\n---\n"
-          )
-        ]),
-        _vm._v(" "),
-        _c("vue-markdown", { staticClass: "noprint" }, [
-          _vm._v(
-            "\n### Acceptance\n\nIf all parties are in agreement of these terms, " +
-              _vm._s(_vm.sender.company) +
-              " will provide a printed copy of this proposal\nfor both parties to review and sign.\nContact Ethan Brace if these terms are acceptable or to request alternative terms.\n"
-          )
-        ]),
-        _vm._v(" "),
-        _c("vue-markdown", { staticClass: "print-only" }, [
-          _vm._v(
-            "\n\n### Acceptance\n\nThis agreement becomes effective when signed by parties of " +
+              " shall be liable to pay for all work completed at the\nhourly rate stated above. No portion of this initial payment will be refunded unless requested within 4 days\nof signing this contract.\n\n---\n\n### Acceptance\n\nThis agreement becomes effective when signed by parties of " +
               _vm._s(_vm.sender.company) +
               " and " +
               _vm._s(_vm.client.company) +
@@ -104671,6 +104646,31 @@ var staticRenderFns = [
     return _c("div", { staticClass: "header flex-center" }, [
       _c("span", { attrs: { id: "logo1" } }, [_vm._v("Brace")]),
       _vm._v(" "),
+      _c("span", { attrs: { id: "logo2" } }, [_vm._v("Yourself")]),
+      _vm._v(" "),
+      _c("span", { attrs: { id: "logo3" } }, [_vm._v("Solutions")]),
+      _vm._v(" "),
+      _c("span", { attrs: { id: "logo-bar" } })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6f9c7cb0", module.exports)
+  }
+}
+
+/***/ }),
+/* 407 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ })
+/******/ ]);,
       _c("span", { attrs: { id: "logo2" } }, [_vm._v("Yourself")]),
       _vm._v(" "),
       _c("span", { attrs: { id: "logo3" } }, [_vm._v("Solutions")]),
