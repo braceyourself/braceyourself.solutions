@@ -84158,21 +84158,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				start: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2018-12-01'),
 				end: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2018-12-30'),
 				start_cost: 1500,
-				end_cost: 1500
+				end_cost: 1500,
+				show: true
 			}, {
 				title: "Enable New Website",
 				item: '\n### New Website\n- Consult with designer\n- Implement design\n    - Build website coding and backend\n    - Consult with Dr Windows to build website to specifications\n- Migrate/Create content for website (services, info, ect..)\n\n### Result\nThe new mydrwindows.com website will be live.\nSEO ranking will begin to improve as traffic increases.\nNew website will include a separation between florida and \'northern\' clients\nPaypal Integration will be added\n\t\t\t\t\t\t',
 				start: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-01-01'),
 				end: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-02-01'),
 				start_cost: 1500,
-				end_cost: 1500
+				end_cost: 1500,
+				show: true
 			}, {
 				title: "Feature: User Authentication",
 				item: '\n\n### User Authentication\n- Enable admin login\n    - create service request for clients\n    - add new clients, addresses, partners, ect..\n    - view/edit entire database with simple interface\n- and Clients\n    - to schedule service\n    - view history\n    - update information\n\n### Result\nAnyone who chooses will be able to create an account with Dr Windows.\nYou will be able to create accounts for anyone you choose.\nYou will be able to set the role of any user. (partner, client, other)\n\t\t\t\t\t\t',
 				start: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-02-01'),
 				end: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2019-03-01'),
 				start_cost: 3000,
-				end_cost: 3000
+				end_cost: 3000,
+				show: false
 			}]
 
 		};
@@ -84217,7 +84220,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		timeline_row_total_cost: function timeline_row_total_cost() {
 			var total = 0;
 			_.forEach(this.timeline, function (row) {
-				total += row.start_cost + row.end_cost;
+				if (row.show) total += row.start_cost + row.end_cost;
 			});
 			return total;
 		},
@@ -103287,32 +103290,34 @@ var render = function() {
             _vm._m(6),
             _vm._v(" "),
             _vm._l(_vm.timeline, function(row) {
-              return _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col col-1" }, [
-                  _c("h2", [
-                    _vm._v(
-                      "\n                            " +
-                        _vm._s(_vm.timeline.indexOf(row) + 1) +
-                        "\n                        "
-                    )
+              return row.show
+                ? _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col col-1" }, [
+                      _c("h2", [
+                        _vm._v(
+                          "\n                            " +
+                            _vm._s(_vm.timeline.indexOf(row) + 1) +
+                            "\n                        "
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col col-7" },
+                      [_c("vue-markdown", [_vm._v(_vm._s(row.item))])],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col col-2 flex-center" }, [
+                      _vm._v(_vm._s(row.start.format("MMM D Y")))
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col col-2 flex-center" }, [
+                      _vm._v(_vm._s(row.end.format("MMM D Y")))
+                    ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col col-7" },
-                  [_c("vue-markdown", [_vm._v(_vm._s(row.item))])],
-                  1
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "col col-2 flex-center" }, [
-                  _vm._v(_vm._s(row.start.format("MMM D Y")))
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col col-2 flex-center" }, [
-                  _vm._v(_vm._s(row.end.format("MMM D Y")))
-                ])
-              ])
+                : _vm._e()
             })
           ],
           2
@@ -103336,27 +103341,29 @@ var render = function() {
           _vm._m(7),
           _vm._v(" "),
           _vm._l(_vm.timeline, function(row) {
-            return _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col col-1" }, [
-                _vm._v(_vm._s(_vm.timeline.indexOf(row) + 1))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col text-center" }, [
-                _c("h2", [_vm._v(_vm._s(row.title))])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col col-1" }, [
-                _vm._v("$" + _vm._s(row.start_cost))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col col-1" }, [
-                _vm._v("$" + _vm._s(row.end_cost))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col col-2" }, [
-                _vm._v("$" + _vm._s(row.start_cost + row.end_cost))
-              ])
-            ])
+            return row.show
+              ? _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col col-1" }, [
+                    _vm._v(_vm._s(_vm.timeline.indexOf(row) + 1))
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col text-center" }, [
+                    _c("h2", [_vm._v(_vm._s(row.title))])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col col-1" }, [
+                    _vm._v("$" + _vm._s(row.start_cost))
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col col-1" }, [
+                    _vm._v("$" + _vm._s(row.end_cost))
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col col-2" }, [
+                    _vm._v("$" + _vm._s(row.start_cost + row.end_cost))
+                  ])
+                ])
+              : _vm._e()
           }),
           _vm._v(" "),
           _c("div", { staticClass: "row" }, [

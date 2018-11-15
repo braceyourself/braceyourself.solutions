@@ -173,7 +173,7 @@ I am confident that the value brought to {{client.company}} by implementing thes
                     <h2 class="col col-2 flex-center">Estimated Completion</h2>
                 </div>
 
-                <div v-for="row in timeline" class="row">
+                <div v-for="row in timeline" v-if="row.show" class="row">
                     <div class="col col-1">
                         <h2>
                             {{timeline.indexOf(row) + 1}}
@@ -209,7 +209,7 @@ I am confident that the value brought to {{client.company}} by implementing thes
                     <h5 class="col col-2">Total</h5>
                 </div>
 
-                <div class="row" v-for="row in timeline">
+                <div class="row" v-for="row in timeline" v-if="row.show">
                     <div class="col col-1">{{timeline.indexOf(row) + 1}}</div>
                     <div class="col text-center">
                         <h2>{{row.title}}</h2>
@@ -460,6 +460,7 @@ You will be provided access to this server and database
 						end:moment('2018-12-30'),
                         start_cost:1500,
 						end_cost:1500,
+						show:true,
 					},
 					{
 						title:"Enable New Website",
@@ -480,7 +481,8 @@ Paypal Integration will be added
 						start: moment('2019-01-01'),
 						end:moment('2019-02-01'),
                         start_cost:1500,
-						end_cost:1500
+						end_cost:1500,
+						show:true,
 					},
 
 					{
@@ -505,7 +507,8 @@ You will be able to set the role of any user. (partner, client, other)
 						start: moment('2019-02-01'),
 						end: moment('2019-03-01'),
                         start_cost:3000,
-						end_cost:3000
+						end_cost:3000,
+                        show:false,
 					},
 				],
 
@@ -551,8 +554,9 @@ You will be able to set the role of any user. (partner, client, other)
 			timeline_row_total_cost() {
                 let total = 0;
                 _.forEach(this.timeline, row =>{
-					total += row.start_cost + row.end_cost;
-                })
+                	if(row.show)
+					    total += row.start_cost + row.end_cost;
+                });
                 return total;
             },
 			logo_redesign_link() {
