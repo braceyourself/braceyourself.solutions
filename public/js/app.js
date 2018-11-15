@@ -84119,6 +84119,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -103528,7 +103533,17 @@ var render = function() {
               _vm._s(_vm.client.company) +
               ". If, at the time of the request for refund, work has been completed beyond the amount\ncovered by the initial payment, " +
               _vm._s(_vm.client.company) +
-              " shall be liable to pay for all work completed at the\nhourly rate stated above. No portion of this initial payment will be refunded unless requested within 4 days\nof signing this contract.\n\n---\n\n### Acceptance\n\nThis agreement becomes effective when signed by parties of " +
+              " shall be liable to pay for all work completed at the\nhourly rate stated above. No portion of this initial payment will be refunded unless requested within 4 days\nof signing this contract.\n\n---\n\n### Non-Disclosure Agreement\n" +
+              _vm._s(_vm.sender.company) +
+              " and any independent contractors working with " +
+              _vm._s(_vm.sender.company) +
+              " agree keep all " +
+              _vm._s(_vm.client.company) +
+              " data and information confidential. " +
+              _vm._s(_vm.sender.company) +
+              " will be held responsible if any " +
+              _vm._s(_vm.client.company) +
+              " data or information is not kept confidential from any unauthorized persons.\n\n---\n\n### Acceptance\n\nThis agreement becomes effective when signed by parties of " +
               _vm._s(_vm.sender.company) +
               " and " +
               _vm._s(_vm.client.company) +

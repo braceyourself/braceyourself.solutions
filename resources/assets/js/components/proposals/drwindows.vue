@@ -359,6 +359,11 @@ of signing this contract.
 
 ---
 
+### Non-Disclosure Agreement
+{{sender.company}} and any independent contractors working with {{sender.company}} agree keep all {{client.company}} data and information confidential. {{sender.company}} will be held responsible if any {{client.company}} data or information is not kept confidential from any unauthorized persons.
+
+---
+
 ### Acceptance
 
 This agreement becomes effective when signed by parties of {{sender.company}} and {{client.company}}.
