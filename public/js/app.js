@@ -103325,119 +103325,126 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "page color-primary", attrs: { id: "costs" } }, [
-      _c("h1", { staticClass: "text-center" }, [_vm._v("Costs")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-center" }, [
-        _vm._v(
-          "\n                The following Items correspond with the timeline phases outlined above.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "table-overflow" },
-        [
-          _vm._m(7),
-          _vm._v(" "),
-          _vm._l(_vm.timeline, function(row) {
-            return row.show
-              ? _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col col-1" }, [
-                    _vm._v(_vm._s(_vm.timeline.indexOf(row) + 1))
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col text-center" }, [
-                    _c("h2", [_vm._v(_vm._s(row.title))])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col col-1" }, [
-                    _vm._v("$" + _vm._s(row.start_cost))
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col col-1" }, [
-                    _vm._v("$" + _vm._s(row.end_cost))
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col col-2" }, [
-                    _vm._v("$" + _vm._s(row.start_cost + row.end_cost))
-                  ])
-                ])
-              : _vm._e()
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "col ", staticStyle: { "text-align": "right" } },
-              [_vm._v("Total:")]
-            ),
+    _c(
+      "div",
+      {
+        staticClass: "page color-primary page-break-before",
+        attrs: { id: "costs" }
+      },
+      [
+        _c("h1", { staticClass: "text-center" }, [_vm._v("Costs")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-center" }, [
+          _vm._v(
+            "\n                The following Items correspond with the timeline phases outlined above.\n            "
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "table-overflow" },
+          [
+            _vm._m(7),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col col-2 ",
-                staticStyle: { "text-align": "center" }
-              },
-              [_vm._v("$" + _vm._s(_vm.timeline_row_total_cost))]
-            )
-          ])
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("h1", { staticClass: "text-center" }, [_vm._v("Recurring Costs")]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "table-overflow" },
-        [
-          _vm._m(8),
-          _vm._v(" "),
-          _vm._l(_vm.recurring_costs, function(row) {
-            return _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col" }, [
-                _c("h2", [_vm._v(_vm._s(row.item))]),
-                _vm._v(" "),
-                row.description
-                  ? _c("p", { staticClass: "text-center" }, [
-                      _vm._v(_vm._s(row.description))
+            _vm._l(_vm.timeline, function(row) {
+              return row.show
+                ? _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col col-1" }, [
+                      _vm._v(_vm._s(_vm.timeline.indexOf(row) + 1))
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col text-center" }, [
+                      _c("h2", [_vm._v(_vm._s(row.title))])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col col-1" }, [
+                      _vm._v("$" + _vm._s(row.start_cost))
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col col-1" }, [
+                      _vm._v("$" + _vm._s(row.end_cost))
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col col-2" }, [
+                      _vm._v("$" + _vm._s(row.start_cost + row.end_cost))
                     ])
-                  : _vm._e()
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticClass: "col col-2" }, [
-                _vm._v("$" + _vm._s(row.monthly))
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticClass: "col col-2" }, [
-                _vm._v("$" + _vm._s(_vm.yearly(row)))
-              ])
-            ])
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "col ", staticStyle: { "text-align": "right" } },
-              [_vm._v("Total:")]
-            ),
+                  ])
+                : _vm._e()
+            }),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col col-2 ",
-                staticStyle: { "text-align": "center" }
-              },
-              [_vm._v("$" + _vm._s(_vm.total_recurring_costs))]
-            )
-          ])
-        ],
-        2
-      )
-    ]),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col ", staticStyle: { "text-align": "right" } },
+                [_vm._v("Total:")]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "col col-2 ",
+                  staticStyle: { "text-align": "center" }
+                },
+                [_vm._v("$" + _vm._s(_vm.timeline_row_total_cost))]
+              )
+            ])
+          ],
+          2
+        ),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("h1", { staticClass: "text-center" }, [_vm._v("Recurring Costs")]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "table-overflow" },
+          [
+            _vm._m(8),
+            _vm._v(" "),
+            _vm._l(_vm.recurring_costs, function(row) {
+              return _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col" }, [
+                  _c("h2", [_vm._v(_vm._s(row.item))]),
+                  _vm._v(" "),
+                  row.description
+                    ? _c("p", { staticClass: "text-center" }, [
+                        _vm._v(_vm._s(row.description))
+                      ])
+                    : _vm._e()
+                ]),
+                _vm._v(" "),
+                _c("h5", { staticClass: "col col-2" }, [
+                  _vm._v("$" + _vm._s(row.monthly))
+                ]),
+                _vm._v(" "),
+                _c("h5", { staticClass: "col col-2" }, [
+                  _vm._v("$" + _vm._s(_vm.yearly(row)))
+                ])
+              ])
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col ", staticStyle: { "text-align": "right" } },
+                [_vm._v("Total:")]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "col col-2 ",
+                  staticStyle: { "text-align": "center" }
+                },
+                [_vm._v("$" + _vm._s(_vm.total_recurring_costs))]
+              )
+            ])
+          ],
+          2
+        )
+      ]
+    ),
     _vm._v(" "),
     _c(
       "div",

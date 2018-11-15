@@ -193,7 +193,7 @@ I am confident that the value brought to {{client.company}} by implementing thes
 
 
 
-        <div class="page color-primary" id="costs">
+        <div class="page color-primary page-break-before" id="costs">
             <h1 class="text-center">Costs</h1>
             <p class="text-center">
                 The following Items correspond with the timeline phases outlined above.
