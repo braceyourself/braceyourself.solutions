@@ -84154,7 +84154,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			},
 			timeline: [{
 				title: "Data Migration",
-				item: '\n### Data Migration\n- Create Virtual Server for website hosting\n- Create database\n- Clean (parse) data into an organized structure\n- Migrate data\n\nWill require input from you detailing specific business processes in order to better understand what is needed in the database design.\n\nWe will also need to review the types of data that your workbooks contain.\n\n### Result\nA private server will be set up and configured specifically for Dr Windows Operations\nYour data will be backed up to a live database\nYou will be provided access to this server and database\n\t\t\t\t\t\t',
+				item: '\n### Data Migration\n- Create Virtual Server for website hosting\n- Create database\n- Clean (parse) data into an organized structure\n- Migrate data\n\nWill require input from you detailing specific business processes in order to better understand what is needed in the database design.\n\nWe will also need to review the types of data that your workbooks contain.\n\n### Result\nA private server will be set up and configured specifically for Dr Windows Operations\nYour data will be backed up to a live database\nYou will be provided access to this server and database\nAll Client data will be linked and migrated\n\t\t\t\t\t\t',
 				start: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2018-12-01'),
 				end: __WEBPACK_IMPORTED_MODULE_1_moment___default()('2018-12-30'),
 				start_cost: 1500,

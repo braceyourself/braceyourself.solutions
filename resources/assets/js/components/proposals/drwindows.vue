@@ -455,6 +455,7 @@ We will also need to review the types of data that your workbooks contain.
 A private server will be set up and configured specifically for Dr Windows Operations
 Your data will be backed up to a live database
 You will be provided access to this server and database
+All Client data will be linked and migrated
 						`,
 						start:moment('2018-12-01'),
 						end:moment('2018-12-30'),
