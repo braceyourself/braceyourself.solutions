@@ -375,7 +375,7 @@ Acceptance of these terms will apply to each phase when/if that phase begins and
 
         </div>
 
-        <div id="signatures" class="flex-center print-only">
+        <div id="signatures" class="flex-center ">
             <div class="row">
                 <div class="col">
                     <span class="sign-here">
@@ -387,10 +387,12 @@ Acceptance of these terms will apply to each phase when/if that phase begins and
 
                 </div>
                 <div class="col">
+                    <img src="../../../images/signature.jpg" alt="ethan brace">
                     <span class="sign-here">
                         <i>{{sender.company}}</i>
                     </span>
                     <span class="sign-here">
+                        {{date}}
                         <i>Date</i>
                     </span>
 
@@ -546,6 +548,10 @@ You will be able to set the role of any user. (partner, client, other)
             }
 		},
 		computed: {
+			date(){
+                return moment().format('MM/D/Y')
+
+            },
 			launch_date() {
 				return this.timeline[this.timeline.length - 1].end.format('MMM D Y')
             },
@@ -723,6 +729,12 @@ You will be able to set the role of any user. (partner, client, other)
                 }
             }
 
+        }
+        img{
+            position: absolute;
+            top: 22px;
+            left: 22px;
+            width: 200px;
         }
     }
     #proposal{
