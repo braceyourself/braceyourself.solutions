@@ -13,7 +13,7 @@
                     </p>
                 </div>
                 <img class="animate fade-in from-right" v-if="image_loaded"
-                     src="/storage/images/Brace.jpg" alt="me">
+                     src="../../images/Brace.jpg" alt="me">
 
             </div>
             <div style="text-align: center;" class="pt-5">Please,
@@ -113,7 +113,8 @@
         img {
             display: block;
             max-width: 400px;
-            max-height: 456px;
+            max-height: 554px;
+            margin:0 auto;
             width: auto;
             height: auto;
 

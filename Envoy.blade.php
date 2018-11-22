@@ -184,8 +184,13 @@ git push
 	sudo chmod -R 775 {{ $var_www_APP_NAME }}/storage;
 
 
+	# make sure public storage is linked
+	php artisan storage:link
+
+
 	# reload the service
 	sudo service {{$php_version}}-fpm reload;
+
 
 @endtask
 

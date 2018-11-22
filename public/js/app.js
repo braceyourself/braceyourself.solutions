@@ -83390,7 +83390,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n#home-intro[data-v-6707e3d4] {\n  padding: 0 18vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  min-height: 400px;\n}\n#home-intro div[data-v-6707e3d4] {\n    padding: 20px;\n}\n#home-intro img[data-v-6707e3d4] {\n    display: block;\n    max-width: 400px;\n    max-height: 456px;\n    width: auto;\n    height: auto;\n}\n@media (max-width: 850px) {\n#home-intro[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      text-align: center;\n}\n}\n.fade-in[data-v-6707e3d4] {\n  opacity: 0;\n}\n.from-top[data-v-6707e3d4] {\n  color: #ffffff00;\n  top: -200px;\n  position: relative;\n}\n.from-right[data-v-6707e3d4] {\n  color: #ffffff00;\n  right: -100vw;\n  position: relative;\n}\n.from-left[data-v-6707e3d4] {\n  color: #ffffff00;\n  left: -200px;\n  position: relative;\n}\n.animate[data-v-6707e3d4] {\n  -webkit-transition: all 1s ease;\n  transition: all 1s ease;\n}\n#landing[data-v-6707e3d4] {\n  width: 100%;\n  background: #ffffff70;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 30px;\n  min-height: 400px;\n}\n#landing #image[data-v-6707e3d4] {\n    margin-right: 5px;\n    width: 500px;\n    background: aliceblue;\n    border-right: 1px solid #65499c;\n    padding-right: 10px;\n    z-index: 1;\n}\n#landing #text[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    margin-left: 5px;\n}\n#landing #text span[data-v-6707e3d4] {\n      color: #65499c;\n      font-size: 65px;\n      font-variant-caps: petite-caps;\n      position: relative;\n}\n", ""]);
+exports.push([module.i, "\n#home-intro[data-v-6707e3d4] {\n  padding: 0 18vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  min-height: 400px;\n}\n#home-intro div[data-v-6707e3d4] {\n    padding: 20px;\n}\n#home-intro img[data-v-6707e3d4] {\n    display: block;\n    max-width: 400px;\n    max-height: 554px;\n    margin: 0 auto;\n    width: auto;\n    height: auto;\n}\n@media (max-width: 850px) {\n#home-intro[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      text-align: center;\n}\n}\n.fade-in[data-v-6707e3d4] {\n  opacity: 0;\n}\n.from-top[data-v-6707e3d4] {\n  color: #ffffff00;\n  top: -200px;\n  position: relative;\n}\n.from-right[data-v-6707e3d4] {\n  color: #ffffff00;\n  right: -100vw;\n  position: relative;\n}\n.from-left[data-v-6707e3d4] {\n  color: #ffffff00;\n  left: -200px;\n  position: relative;\n}\n.animate[data-v-6707e3d4] {\n  -webkit-transition: all 1s ease;\n  transition: all 1s ease;\n}\n#landing[data-v-6707e3d4] {\n  width: 100%;\n  background: #ffffff70;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 30px;\n  min-height: 400px;\n}\n#landing #image[data-v-6707e3d4] {\n    margin-right: 5px;\n    width: 500px;\n    background: aliceblue;\n    border-right: 1px solid #65499c;\n    padding-right: 10px;\n    z-index: 1;\n}\n#landing #text[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    margin-left: 5px;\n}\n#landing #text span[data-v-6707e3d4] {\n      color: #65499c;\n      font-size: 65px;\n      font-variant-caps: petite-caps;\n      position: relative;\n}\n", ""]);
 
 // exports
 
@@ -83587,7 +83587,7 @@ var render = function() {
           _vm.image_loaded
             ? _c("img", {
                 staticClass: "animate fade-in from-right",
-                attrs: { src: "/storage/images/Brace.jpg", alt: "me" }
+                attrs: { src: __webpack_require__(417), alt: "me" }
               })
             : _vm._e()
         ]),
@@ -104798,6 +104798,13 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-21adbbbe", module.exports)
   }
 }
+
+/***/ }),
+/* 416 */,
+/* 417 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Brace.jpg?884cad8bdcb7c7078750305bb0a38ea3";
 
 /***/ })
 /******/ ]);
