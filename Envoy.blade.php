@@ -185,7 +185,8 @@ git push
 
 
 	# make sure public storage is linked
-	php artisan storage:link
+	mkdir -p {{ $var_www_APP_NAME }}/storage/app
+    ln -s {{ $var_www_APP_NAME }}storage/app {{ $var_www_releases_APP_NAME }}/{{$release}}/public/storage
 
 
 	# reload the service
