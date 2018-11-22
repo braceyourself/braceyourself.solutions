@@ -83437,6 +83437,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -83586,10 +83587,7 @@ var render = function() {
           _vm.image_loaded
             ? _c("img", {
                 staticClass: "animate fade-in from-right",
-                attrs: {
-                  src: __webpack_require__(416),
-                  alt: "me"
-                }
+                attrs: { src: "/storage/images/Brace.jpg", alt: "me" }
               })
             : _vm._e()
         ]),
@@ -83616,7 +83614,7 @@ var render = function() {
               [_vm._v("Contact Us")]
             ),
             _vm._v(
-              "\n            If you are interested in creating something amazing.\n        "
+              "\n            iIf you are interested in creating something amazing.\n        "
             )
           ]
         ),
@@ -104800,12 +104798,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-21adbbbe", module.exports)
   }
 }
-
-/***/ }),
-/* 416 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Brace.jpg?884cad8bdcb7c7078750305bb0a38ea3";
 
 /***/ })
 /******/ ]);

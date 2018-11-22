@@ -25,6 +25,8 @@ clear_cache
 log_release
 @endmacro
 
+
+
 @macro('deploy', ['on' => 'as1'])
 	identify
 	fetch_repo

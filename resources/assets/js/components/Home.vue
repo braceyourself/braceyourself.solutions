@@ -13,12 +13,13 @@
                     </p>
                 </div>
                 <img class="animate fade-in from-right" v-if="image_loaded"
-                     src="../../../../public/storage/images/Brace.jpg" alt="me">
+                     src="/storage/images/Brace.jpg" alt="me">
+
             </div>
             <div style="text-align: center;" class="pt-5">Please,
                 <span @click="$store.commit('toggleContactForm')"
                       style="color:blue;text-decoration: underline;cursor:pointer ">Contact Us</span>
-                If you are interested in creating something amazing.
+                iIf you are interested in creating something amazing.
             </div>
 
             <hr>
