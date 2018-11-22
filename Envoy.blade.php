@@ -1,33 +1,48 @@
-@servers(['web' => 'ethanadmin@104.131.102.188', 'localhost'=>'127.0.0.1'])
+@servers(['as1'=>'192.168.0.4','web' => 'ethanadmin@104.131.102.188', 'localhost'=>'127.0.0.1'])
 
 <?php
-	$local_dir = "/mnt/c/Users/ethan/Code/braceyourself.solutions";
-//	$last_commit_msg = shell_exec("cd $local_dir && git log -1 --pretty=%B");
-//	$last_commit_msg = str_replace(' ', '_', $last_commit_msg);
+$local_dir = "/mnt/c/Users/ethan/Code/braceyourself.solutions";
 
-	$site_name = 'braceyourself.solutions';
-	$repo = "/var/git/$site_name.git";
-	$var_www_APP_NAME = "/var/www/$site_name";
-	$var_www_releases_APP_NAME = "/var/www/releases/$site_name";
-	$var_www_APP_NAME_app = $var_www_APP_NAME.'/app';
+$site_name = 'braceyourself.solutions';
+$repo = "/var/git/$site_name.git";
+$var_www_APP_NAME = "/var/www/$site_name";
+$var_www_releases_APP_NAME = "/var/www/releases/$site_name";
+$var_www_APP_NAME_app = $var_www_APP_NAME . '/app';
+$php_version = 'php7.2';
 
-	$release = date('Y-M-d_H:i:s');
+$release = date('Y-M-d_H:i:s');
 ?>
 
+@macro('dev', ['on' => 'as1'])
+identify
+fetch_repo
+create_folders
+update_permissions
+update_symlinks
+run_composer
+npm
+clear_cache
+log_release
+@endmacro
 
-@macro('deploy', ['on' => 'web'])
+@macro('deploy', ['on' => 'as1'])
 	identify
 	fetch_repo
-	run_composer
+	create_folders
 	update_permissions
 	update_symlinks
+	run_composer
 	npm
 	clear_cache
 	log_release
 @endmacro
 
 
-@task('checks')
+@task('create_folders', ['on' => 'as1'])
+	cd {{$var_www_APP_NAME}}/storage/framework
+	mkdir -p sessions
+	mkdir -p views
+	mkdir -p cache
 
 @endtask
 
@@ -123,6 +138,8 @@ git push
 
 @task('npm')
 	cd {{ $var_www_releases_APP_NAME }}/{{$release}}
+	{{--echo "Using new webpack file"--}}
+{{--	cp webpack.mix.js {{$var_www_APP_NAME}}--}}
 	npm install
 	npm run prod
 @endtask
@@ -131,26 +148,42 @@ git push
 @task('update_symlinks')
 	cd {{ $var_www_APP_NAME }};
 
+	#link app directory with release
 	ln -nfs {{ $var_www_releases_APP_NAME }}/"{{ $release }}" {{ $var_www_APP_NAME_app }};
 
 
+	# link .env
 	ln -nfs {{ $var_www_APP_NAME }}/.env {{ $var_www_APP_NAME_app }}/.env;
 
 
+	# link storage
 	rm -r {{ $var_www_releases_APP_NAME }}/"{{ $release }}"/storage;
 	mkdir -p {{ $var_www_APP_NAME }}/storage
 	ln -nfs {{ $var_www_APP_NAME }}/storage {{ $var_www_APP_NAME_app }}/storage;
 
 
+	# link node_modules
+{{--	#rm -r {{ $var_www_releases_APP_NAME }}/"{{ $release }}"/node_modules;--}}
+{{--	mkdir -p {{ $var_www_APP_NAME }}/node_modules--}}
+{{--	ln -nfs {{ $var_www_APP_NAME }}/node_modules {{ $var_www_APP_NAME_app }}/node_modules;--}}
+
+
+	# link vendor
+	#rm -r {{ $var_www_releases_APP_NAME }}/"{{ $release }}"/vendor;
+	mkdir -p {{ $var_www_APP_NAME }}/vendor
+	ln -nfs {{ $var_www_APP_NAME }}/vendor {{ $var_www_APP_NAME_app }}/vendor;
+
+
+	# set permissions
 	cd {{ $var_www_APP_NAME_app }};
 	sudo chgrp -h www-data .env;
 	sudo chgrp -h www-data storage;
-
 	sudo chgrp -hR www-data {{ $var_www_APP_NAME }};
 	sudo chmod -R 775 {{ $var_www_APP_NAME }}/storage;
 
 
-	sudo service php7.2-fpm reload;
+	# reload the service
+	sudo service {{$php_version}}-fpm reload;
 
 @endtask
 

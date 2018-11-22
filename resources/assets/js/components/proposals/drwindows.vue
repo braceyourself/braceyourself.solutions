@@ -1,7 +1,7 @@
 <template>
     <div class="proposal">
         <div class="print-page">
-            <logo/>
+            <logo style="top: -65px;"/>
             <div class="page" id="title-page">
                 <div class="flex-center">
                     <h1 style="text-decoration: underline">Proposal of Website Redesign and Business Integration</h1>

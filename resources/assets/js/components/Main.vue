@@ -1,6 +1,6 @@
 <template>
     <div>
-        <navbar></navbar>
+        <!--<navbar></navbar>-->
         <!--<logo></logo>-->
         <router-view id="router-view"/>
         <bottom></bottom>

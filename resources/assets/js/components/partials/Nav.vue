@@ -10,11 +10,6 @@
 
             </div>
         </div>
-        <!--<div class="logo">-->
-            <!--<span id="word_1">Brace</span>-->
-            <!--<span id="word_2">Yourself</span>-->
-            <!--<span id="word_3">Solutions</span>-->
-        <!--</div>-->
     </nav>
 </template>
 

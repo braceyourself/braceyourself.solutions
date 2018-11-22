@@ -1,67 +1,84 @@
 <template>
-    <div id="home">
+    <div>
+        <logo style="top:-69px"/>
+        <div id="home">
 
-        <div id="landing">
-            <div id="image"></div>
+            <div id="home-intro">
+                <div class="animate from-left" style="text-align: right">
+                    <h1>Lets create something!</h1>
+                    <p>
+                        BraceYourself Solutions is a web development and design company.
+                        We specialize in creating web applications that help improve
+                        every-day business operations.
+                    </p>
+                </div>
+                <img class="animate fade-in from-right" v-if="image_loaded"
+                     src="../../../../public/storage/images/Brace.jpg" alt="me">
+            </div>
+            <div style="text-align: center;" class="pt-5">Please,
+                <span @click="$store.commit('toggleContactForm')"
+                      style="color:blue;text-decoration: underline;cursor:pointer ">Contact Us</span>
+                If you are interested in creating something amazing.
+            </div>
 
-            <div id="text">
-                <span>
-                    Imagine.
-                </span>
-                <span>
-                    Build.
-                </span>
-                <span>
-                    Enjoy.
-                </span>
+            <hr>
+            <div class="flex-center pt-5" style="display:flex;flex-direction: column">
+                <h1>The Team</h1>
+                <p>Well, right now its just me and my sister in law - <a href="https://www.brightlyalex.com/">Alex.</a>
+                </p>
+
             </div>
 
         </div>
-
-
-
-
-        <div id="contact-form">
-            <div id="contact-form-text">Contact</div>
-            <form @submit.prevent="" id="contact-form-input">
-                <label>Email <span style="color:red">*</span>
-                    <input type="text" v-model="contactForm.email"/>
-                </label>
-                <label>Name
-                    <input type="text" v-model="contactForm.name" />
-                </label>
-                <label>Message
-                    <input type="text" v-model="contactForm.message" />
-                </label>
-                <button class="btn btn-primary form-control" @click="submitContactForm">Send</button>
-                <span>required<span class="ml-1" style="color:red">*</span></span>
-            </form>
-        </div>
-
 
     </div>
 </template>
 
 <script>
+
 	export default {
 		components: {
-			//
+			'logo': require('./partials/Logo'),
 		},
 		name: "Home",
 		data() {
 			return {
 				contactForm: {},
+				image_loaded: false,
 			};
 		},
 
 		beforeCreate() {},
 		created() {
-			//
+			setTimeout(() => {
+				this.image_loaded = true;
+			}, 1000);
 		},
 
 		beforeMount() {},
 		mounted() {
-			//
+			setTimeout(() => {
+				$(".fade-in").css({
+					opacity: "inherit",
+				});
+
+				$(".from-left").css({
+					left: '0px',
+					color: 'inherit',
+				});
+
+				$(".from-top").css({
+					top: '0px',
+					color: 'inherit',
+				});
+
+				$(".from-right").css({
+					right: '0px',
+					color: 'inherit',
+					opacity: 'initial',
+				});
+
+			}, 1500);
 		},
 		beforeUpdate() {},
 		updated() {},
@@ -70,17 +87,9 @@
 		beforeDestroy() {},
 		destroyed() {},
 		methods: {
-            submitContactForm(){
-                this.$store.dispatch("store", {resource:"contact", data:this.contactForm}).then(res=>{
-                    this.flash("Thanks!! I'll be in touch with you soon.");
-                }).catch(err=>{
-
-                })
-            },
-		},
-		computed: {
 			//
 		},
+		computed: {},
 
 		props: {},
 		watch: {},
@@ -90,31 +99,62 @@
 <style scoped lang="scss">
     @import "../../sass/variables";
 
-    .logo {
-
-        display: inline-block;
-        font-size: 30px;
-
-        span {
-            left: 50%;
-            position: absolute;
-            /*position: absolute;*/
-
-            $nth1-2_leftPosition: 63px;
-            &:nth-child(1), &:nth-child(2) {
-                font-size: 40px;
-                left: $nth1-2_leftPosition;
-            }
-
-            &:nth-child(2) {
-                left: $nth1-2_leftPosition+ 100px;
-            }
-
-            &:last-child {
-                font-size: 100px;
-                font-variant-caps: petite-caps;
-            }
+    #home-intro {
+        padding: 0 18vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        min-height: 400px;
+        div {
+            padding: 20px;
         }
+
+        img {
+            display: block;
+            max-width: 400px;
+            max-height: 456px;
+            width: auto;
+            height: auto;
+
+        }
+        @media(max-width:$medium-screen){
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .fade-in {
+        opacity: 0;
+    }
+
+    .from-top {
+        color: $transparent;
+        top: -200px;
+        position: relative;
+
+    }
+
+    .from-right {
+        color: $transparent;
+        right: -100vw;
+        position: relative;
+
+    }
+
+    .from-left {
+        color: $transparent;
+        left: -200px;
+        position: relative;
+
+    }
+
+    .animate {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+
     }
 
     #landing {
@@ -150,43 +190,5 @@
         }
     }
 
-    #contact-form {
-        width: 100%;
-        /*height: auto;*/
-        background: $color-primary-dark;
-        background: #4b636e;
-        display: flex;
-        justify-content: space-evenly;
-        color: $color-secondary-light;
-        padding: 30px;
-
-        div{
-            min-width: 350px;
-        }
-
-        #contact-form-input {
-            width: 50vw;
-            display: inherit;
-            flex-direction: column;
-            padding-left: 55px;
-            label {
-                width: 100%;
-            }
-        }
-
-        #contact-form-text {
-            width: 50vw;
-            display: inherit;
-            flex-direction: column;
-
-            text-align: right;
-            padding-right: 55px;
-            border-right: 1px solid aliceblue;
-        }
-
-        @media (max-width:600px) {
-            flex-direction: column;
-        }
-    }
 
 </style>

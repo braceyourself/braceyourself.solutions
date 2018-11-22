@@ -1,5 +1,5 @@
 <template>
-    <div class="header flex-center">
+    <div id="logo">
         <span id="logo1">Brace</span>
         <span id="logo2">Yourself</span>
         <span id="logo3">Solutions</span>
@@ -23,7 +23,22 @@
 
 		beforeMount() {},
 		mounted() {
-			//
+            $("span").css('font-size', this.font_size);
+
+			setTimeout(() => {
+				$("#logo3").css({
+                    'left': '67px',
+                    'color': 'initial',
+                });
+				$("#logo-bar").css({
+					width: '275px',
+					left: '-113px',
+				});
+
+
+
+			}, 500);
+
 		},
 		beforeUpdate() {},
 		updated() {},
@@ -38,46 +53,64 @@
 			//
 		},
 
-		props: {},
+		props: {
+			font_size:'40px',
+        },
 		components: {},
 		watch: {},
 
 	};
 </script>
 
-<style scoped lang="scss">
-
-    .header {
-        top: -67px;
+<style>
+    #logo {
+        background-color: black;
+        width: 0;
         position: relative;
-        height: 36px;
-        color: ghostwhite;
-
-        span {
-            position: relative;
-            font-size: 40px;
-
-        }
-        #logo1 {
-            top: 99px;
-            left: -72px;
-        }
-        #logo2 {
-            top: 35px;
-            left: 63px;
-        }
-        #logo3 {
-            font-size: 27px;
-            top: 1px;
-            font-variant-caps: all-petite-caps;
-            left: 83px;
-
-        }
-        #logo-bar {
-            border: 1px solid black;
-            width: 402px;
-            top: -25px;
-        }
+        margin: 0 auto;
+        left:-26px;
     }
 
+    #logo1 {
+        font-size: 40px;
+        position: absolute;
+        left: -101px;
+
+    }
+
+    #logo2 {
+        font-size: 40px;
+        position: absolute;
+    }
+
+    #logo3 {
+        color:#ffffff00;
+        font-size: 20px;
+        font-variant-caps: all-petite-caps;
+        position: absolute;
+        top: 34px;
+        left: -99px;
+
+        -webkit-transition: left 1s, color 1s;
+        -moz-transition: left 1s, color 1s;
+        -ms-transition: left 1s, color 1s;
+        -o-transition: left 1s, color 1s;
+        transition: left 1s, color 1s;
+
+    }
+
+    #logo-bar {
+        height: 1px;
+        width: 0;
+        border-bottom: solid 2px black;
+        position: absolute;
+        left: -98px;
+        top: 45px;
+
+        -webkit-transition: left 1s, width 1s;
+        -moz-transition: left 1s, width 1s;
+        -ms-transition: left 1s, width 1s;
+        -o-transition: left 1s, width 1s;
+        transition: left 1s, width 1s;
+    }
 </style>

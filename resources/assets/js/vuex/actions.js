@@ -12,4 +12,16 @@ export default {
 
 		$("#router-view").css("min-height", router_view_height);
 	},
+
+	store({commit}, {resource, data}){
+        axios.post(`/${resource}`, data).then(res => {
+			console.log(res.data);
+		}).catch(err =>{
+		    let data = err.response.data;
+		    console.log(data);
+		});
+	},
+
+
+
 };
