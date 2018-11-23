@@ -10511,7 +10511,6 @@ body {
   color: #636b6f;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
-  font-size: 1.8vw;
   margin: 0;
   overflow-x: hidden;
 }
@@ -10667,5 +10666,9 @@ body {
 form {
   width: 100%;
   display: block;
+}
+
+.underline {
+  text-decoration: underline !important;
 }
 

@@ -11,5 +11,6 @@ export default {
 		email: '',
 		name: '',
 		message: '',
+		errors: [],
 	},
 }

@@ -34,6 +34,7 @@ log_release
 	update_permissions
 	update_symlinks
 	run_composer
+	migrate
 	npm
 	clear_cache
 	log_release
@@ -129,6 +130,10 @@ git push
 	composer dump-autoload -o
 @endtask
 
+
+@task('migrate')
+	php artisan migrate
+@endtask
 
 
 @task('update_permissions')

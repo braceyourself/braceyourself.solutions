@@ -14,12 +14,17 @@ export default {
 	},
 
 	store({commit}, {resource, data}){
-        axios.post(`/${resource}`, data).then(res => {
-			console.log(res.data);
-		}).catch(err =>{
-		    let data = err.response.data;
-		    console.log(data);
-		});
+		return new Promise((resolve,reject)=>{
+			axios.post(`/${resource}`, data).then(res => {
+				console.log(res.data);
+				resolve(res.data);
+			}).catch(err =>{
+				let data = err.response.data;
+				console.log(data);
+				reject(data);
+			});
+
+		})
 	},
 
 

@@ -17,19 +17,27 @@
         </div>
 
         <div v-if="$store.state.contact_form.show" id="contact-form">
+
             <form @submit.prevent="submitContactForm" id="contact-form-input">
                 <a>
                     <i class="material-icons" @click="$store.commit('toggleContactForm')">close</i>
                 </a>
                 <label>Email
-                    <input type="text" v-model="contact_form.email"/>
+                    <input @input="inputChanged('email')" type="text" v-model="contact_form.email"/>
                 </label>
                 <label>Name
-                    <input type="text" v-model="contact_form.name"/>
+                    <input @input="inputChanged('name')" type="text" v-model="contact_form.name"/>
                 </label>
                 <label>Message
-                    <input type="text" v-model="contact_form.message"/>
+                    <textarea @input="inputChanged('message')" class="form-control"
+                              v-model="contact_form.message"></textarea>
                 </label>
+                <div v-if="contact_form_has_errors">
+                    <div v-for="error in contact_form.errors" class="text-center">
+                        {{error.val[0]}}
+                    </div>
+
+                </div>
                 <button class="btn btn-primary form-control">Send</button>
             </form>
         </div>
@@ -65,10 +73,10 @@
                 display: block;
                 color: white;
             }
-            &.left{
+            &.left {
                 text-align: right;
             }
-            &.right{
+            &.right {
                 text-align: left;
             }
         }
@@ -88,6 +96,7 @@
     }
 
     #contact-form {
+        z-index:2;
         position: fixed;
         bottom: 0;
         width: 100%;
@@ -110,6 +119,17 @@
             font-size: 41px;
         }
 
+        input, textarea {
+            border: none;
+            border-bottom: 1px solid white;
+            border-radius: 0;
+            background-color: inherit;
+            color: white;
+        }
+        button {
+            border-radius: 0;
+        }
+
         #contact-form-input {
             width: 50vw;
             display: inherit;
@@ -119,9 +139,8 @@
                 width: 100%;
             }
 
-
-            @media(max-width:$medium-screen){
-                width:75vw;
+            @media(max-width: $medium-screen) {
+                width: 75vw;
             }
         }
 
@@ -145,8 +164,7 @@
 	export default {
 		name: "Footer",
 		data() {
-			return {
-			};
+			return {};
 		},
 
 		beforeCreate() {},
@@ -158,6 +176,9 @@
 		mounted() {
 
 			this.$store.dispatch('set_main_min_height');
+			$("#contact-form-input *").on('change', () => {
+				console.log('form data changed');
+			});
 
 		},
 		beforeUpdate() {},
@@ -167,25 +188,45 @@
 		beforeDestroy() {},
 		destroyed() {},
 		methods: {
+			inputChanged(key) {
+				console.log(key);
+				this.contact_form.errors = _.remove(this.contact_form.errors, error => {
+					return error.key != key;
+				});
+
+			},
 			submitContactForm() {
-				this.$store.dispatch("store", {resource: "contact", data: this.contactForm}).then(res => {
+				this.$store.dispatch("store", {resource: "contact", data: this.contact_form}).then(res => {
 					this.flash("Thanks!! I'll be in touch with you soon.");
 					this.contact_form.show = false;
 				}).catch(err => {
+					let contact_form = this.contact_form;
+					contact_form.errors = [];
+					_.forEach(err.errors, (val, key) => {
+						contact_form.errors.push({key, val});
+					});
+					contact_form.has_errors = true;
+
+					this.$store.commit('updateContactForm', contact_form);
 
 				});
 			},
 		},
 		computed: {
-            contact_form(){
-            	return this.$store.state.contact_form;
-            }
+			contact_form_has_errors() {
+
+				return this.contact_form.errors.length > 0;
+			},
+
+			contact_form() {
+				return this.$store.state.contact_form;
+			},
 		},
 
 		props: {},
 		components: {},
 		watch: {},
 
-	};
+	}
 </script>
 

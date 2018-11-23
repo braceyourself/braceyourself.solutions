@@ -80425,7 +80425,8 @@ var index_esm = {
 		show: false,
 		email: '',
 		name: '',
-		message: ''
+		message: '',
+		errors: []
 	}
 });
 
@@ -80437,6 +80438,9 @@ var index_esm = {
 /* harmony default export */ __webpack_exports__["a"] = ({
 	toggleContactForm: function toggleContactForm(state) {
 		state.contact_form.show = !state.contact_form.show;
+	},
+	updateContactForm: function updateContactForm(state, data) {
+		state.contact_form = data;
 	}
 });
 
@@ -80466,11 +80470,15 @@ var index_esm = {
 		var resource = _ref3.resource,
 		    data = _ref3.data;
 
-		axios.post("/" + resource, data).then(function (res) {
-			console.log(res.data);
-		}).catch(function (err) {
-			var data = err.response.data;
-			console.log(data);
+		return new Promise(function (resolve, reject) {
+			axios.post("/" + resource, data).then(function (res) {
+				console.log(res.data);
+				resolve(res.data);
+			}).catch(function (err) {
+				var data = err.response.data;
+				console.log(data);
+				reject(data);
+			});
 		});
 	}
 });
@@ -83390,7 +83398,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n#home-intro[data-v-6707e3d4] {\n  padding: 0 18vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  min-height: 400px;\n}\n#home-intro div[data-v-6707e3d4] {\n    padding: 20px;\n}\n#home-intro img[data-v-6707e3d4] {\n    display: block;\n    max-width: 400px;\n    max-height: 554px;\n    margin: 0 auto;\n    width: auto;\n    height: auto;\n}\n@media (max-width: 850px) {\n#home-intro[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      text-align: center;\n}\n}\n.fade-in[data-v-6707e3d4] {\n  opacity: 0;\n}\n.from-top[data-v-6707e3d4] {\n  color: #ffffff00;\n  top: -200px;\n  position: relative;\n}\n.from-right[data-v-6707e3d4] {\n  color: #ffffff00;\n  right: -100vw;\n  position: relative;\n}\n.from-left[data-v-6707e3d4] {\n  color: #ffffff00;\n  left: -200px;\n  position: relative;\n}\n.animate[data-v-6707e3d4] {\n  -webkit-transition: all 1s ease;\n  transition: all 1s ease;\n}\n#landing[data-v-6707e3d4] {\n  width: 100%;\n  background: #ffffff70;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 30px;\n  min-height: 400px;\n}\n#landing #image[data-v-6707e3d4] {\n    margin-right: 5px;\n    width: 500px;\n    background: aliceblue;\n    border-right: 1px solid #65499c;\n    padding-right: 10px;\n    z-index: 1;\n}\n#landing #text[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    margin-left: 5px;\n}\n#landing #text span[data-v-6707e3d4] {\n      color: #65499c;\n      font-size: 65px;\n      font-variant-caps: petite-caps;\n      position: relative;\n}\n", ""]);
+exports.push([module.i, "\n.link[data-v-6707e3d4] {\n  color: #65499c;\n  text-decoration: underline;\n  cursor: pointer;\n}\n#home[data-v-6707e3d4] {\n  font-size: 20px;\n}\n@media (max-width: 550px) {\n#home[data-v-6707e3d4] {\n      text-align: center;\n}\n#home img[data-v-6707e3d4] {\n        /*width:100%;*/\n}\n}\n#home-intro[data-v-6707e3d4] {\n  padding: 0 10vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  min-height: 400px;\n  text-align: right;\n}\n#home-intro div[data-v-6707e3d4] {\n    padding: 20px;\n}\n#home-intro img[data-v-6707e3d4] {\n    display: block;\n    max-width: 550px;\n    max-height: 367px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    margin: 0 auto;\n    width: 100%;\n    height: auto;\n    -webkit-box-shadow: 6px 6px 41px -11px black;\n            box-shadow: 6px 6px 41px -11px black;\n}\n@media (max-width: 850px) {\n#home-intro[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      text-align: center;\n      padding: 0 5vw;\n}\n}\n.fade-in[data-v-6707e3d4] {\n  opacity: 0;\n}\n.from-top[data-v-6707e3d4] {\n  color: #ffffff00;\n  top: -200px;\n  position: relative;\n}\n.from-right[data-v-6707e3d4] {\n  color: #ffffff00;\n  right: -100vw;\n  position: relative;\n}\n.from-left[data-v-6707e3d4] {\n  color: #ffffff00;\n  left: -200px;\n  position: relative;\n}\n.animate[data-v-6707e3d4] {\n  -webkit-transition: all 1s ease;\n  transition: all 1s ease;\n}\n#landing[data-v-6707e3d4] {\n  width: 100%;\n  background: #ffffff70;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 30px;\n  min-height: 400px;\n}\n#landing #image[data-v-6707e3d4] {\n    margin-right: 5px;\n    width: 500px;\n    background: aliceblue;\n    border-right: 1px solid #65499c;\n    padding-right: 10px;\n    z-index: 1;\n}\n#landing #text[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    margin-left: 5px;\n}\n#landing #text span[data-v-6707e3d4] {\n      color: #65499c;\n      font-size: 65px;\n      font-variant-caps: petite-caps;\n      position: relative;\n}\n#team[data-v-6707e3d4] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n#team div[data-v-6707e3d4] {\n    /*max-width: 300px;*/\n}\n#team .profile[data-v-6707e3d4] {\n    max-width: 200px;\n    /*max-height: 200px;*/\n    /*width: 100%;*/\n    height: 250px;\n    position: relative;\n    z-index: 0;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -webkit-box-shadow: 6px 6px 41px -11px black;\n            box-shadow: 6px 6px 41px -11px black;\n}\n#team .name[data-v-6707e3d4] {\n    text-decoration: underline;\n    z-index: 1;\n    /*text-align: right;*/\n    font-size: 30px;\n    /*!*text-shadow: 2px 2px 12px black;*!*/\n    position: relative;\n}\n#team .team-card[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    max-width: 500px;\n}\n#team .team-card h3[data-v-6707e3d4] {\n      font-size: 40px;\n}\n#team .team-card .content[data-v-6707e3d4] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: horizontal;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: row;\n              flex-direction: row;\n      text-align: left;\n      font-size: 19px;\n}\n#team .team-card .content div[data-v-6707e3d4] {\n        padding: 10px;\n}\n@media (max-width: 550px) {\n#team .team-card .content[data-v-6707e3d4] {\n          -webkit-box-orient: vertical;\n          -webkit-box-direction: normal;\n              -ms-flex-direction: column;\n                  flex-direction: column;\n          text-align: center;\n}\n}\n@media (max-width: 850px) {\n#team[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n}\n}\n", ""]);
 
 // exports
 
@@ -83401,6 +83409,56 @@ exports.push([module.i, "\n#home-intro[data-v-6707e3d4] {\n  padding: 0 18vw;\n 
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -83555,11 +83613,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		//
 	},
 	computed: {
-		//
+		font_size1: function font_size1() {},
+		font_size2: function font_size2() {},
+		length: function length() {}
 	},
 
 	props: {
-		font_size: '40px'
+		size: 'medium'
 	},
 	components: {},
 	watch: {}
@@ -83587,34 +83647,48 @@ var render = function() {
           _vm.image_loaded
             ? _c("img", {
                 staticClass: "animate fade-in from-right",
-                attrs: { src: __webpack_require__(417), alt: "me" }
+                attrs: {
+                  src:
+                    "https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                  alt: "me"
+                }
               })
             : _vm._e()
         ]),
         _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "pt-5", staticStyle: { "text-align": "center" } },
+          {
+            staticClass: "flex-center py-5",
+            staticStyle: { display: "flex", "flex-direction": "column" }
+          },
           [
-            _vm._v("Please,\n            "),
+            _c("h1", { staticClass: "underline" }, [_vm._v("Projects")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Currently accepting projects!")]),
+            _vm._v(" "),
             _c(
-              "span",
-              {
-                staticStyle: {
-                  color: "blue",
-                  "text-decoration": "underline",
-                  cursor: "pointer"
-                },
-                on: {
-                  click: function($event) {
-                    _vm.$store.commit("toggleContactForm")
-                  }
-                }
-              },
-              [_vm._v("Contact Us")]
-            ),
-            _vm._v(
-              "\n            iIf you are interested in creating something amazing.\n        "
+              "div",
+              { staticClass: "pt-5", staticStyle: { "text-align": "center" } },
+              [
+                _c(
+                  "span",
+                  {
+                    staticClass: "link",
+                    on: {
+                      click: function($event) {
+                        _vm.$store.commit("toggleContactForm")
+                      }
+                    }
+                  },
+                  [_vm._v("Contact Us")]
+                ),
+                _vm._v(
+                  "\n                if you are interested in creating something amazing.\n            "
+                )
+              ]
             )
           ]
         ),
@@ -83632,22 +83706,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "animate from-left",
-        staticStyle: { "text-align": "right" }
-      },
-      [
-        _c("h1", [_vm._v("Lets create something!")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "\n                    BraceYourself Solutions is a web development and design company.\n                    We specialize in creating web applications that help improve\n                    every-day business operations.\n                "
-          )
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "animate from-left" }, [
+      _c("h1", [_vm._v("Lets create something!")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n                    BraceYourself Solutions is a web development and design company.\n                    We specialize in creating web applications that help improve\n                    every-day business operations.\n                "
+        )
+      ])
+    ])
   },
   function() {
     var _vm = this
@@ -83656,18 +83723,82 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "flex-center pt-5",
+        staticClass: "flex-center py-5",
         staticStyle: { display: "flex", "flex-direction": "column" }
       },
       [
-        _c("h1", [_vm._v("The Team")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("Well, right now its just me and my sister in law - "),
-          _c("a", { attrs: { href: "https://www.brightlyalex.com/" } }, [
-            _vm._v("Alex.")
+        _c("div", { staticClass: "text-center", attrs: { id: "team" } }, [
+          _c("div", { staticClass: "team-card" }, [
+            _c("h3", { staticClass: "border-bottom" }, [
+              _vm._v("Lead Developer")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content" }, [
+              _c("div", [
+                _c("img", {
+                  staticClass: "profile",
+                  attrs: {
+                    src:
+                      "http://ethan.braceyourself.solutions/images/profile.jpg",
+                    alt: "Ethan"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", [
+                _c("span", { staticClass: "name" }, [_vm._v("Ethan")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Mostly-self-taught Web Developer specializing in Single-Page Web Applications. "
+                  )
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "team-card" }, [
+            _c("h3", { staticClass: "border-bottom" }, [
+              _vm._v("Lead Designer")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content" }, [
+              _c("div", [
+                _c("img", {
+                  staticClass: "profile",
+                  attrs: {
+                    src:
+                      "https://static.wixstatic.com/media/082b7e_f186f74c51714cfa9785278f66319616~mv2_d_3585_3179_s_4_2.jpg/v1/crop/x_510,y_0,w_2566,h_3179/fill/w_339,h_420,al_c,q_80,usm_0.66_1.00_0.01/IMG_7490.webp",
+                    alt: "Alex"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", [
+                _c("div", { staticClass: "name" }, [_vm._v("Alex")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Alex owns and operates a Design & Photography company. Check it out!"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "https://www.brightlyalex.com/" } }, [
+                  _c("img", {
+                    staticStyle: { "max-width": "200px" },
+                    attrs: {
+                      src:
+                        "https://static.wixstatic.com/media/082b7e_f6c887e1579f4082b627f54bf5cb7659~mv2.png/v1/crop/x_0,y_100,w_1126,h_462/fill/w_558,h_225,al_c,q_80,usm_0.66_1.00_0.01/BrightlyAlex_Logo-02.webp",
+                      alt: "brightly alex"
+                    }
+                  })
+                ])
+              ])
+            ])
           ])
-        ])
+        ]),
+        _vm._v(" "),
+        _c("p")
       ]
     )
   }
@@ -104306,7 +104437,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "/*@import \"~material-design-icons\";*/\n/*position: fixed;*/\n/*bottom: 0px;*/\n/*display: flex;*/\n/*flex-direction: column;*/\na[data-v-96898ade]:hover {\n  cursor: pointer !important;\n  text-decoration: underline !important;\n}\n#footer[data-v-96898ade] {\n  /*position: absolute;*/\n  width: 100%;\n  height: auto;\n  padding: 15px;\n  background: #65499c;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n#footer .column a[data-v-96898ade] {\n    display: block;\n    color: white;\n}\n#footer .column.left[data-v-96898ade] {\n    text-align: right;\n}\n#footer .column.right[data-v-96898ade] {\n    text-align: left;\n}\n#footer .vr[data-v-96898ade] {\n    border: 1px solid #c7a4ff;\n    width: 1px;\n    margin: 5px;\n    padding: 15px 0;\n}\n#bottom[data-v-96898ade] {\n  background-color: black;\n}\n#contact-form[data-v-96898ade] {\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  /*height: auto;*/\n  background: #4b636e;\n  background: #4b636e;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n      -ms-flex-pack: space-evenly;\n          justify-content: space-evenly;\n  color: #c7a4ff;\n  padding: 30px;\n}\n#contact-form div[data-v-96898ade] {\n    min-width: 350px;\n}\n#contact-form i[data-v-96898ade] {\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    font-size: 41px;\n}\n#contact-form #contact-form-input[data-v-96898ade] {\n    width: 50vw;\n    display: inherit;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding-left: 55px;\n}\n#contact-form #contact-form-input label[data-v-96898ade] {\n      width: 100%;\n}\n@media (max-width: 850px) {\n#contact-form #contact-form-input[data-v-96898ade] {\n        width: 75vw;\n}\n}\n#contact-form #contact-form-text[data-v-96898ade] {\n    width: 50vw;\n    display: inherit;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    text-align: right;\n    padding-right: 55px;\n    border-right: 1px solid aliceblue;\n}\n@media (max-width: 600px) {\n#contact-form[data-v-96898ade] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n}\n}\n", ""]);
+exports.push([module.i, "/*@import \"~material-design-icons\";*/\n/*position: fixed;*/\n/*bottom: 0px;*/\n/*display: flex;*/\n/*flex-direction: column;*/\na[data-v-96898ade]:hover {\n  cursor: pointer !important;\n  text-decoration: underline !important;\n}\n#footer[data-v-96898ade] {\n  /*position: absolute;*/\n  width: 100%;\n  height: auto;\n  padding: 15px;\n  background: #65499c;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n#footer .column a[data-v-96898ade] {\n    display: block;\n    color: white;\n}\n#footer .column.left[data-v-96898ade] {\n    text-align: right;\n}\n#footer .column.right[data-v-96898ade] {\n    text-align: left;\n}\n#footer .vr[data-v-96898ade] {\n    border: 1px solid #c7a4ff;\n    width: 1px;\n    margin: 5px;\n    padding: 15px 0;\n}\n#bottom[data-v-96898ade] {\n  background-color: black;\n}\n#contact-form[data-v-96898ade] {\n  z-index: 2;\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  /*height: auto;*/\n  background: #4b636e;\n  background: #4b636e;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n      -ms-flex-pack: space-evenly;\n          justify-content: space-evenly;\n  color: #c7a4ff;\n  padding: 30px;\n}\n#contact-form div[data-v-96898ade] {\n    min-width: 350px;\n}\n#contact-form i[data-v-96898ade] {\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    font-size: 41px;\n}\n#contact-form input[data-v-96898ade], #contact-form textarea[data-v-96898ade] {\n    border: none;\n    border-bottom: 1px solid white;\n    border-radius: 0;\n    background-color: inherit;\n    color: white;\n}\n#contact-form button[data-v-96898ade] {\n    border-radius: 0;\n}\n#contact-form #contact-form-input[data-v-96898ade] {\n    width: 50vw;\n    display: inherit;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding-left: 55px;\n}\n#contact-form #contact-form-input label[data-v-96898ade] {\n      width: 100%;\n}\n@media (max-width: 850px) {\n#contact-form #contact-form-input[data-v-96898ade] {\n        width: 75vw;\n}\n}\n#contact-form #contact-form-text[data-v-96898ade] {\n    width: 50vw;\n    display: inherit;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    text-align: right;\n    padding-right: 55px;\n    border-right: 1px solid aliceblue;\n}\n@media (max-width: 600px) {\n#contact-form[data-v-96898ade] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n}\n}\n", ""]);
 
 // exports
 
@@ -104317,6 +104448,25 @@ exports.push([module.i, "/*@import \"~material-design-icons\";*/\n/*position: fi
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -104474,6 +104624,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	mounted: function mounted() {
 
 		this.$store.dispatch('set_main_min_height');
+		$("#contact-form-input *").on('change', function () {
+			console.log('form data changed');
+		});
 	},
 	beforeUpdate: function beforeUpdate() {},
 	updated: function updated() {},
@@ -104483,16 +104636,35 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	destroyed: function destroyed() {},
 
 	methods: {
+		inputChanged: function inputChanged(key) {
+			console.log(key);
+			this.contact_form.errors = _.remove(this.contact_form.errors, function (error) {
+				return error.key != key;
+			});
+		},
 		submitContactForm: function submitContactForm() {
 			var _this = this;
 
-			this.$store.dispatch("store", { resource: "contact", data: this.contactForm }).then(function (res) {
+			this.$store.dispatch("store", { resource: "contact", data: this.contact_form }).then(function (res) {
 				_this.flash("Thanks!! I'll be in touch with you soon.");
 				_this.contact_form.show = false;
-			}).catch(function (err) {});
+			}).catch(function (err) {
+				var contact_form = _this.contact_form;
+				contact_form.errors = [];
+				_.forEach(err.errors, function (val, key) {
+					contact_form.errors.push({ key: key, val: val });
+				});
+				contact_form.has_errors = true;
+
+				_this.$store.commit('updateContactForm', contact_form);
+			});
 		}
 	},
 	computed: {
+		contact_form_has_errors: function contact_form_has_errors() {
+
+			return this.contact_form.errors.length > 0;
+		},
 		contact_form: function contact_form() {
 			return this.$store.state.contact_form;
 		}
@@ -104585,12 +104757,17 @@ var render = function() {
                   attrs: { type: "text" },
                   domProps: { value: _vm.contact_form.email },
                   on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                    input: [
+                      function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.contact_form, "email", $event.target.value)
+                      },
+                      function($event) {
+                        _vm.inputChanged("email")
                       }
-                      _vm.$set(_vm.contact_form, "email", $event.target.value)
-                    }
+                    ]
                   }
                 })
               ]),
@@ -104609,19 +104786,24 @@ var render = function() {
                   attrs: { type: "text" },
                   domProps: { value: _vm.contact_form.name },
                   on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                    input: [
+                      function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.contact_form, "name", $event.target.value)
+                      },
+                      function($event) {
+                        _vm.inputChanged("name")
                       }
-                      _vm.$set(_vm.contact_form, "name", $event.target.value)
-                    }
+                    ]
                   }
                 })
               ]),
               _vm._v(" "),
               _c("label", [
                 _vm._v("Message\n                "),
-                _c("input", {
+                _c("textarea", {
                   directives: [
                     {
                       name: "model",
@@ -104630,18 +104812,42 @@ var render = function() {
                       expression: "contact_form.message"
                     }
                   ],
-                  attrs: { type: "text" },
+                  staticClass: "form-control",
                   domProps: { value: _vm.contact_form.message },
                   on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                    input: [
+                      function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.contact_form,
+                          "message",
+                          $event.target.value
+                        )
+                      },
+                      function($event) {
+                        _vm.inputChanged("message")
                       }
-                      _vm.$set(_vm.contact_form, "message", $event.target.value)
-                    }
+                    ]
                   }
                 })
               ]),
+              _vm._v(" "),
+              _vm.contact_form_has_errors
+                ? _c(
+                    "div",
+                    _vm._l(_vm.contact_form.errors, function(error) {
+                      return _c("div", { staticClass: "text-center" }, [
+                        _vm._v(
+                          "\n                    " +
+                            _vm._s(error.val[0]) +
+                            "\n                "
+                        )
+                      ])
+                    })
+                  )
+                : _vm._e(),
               _vm._v(" "),
               _c("button", { staticClass: "btn btn-primary form-control" }, [
                 _vm._v("Send")
@@ -104798,13 +105004,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-21adbbbe", module.exports)
   }
 }
-
-/***/ }),
-/* 416 */,
-/* 417 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Brace.jpg?884cad8bdcb7c7078750305bb0a38ea3";
 
 /***/ })
 /******/ ]);

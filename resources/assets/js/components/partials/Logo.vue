@@ -50,11 +50,19 @@
 			//
 		},
 		computed: {
-			//
+            font_size1(){
+
+            },
+			font_size2(){
+
+			},
+            length(){
+
+            }
 		},
 
 		props: {
-			font_size:'40px',
+            size: 'medium'
         },
 		components: {},
 		watch: {},

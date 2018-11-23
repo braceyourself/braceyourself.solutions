@@ -5,81 +5,87 @@ namespace App\Http\Controllers;
 use App\Contact;
 use Illuminate\Http\Request;
 
-class ContactController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
+class ContactController extends Controller {
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function index() {
+		//
+	}
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        return response(['message' => 'saved']);
-    }
+	/**
+	 * Show the form for creating a new resource.
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function create() {
+		//
+	}
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Contact $contact)
-    {
-        //
-    }
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @param  \Illuminate\Http\Request $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function store(Request $request) {
+		$request->validate([
+            'email'=>'required|email',
+            'name'=>'required|string',
+			'message'=>'required',
+		],[
+			'email.email' => "That email isn't valid.",
+			'name.required' => "Please provide your name.",
+			'message.required' => "The message is blank"
+		]);
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Contact $contact)
-    {
-        //
-    }
+		$contact = new Contact($request->all());
+		$contact->save();
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Contact $contact)
-    {
-        //
-    }
+		return response(['message' => 'saved']);
+	}
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Contact $contact)
-    {
-        //
-    }
+	/**
+	 * Display the specified resource.
+	 *
+	 * @param  \App\Contact $contact
+	 * @return \Illuminate\Http\Response
+	 */
+	public function show(Contact $contact) {
+		//
+	}
+
+	/**
+	 * Show the form for editing the specified resource.
+	 *
+	 * @param  \App\Contact $contact
+	 * @return \Illuminate\Http\Response
+	 */
+	public function edit(Contact $contact) {
+		//
+	}
+
+	/**
+	 * Update the specified resource in storage.
+	 *
+	 * @param  \Illuminate\Http\Request $request
+	 * @param  \App\Contact $contact
+	 * @return \Illuminate\Http\Response
+	 */
+	public function update(Request $request, Contact $contact) {
+		//
+	}
+
+	/**
+	 * Remove the specified resource from storage.
+	 *
+	 * @param  \App\Contact $contact
+	 * @return \Illuminate\Http\Response
+	 */
+	public function destroy(Contact $contact) {
+		//
+	}
 }

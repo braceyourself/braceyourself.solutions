@@ -17,7 +17,7 @@ html, body {
     color: #636b6f;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    font-size: 1.8vw;
+    //font-size: 1.8vw;
     //height: 1500px;
     margin: 0;
     overflow-x: hidden;
@@ -150,7 +150,7 @@ input {
         page-break-before: avoid;
     }
     h1, h2, h3, h4, h5, h6 {
-
+        //
     }
     h1 {
         text-decoration: none !important;
@@ -164,4 +164,8 @@ input {
 form{
     width:100%;
     display:block;
+}
+
+.underline{
+    text-decoration: underline !important;
 }
