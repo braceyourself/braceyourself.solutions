@@ -14,13 +14,17 @@ $theme-colors: (
 
 html, body {
     background-color: $body-bg;
-    color: #636b6f;
+    color: $body-text;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     //font-size: 1.8vw;
     //height: 1500px;
     margin: 0;
     overflow-x: hidden;
+    a,.link{
+        color:$body-text;
+        text-decoration:underline;
+    }
 
     @media (max-width:$medium-screen){
         font-size:3vw;
@@ -168,4 +172,78 @@ form{
 
 .underline{
     text-decoration: underline !important;
+}
+
+.bg-primary {
+    background-color: $color-primary;
+    color: $color-secondary-light;
+}
+.bg-primary-light{}
+.bg-primary-dark{
+    background-color: $color-primary-dark;
+    color: white;
+    a,.link{
+        color:white;
+    }
+
+}
+
+.bg-secondary{
+    background-color: $color-secondary;
+    color: $color-primary-light;
+
+}
+.bg-secondary-light{}
+.bg-secondary-dark{}
+
+.text-shadow{
+    text-shadow: 0px 0px 15px #060606;
+}
+
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+.from-top {
+    color: $transparent;
+    top: -200px;
+    position: relative;
+
+}
+
+.from-right {
+    color: $transparent;
+    right: -100vw;
+    position: relative;
+
+}
+
+.from-left {
+    color: $transparent;
+    left: -200px;
+    position: relative;
+
+}
+
+.animate {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
+
+.no-select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

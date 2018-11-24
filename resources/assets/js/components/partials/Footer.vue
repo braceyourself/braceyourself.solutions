@@ -8,7 +8,7 @@
             <span class="vr"></span>
             <div class="column right">
                 <router-link to="login">login</router-link>
-                <a @click="$store.commit('toggleContactForm')">contact me</a>
+                <a class="no-select" @click="$store.commit('toggleContactForm')">contact me</a>
             </div>
         </div>
 

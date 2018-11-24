@@ -83398,7 +83398,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.link[data-v-6707e3d4] {\n  color: #65499c;\n  text-decoration: underline;\n  cursor: pointer;\n}\n#home[data-v-6707e3d4] {\n  font-size: 20px;\n}\n@media (max-width: 550px) {\n#home[data-v-6707e3d4] {\n      text-align: center;\n}\n#home img[data-v-6707e3d4] {\n        /*width:100%;*/\n}\n}\n#home-intro[data-v-6707e3d4] {\n  padding: 0 10vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  min-height: 400px;\n  text-align: right;\n}\n#home-intro div[data-v-6707e3d4] {\n    padding: 20px;\n}\n#home-intro img[data-v-6707e3d4] {\n    display: block;\n    max-width: 550px;\n    max-height: 367px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    margin: 0 auto;\n    width: 100%;\n    height: auto;\n    -webkit-box-shadow: 6px 6px 41px -11px black;\n            box-shadow: 6px 6px 41px -11px black;\n}\n@media (max-width: 850px) {\n#home-intro[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      text-align: center;\n      padding: 0 5vw;\n}\n}\n.fade-in[data-v-6707e3d4] {\n  opacity: 0;\n}\n.from-top[data-v-6707e3d4] {\n  color: #ffffff00;\n  top: -200px;\n  position: relative;\n}\n.from-right[data-v-6707e3d4] {\n  color: #ffffff00;\n  right: -100vw;\n  position: relative;\n}\n.from-left[data-v-6707e3d4] {\n  color: #ffffff00;\n  left: -200px;\n  position: relative;\n}\n.animate[data-v-6707e3d4] {\n  -webkit-transition: all 1s ease;\n  transition: all 1s ease;\n}\n#landing[data-v-6707e3d4] {\n  width: 100%;\n  background: #ffffff70;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 30px;\n  min-height: 400px;\n}\n#landing #image[data-v-6707e3d4] {\n    margin-right: 5px;\n    width: 500px;\n    background: aliceblue;\n    border-right: 1px solid #65499c;\n    padding-right: 10px;\n    z-index: 1;\n}\n#landing #text[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    margin-left: 5px;\n}\n#landing #text span[data-v-6707e3d4] {\n      color: #65499c;\n      font-size: 65px;\n      font-variant-caps: petite-caps;\n      position: relative;\n}\n#team[data-v-6707e3d4] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n#team div[data-v-6707e3d4] {\n    /*max-width: 300px;*/\n}\n#team .profile[data-v-6707e3d4] {\n    max-width: 200px;\n    /*max-height: 200px;*/\n    /*width: 100%;*/\n    height: 250px;\n    position: relative;\n    z-index: 0;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -webkit-box-shadow: 6px 6px 41px -11px black;\n            box-shadow: 6px 6px 41px -11px black;\n}\n#team .name[data-v-6707e3d4] {\n    text-decoration: underline;\n    z-index: 1;\n    /*text-align: right;*/\n    font-size: 30px;\n    /*!*text-shadow: 2px 2px 12px black;*!*/\n    position: relative;\n}\n#team .team-card[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    max-width: 500px;\n}\n#team .team-card h3[data-v-6707e3d4] {\n      font-size: 40px;\n}\n#team .team-card .content[data-v-6707e3d4] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: horizontal;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: row;\n              flex-direction: row;\n      text-align: left;\n      font-size: 19px;\n}\n#team .team-card .content div[data-v-6707e3d4] {\n        padding: 10px;\n}\n@media (max-width: 550px) {\n#team .team-card .content[data-v-6707e3d4] {\n          -webkit-box-orient: vertical;\n          -webkit-box-direction: normal;\n              -ms-flex-direction: column;\n                  flex-direction: column;\n          text-align: center;\n}\n}\n@media (max-width: 850px) {\n#team[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n}\n}\n", ""]);
+exports.push([module.i, "\n#home[data-v-6707e3d4] {\n  font-size: 20px;\n}\n@media (max-width: 550px) {\n#home[data-v-6707e3d4] {\n      text-align: center;\n}\n#home img[data-v-6707e3d4] {\n        /*width:100%;*/\n}\n}\n#home-intro[data-v-6707e3d4] {\n  /*-webkit-transition: background-position-x 1000ms swing;*/\n  /*-moz-transition: background-position-x 1000ms swing;*/\n  /*-ms-transition: background-position-x 1000ms swing;*/\n  /*-o-transition: background-position-x 1000ms swing;*/\n  /*transition: background-position-x 1000ms swing;*/\n  background: url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center fixed;\n  background-position-y: 61%;\n  background-position-x: 45%;\n  padding: 20px 10vw;\n  min-height: 771px;\n  max-height: 800px;\n  overflow: hidden;\n  text-align: right;\n}\n#home-intro .intro[data-v-6707e3d4] {\n    right: -100px;\n    text-align: left;\n    padding: 27px;\n    background-color: unset;\n    position: absolute;\n    width: 45vw;\n    z-index: 0;\n}\n@media (max-width: 850px) {\n#home-intro .intro[data-v-6707e3d4] {\n        /*left: 0;*/\n        width: 100vw;\n        text-align: center;\n}\n}\n@media (max-width: 850px) {\n#home-intro[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      text-align: center;\n      padding: 0 5vw;\n}\n}\n#landing[data-v-6707e3d4] {\n  width: 100%;\n  background: #ffffff70;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 30px;\n  min-height: 400px;\n}\n#landing #image[data-v-6707e3d4] {\n    margin-right: 5px;\n    width: 500px;\n    background: aliceblue;\n    border-right: 1px solid #4b636e;\n    padding-right: 10px;\n    z-index: 1;\n}\n#landing #text[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    margin-left: 5px;\n}\n#landing #text span[data-v-6707e3d4] {\n      color: #4b636e;\n      font-size: 65px;\n      font-variant-caps: petite-caps;\n      position: relative;\n}\n#projects[data-v-6707e3d4] {\n  color: black;\n  /*background-image: $projects_page_image;*/\n  /*background-size: cover;*/\n  /*background-blend-mode: saturation;*/\n}\n#team[data-v-6707e3d4] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n#team div[data-v-6707e3d4] {\n    /*max-width: 300px;*/\n}\n#team .profile[data-v-6707e3d4] {\n    max-width: 200px;\n    /*max-height: 200px;*/\n    /*width: 100%;*/\n    height: 250px;\n    position: relative;\n    z-index: 0;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -webkit-box-shadow: 6px 6px 41px -11px black;\n            box-shadow: 6px 6px 41px -11px black;\n}\n#team .name[data-v-6707e3d4] {\n    text-decoration: underline;\n    z-index: 1;\n    /*text-align: right;*/\n    font-size: 30px;\n    /*!*text-shadow: 2px 2px 12px black;*!*/\n    position: relative;\n}\n#team .team-card[data-v-6707e3d4] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    max-width: 500px;\n}\n#team .team-card h3[data-v-6707e3d4] {\n      font-size: 40px;\n}\n#team .team-card .content[data-v-6707e3d4] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: horizontal;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: row;\n              flex-direction: row;\n      text-align: left;\n      font-size: 25px;\n      font-weight: 600;\n}\n#team .team-card .content div[data-v-6707e3d4] {\n        padding: 10px;\n}\n@media (max-width: 550px) {\n#team .team-card .content[data-v-6707e3d4] {\n          -webkit-box-orient: vertical;\n          -webkit-box-direction: normal;\n              -ms-flex-direction: column;\n                  flex-direction: column;\n          text-align: center;\n}\n}\n@media (max-width: 850px) {\n#team[data-v-6707e3d4] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n}\n}\n#team-page[data-v-6707e3d4] {\n  background: url(\"https://image.ibb.co/kbdZYK/B2-Desk.jpg\") repeat-y center center fixed;\n  background-size: cover;\n}\n", ""]);
 
 // exports
 
@@ -83496,11 +83496,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	components: {
-		'logo': __webpack_require__(12)
+		'logo': __webpack_require__(12),
+		'hyperlink': __webpack_require__(419)
 	},
 	name: "Home",
 	data: function data() {
@@ -83519,6 +83533,35 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 	beforeMount: function beforeMount() {},
 	mounted: function mounted() {
+		var home_intro = $("#home-intro");
+		var team_page = $("#team-page");
+		var intro_description = $("#intro-description");
+		var projects_page = $("#projects");
+
+		window.onscroll = function (e) {
+
+			var top = $(window).scrollTop();
+			var pos_x = (top + 1000) / 25;
+
+			$(home_intro).css({
+				"background-position-x": pos_x + '%'
+			});
+
+			// Team
+			var pos_y = top * .5 - 1000;
+			$(team_page).css({
+				'background-position-y': pos_y + 'px'
+			});
+
+			// intro description
+			var position = top + 75;
+			var projects_from_top = $(projects_page).console.log(projects_from_top);
+
+			$(intro_description).css({
+				top: position + 'px'
+			});
+		};
+
 		setTimeout(function () {
 			$(".fade-in").css({
 				opacity: "inherit"
@@ -83539,7 +83582,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				color: 'inherit',
 				opacity: 'initial'
 			});
+
+			$(".intro").css({
+				'background-color': "rgba(72, 72, 72, 0.84)"
+			});
 		}, 1500);
+
+		setTimeout(function () {
+			$(intro_description).css({
+				'-webkit-transition': 'none !important',
+				'-moz-transition': 'none !important',
+				'-o-transition': 'none !important',
+				'transition': 'none !important'
+			});
+		}, 2000);
 	},
 	beforeUpdate: function beforeUpdate() {},
 	updated: function updated() {},
@@ -83619,7 +83675,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	props: {
-		size: 'medium'
+		size: 'medium',
+		'background-color': {
+			default: 'inherit'
+		}
 	},
 	components: {},
 	watch: {}
@@ -83635,172 +83694,186 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("logo", { staticStyle: { top: "-69px" } }),
+  return _c("div", [
+    _c("div", { attrs: { id: "home" } }, [
+      _vm._m(0),
       _vm._v(" "),
-      _c("div", { attrs: { id: "home" } }, [
-        _c("div", { attrs: { id: "home-intro" } }, [
-          _vm._m(0),
+      _c(
+        "div",
+        {
+          staticClass: "flex-center py-5 bg-secondary",
+          staticStyle: { display: "flex", "flex-direction": "column" },
+          attrs: { id: "projects" }
+        },
+        [
+          _c("h1", { staticClass: "underline" }, [_vm._v("Projects")]),
           _vm._v(" "),
-          _vm.image_loaded
-            ? _c("img", {
-                staticClass: "animate fade-in from-right",
-                attrs: {
-                  src:
-                    "https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-                  alt: "me"
-                }
-              })
-            : _vm._e()
-        ]),
-        _vm._v(" "),
-        _c("hr"),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "flex-center py-5",
-            staticStyle: { display: "flex", "flex-direction": "column" }
-          },
-          [
-            _c("h1", { staticClass: "underline" }, [_vm._v("Projects")]),
-            _vm._v(" "),
-            _c("p", [_vm._v("Currently accepting projects!")]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "pt-5", staticStyle: { "text-align": "center" } },
-              [
-                _c(
-                  "span",
-                  {
-                    staticClass: "link",
-                    on: {
-                      click: function($event) {
-                        _vm.$store.commit("toggleContactForm")
-                      }
+          _c("p", [_vm._v("Currently accepting projects!")]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "pt-5", staticStyle: { "text-align": "center" } },
+            [
+              _c(
+                "span",
+                {
+                  staticClass: "link",
+                  on: {
+                    click: function($event) {
+                      _vm.$store.commit("toggleContactForm")
                     }
-                  },
-                  [_vm._v("Contact Us")]
-                ),
-                _vm._v(
-                  "\n                if you are interested in creating something amazing.\n            "
-                )
-              ]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("hr"),
-        _vm._v(" "),
-        _vm._m(1)
-      ])
-    ],
-    1
-  )
+                  }
+                },
+                [_vm._v("Contact Us")]
+              ),
+              _vm._v(
+                "\n                if you are interested in creating something amazing.\n            "
+              )
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "flex-center py-5",
+          staticStyle: { display: "flex", "flex-direction": "column" },
+          attrs: { id: "team-page" }
+        },
+        [
+          _c("div", { staticClass: "text-center", attrs: { id: "team" } }, [
+            _c("div", { staticClass: "team-card" }, [
+              _c("h3", { staticClass: "border-bottom" }, [
+                _vm._v("Lead Developer")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "content" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("div", [
+                  _c("span", { staticClass: "name" }, [_vm._v("Ethan")]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    [
+                      _vm._v(
+                        "\n                                Mostly-self-taught Web Developer specializing in Single-Page Web\n                                Applications using\n                                "
+                      ),
+                      _c(
+                        "hyperlink",
+                        { attrs: { to: "https://laravel.com" } },
+                        [_vm._v("Laravel")]
+                      ),
+                      _vm._v(
+                        "\n                                and\n                                "
+                      ),
+                      _c("hyperlink", { attrs: { to: "https://vuejs.org" } }, [
+                        _vm._v("Vue")
+                      ]),
+                      _vm._v(
+                        "\n                                .\n                            "
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(2)
+          ]),
+          _vm._v(" "),
+          _c("p")
+        ]
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "animate from-left" }, [
-      _c("h1", [_vm._v("Lets create something!")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                    BraceYourself Solutions is a web development and design company.\n                    We specialize in creating web applications that help improve\n                    every-day business operations.\n                "
-        )
-      ])
+    return _c(
+      "div",
+      { staticClass: "bg-secondary text-shadow", attrs: { id: "home-intro" } },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "animate from-right intro",
+            attrs: { id: "intro-description" }
+          },
+          [
+            _c("h1", [_vm._v("Lets create something!")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                    BraceYourself Solutions is a web development and design company.\n                    We specialize in creating web applications that help improve\n                    every-day business operations.\n                "
+              )
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "image-container" }, [
+          _c("img", { attrs: { src: "", alt: "" } })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("img", {
+        staticClass: "profile",
+        attrs: { src: __webpack_require__(417), alt: "Ethan" }
+      })
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "flex-center py-5",
-        staticStyle: { display: "flex", "flex-direction": "column" }
-      },
-      [
-        _c("div", { staticClass: "text-center", attrs: { id: "team" } }, [
-          _c("div", { staticClass: "team-card" }, [
-            _c("h3", { staticClass: "border-bottom" }, [
-              _vm._v("Lead Developer")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "content" }, [
-              _c("div", [
-                _c("img", {
-                  staticClass: "profile",
-                  attrs: {
-                    src:
-                      "http://ethan.braceyourself.solutions/images/profile.jpg",
-                    alt: "Ethan"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _c("span", { staticClass: "name" }, [_vm._v("Ethan")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "Mostly-self-taught Web Developer specializing in Single-Page Web Applications. "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "team-card" }, [
-            _c("h3", { staticClass: "border-bottom" }, [
-              _vm._v("Lead Designer")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "content" }, [
-              _c("div", [
-                _c("img", {
-                  staticClass: "profile",
-                  attrs: {
-                    src:
-                      "https://static.wixstatic.com/media/082b7e_f186f74c51714cfa9785278f66319616~mv2_d_3585_3179_s_4_2.jpg/v1/crop/x_510,y_0,w_2566,h_3179/fill/w_339,h_420,al_c,q_80,usm_0.66_1.00_0.01/IMG_7490.webp",
-                    alt: "Alex"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _c("div", { staticClass: "name" }, [_vm._v("Alex")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "Alex owns and operates a Design & Photography company. Check it out!"
-                  )
-                ]),
-                _vm._v(" "),
-                _c("a", { attrs: { href: "https://www.brightlyalex.com/" } }, [
-                  _c("img", {
-                    staticStyle: { "max-width": "200px" },
-                    attrs: {
-                      src:
-                        "https://static.wixstatic.com/media/082b7e_f6c887e1579f4082b627f54bf5cb7659~mv2.png/v1/crop/x_0,y_100,w_1126,h_462/fill/w_558,h_225,al_c,q_80,usm_0.66_1.00_0.01/BrightlyAlex_Logo-02.webp",
-                      alt: "brightly alex"
-                    }
-                  })
-                ])
-              ])
-            ])
-          ])
+    return _c("div", { staticClass: "team-card" }, [
+      _c("h3", { staticClass: "border-bottom" }, [_vm._v("Lead Designer")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "content" }, [
+        _c("div", [
+          _c("img", {
+            staticClass: "profile",
+            attrs: {
+              src:
+                "https://static.wixstatic.com/media/082b7e_f186f74c51714cfa9785278f66319616~mv2_d_3585_3179_s_4_2.jpg/v1/crop/x_510,y_0,w_2566,h_3179/fill/w_339,h_420,al_c,q_80,usm_0.66_1.00_0.01/IMG_7490.webp",
+              alt: "Alex"
+            }
+          })
         ]),
         _vm._v(" "),
-        _c("p")
-      ]
-    )
+        _c("div", [
+          _c("div", { staticClass: "name" }, [_vm._v("Alex")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Alex owns and operates a Design & Photography company. Check it out!"
+            )
+          ]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "https://www.brightlyalex.com/" } }, [
+            _c("img", {
+              staticStyle: { "max-width": "200px" },
+              attrs: {
+                src:
+                  "https://static.wixstatic.com/media/082b7e_f6c887e1579f4082b627f54bf5cb7659~mv2.png/v1/crop/x_0,y_100,w_1126,h_462/fill/w_558,h_225,al_c,q_80,usm_0.66_1.00_0.01/BrightlyAlex_Logo-02.webp",
+                alt: "brightly alex"
+              }
+            })
+          ])
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -83847,7 +83920,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.flex-center[data-v-6a19b4a0] {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.flex-center p[data-v-6a19b4a0] {\n    text-align: center;\n}\n.color-primary[data-v-6a19b4a0], #introduction[data-v-6a19b4a0], #problems[data-v-6a19b4a0] {\n  background-color: #2196f3;\n  color: ghostwhite;\n}\n.color-secondary[data-v-6a19b4a0], #title-page[data-v-6a19b4a0], #project-goals[data-v-6a19b4a0], #potential-new-features[data-v-6a19b4a0] {\n  background-color: #757575;\n  color: ghostwhite;\n}\n.color-secondary a[data-v-6a19b4a0], #title-page a[data-v-6a19b4a0], #project-goals a[data-v-6a19b4a0], #potential-new-features a[data-v-6a19b4a0] {\n    color: #81d5ff;\n}\n.page[data-v-6a19b4a0] {\n  font-size: 18px;\n  padding: 50px;\n}\n.page strong[data-v-6a19b4a0] {\n    font-size: 25px;\n}\n.page h1[data-v-6a19b4a0] {\n    text-decoration: underline;\n    text-align: center;\n}\n.page .col[data-v-6a19b4a0] {\n    padding: 10px;\n    border-bottom: 1px solid black;\n}\n.page .row h1[data-v-6a19b4a0], .page .row h2[data-v-6a19b4a0], .page .row h3[data-v-6a19b4a0], .page .row h4[data-v-6a19b4a0], .page .row h5[data-v-6a19b4a0], .page .row h6[data-v-6a19b4a0] {\n    margin: 0;\n    text-align: center;\n    vertical-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(1) {\n    background-color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(2) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(3) {\n    background-color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(4) {\n    background-color: #a7c0cd;\n    color: #4b636e;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(5) {\n    background-color: #4b636e;\n    text-align: center;\n}\n@media (max-width: 764px) {\n.page[data-v-6a19b4a0] {\n      padding: 15px;\n}\n.page .row[data-v-6a19b4a0] {\n        min-width: 1000px;\n}\n.page .table-overflow[data-v-6a19b4a0] {\n        overflow-x: scroll;\n        padding-left: 11px;\n        -webkit-box-shadow: -2px 0 71px -5px black;\n                box-shadow: -2px 0 71px -5px black;\n}\n}\n#title-page[data-v-6a19b4a0] {\n  padding: 50px 0;\n  min-height: auto;\n}\n#introduction[data-v-6a19b4a0] {\n  min-height: auto;\n}\n#introduction p[data-v-6a19b4a0] {\n    max-width: 50%;\n}\n#signatures[data-v-6a19b4a0] {\n  padding: 50px 0;\n}\n#signatures .col[data-v-6a19b4a0] {\n    width: 42vw;\n    text-align: center;\n    font-size: 28px;\n}\n#signatures .col h1[data-v-6a19b4a0] {\n      text-decoration: underline;\n}\n#signatures .col .sign-here[data-v-6a19b4a0] {\n      text-align: left;\n      border-bottom: black 1px solid;\n      padding-top: 49px;\n      width: 100%;\n      display: block;\n}\n#signatures .col .sign-here i[data-v-6a19b4a0] {\n        position: relative;\n        top: 40px;\n}\n#signatures img[data-v-6a19b4a0] {\n    position: absolute;\n    top: 22px;\n    left: 22px;\n    width: 200px;\n}\n#proposal[data-v-6a19b4a0] {\n  overflow: hidden;\n}\n", ""]);
+exports.push([module.i, "\n.flex-center[data-v-6a19b4a0] {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.flex-center p[data-v-6a19b4a0] {\n    text-align: center;\n}\n.color-primary[data-v-6a19b4a0], #introduction[data-v-6a19b4a0], #problems[data-v-6a19b4a0] {\n  background-color: #2196f3;\n  color: ghostwhite;\n}\n.color-secondary[data-v-6a19b4a0], #title-page[data-v-6a19b4a0], #project-goals[data-v-6a19b4a0], #potential-new-features[data-v-6a19b4a0] {\n  background-color: #757575;\n  color: ghostwhite;\n}\n.color-secondary a[data-v-6a19b4a0], #title-page a[data-v-6a19b4a0], #project-goals a[data-v-6a19b4a0], #potential-new-features a[data-v-6a19b4a0] {\n    color: #81d5ff;\n}\n.page[data-v-6a19b4a0] {\n  font-size: 18px;\n  padding: 50px;\n}\n.page strong[data-v-6a19b4a0] {\n    font-size: 25px;\n}\n.page h1[data-v-6a19b4a0] {\n    text-decoration: underline;\n    text-align: center;\n}\n.page .col[data-v-6a19b4a0] {\n    padding: 10px;\n    border-bottom: 1px solid black;\n}\n.page .row h1[data-v-6a19b4a0], .page .row h2[data-v-6a19b4a0], .page .row h3[data-v-6a19b4a0], .page .row h4[data-v-6a19b4a0], .page .row h5[data-v-6a19b4a0], .page .row h6[data-v-6a19b4a0] {\n    margin: 0;\n    text-align: center;\n    vertical-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(1) {\n    background-color: #b53d00;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(2) {\n    background-color: #ff9d3f;\n    color: #b53d00;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(3) {\n    background-color: #b53d00;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(4) {\n    background-color: #ff9d3f;\n    color: #b53d00;\n    text-align: center;\n}\n.page .row .col[data-v-6a19b4a0]:nth-child(5) {\n    background-color: #b53d00;\n    text-align: center;\n}\n@media (max-width: 764px) {\n.page[data-v-6a19b4a0] {\n      padding: 15px;\n}\n.page .row[data-v-6a19b4a0] {\n        min-width: 1000px;\n}\n.page .table-overflow[data-v-6a19b4a0] {\n        overflow-x: scroll;\n        padding-left: 11px;\n        -webkit-box-shadow: -2px 0 71px -5px black;\n                box-shadow: -2px 0 71px -5px black;\n}\n}\n#title-page[data-v-6a19b4a0] {\n  padding: 50px 0;\n  min-height: auto;\n}\n#introduction[data-v-6a19b4a0] {\n  min-height: auto;\n}\n#introduction p[data-v-6a19b4a0] {\n    max-width: 50%;\n}\n#signatures[data-v-6a19b4a0] {\n  padding: 50px 0;\n}\n#signatures .col[data-v-6a19b4a0] {\n    width: 42vw;\n    text-align: center;\n    font-size: 28px;\n}\n#signatures .col h1[data-v-6a19b4a0] {\n      text-decoration: underline;\n}\n#signatures .col .sign-here[data-v-6a19b4a0] {\n      text-align: left;\n      border-bottom: black 1px solid;\n      padding-top: 49px;\n      width: 100%;\n      display: block;\n}\n#signatures .col .sign-here i[data-v-6a19b4a0] {\n        position: relative;\n        top: 40px;\n}\n#signatures img[data-v-6a19b4a0] {\n    position: absolute;\n    top: 22px;\n    left: 22px;\n    width: 200px;\n}\n#proposal[data-v-6a19b4a0] {\n  overflow: hidden;\n}\n", ""]);
 
 // exports
 
@@ -103915,6 +103988,8 @@ var map = {
 	"./Main.vue": 41,
 	"./partials/Footer": 43,
 	"./partials/Footer.vue": 43,
+	"./partials/Hyperlink": 419,
+	"./partials/Hyperlink.vue": 419,
 	"./partials/Logo": 12,
 	"./partials/Logo.vue": 12,
 	"./partials/Nav": 42,
@@ -104295,7 +104370,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.navbar[data-v-95a591c6] {\n  padding: 0;\n}\nnav[data-v-95a591c6] {\n  height: 55px;\n  top: 0;\n  z-index: 10;\n  padding: 0;\n  position: fixed;\n  width: 100%;\n}\nnav #nav-color[data-v-95a591c6] {\n    background: #78909c;\n    width: 100%;\n    height: 30px;\n}\nnav #nav-links[data-v-95a591c6] {\n    padding: 5px 18px;\n    position: relative;\n    top: -30px;\n    background: #ffffff9e;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    width: auto;\n    margin: 0 auto;\n}\nnav #logo[data-v-95a591c6] {\n    position: absolute;\n}\na[data-v-95a591c6] {\n  -webkit-transition: 0.3s;\n  /* Safari */\n  transition: 0.3s;\n  border-radius: 0px;\n  position: relative;\n  top: -11px;\n}\na[data-v-95a591c6]:hover {\n    top: 0;\n}\n", ""]);
+exports.push([module.i, "\n.navbar[data-v-95a591c6] {\n  padding: 0;\n  width: 100%;\n  background: #ef6c00;\n  height: 63px;\n  position: fixed;\n  top: 0;\n  z-index: 10;\n  -webkit-box-shadow: 0 1px 51px -6px black;\n          box-shadow: 0 1px 51px -6px black;\n}\nnav[data-v-95a591c6] {\n  height: 55px;\n  top: 0;\n  z-index: 10;\n  padding: 0;\n  position: fixed;\n  width: 100%;\n}\nnav #nav-color[data-v-95a591c6] {\n    background: #ef6c00;\n    width: 100%;\n    height: 30px;\n}\nnav #nav-links[data-v-95a591c6] {\n    padding: 5px 18px;\n    position: relative;\n    top: -30px;\n    background: #ffffff9e;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    width: auto;\n    margin: 0 auto;\n}\nnav #logo[data-v-95a591c6] {\n    position: absolute;\n}\na[data-v-95a591c6] {\n  -webkit-transition: 0.3s;\n  /* Safari */\n  transition: 0.3s;\n  border-radius: 0px;\n  position: relative;\n  top: -11px;\n}\na[data-v-95a591c6]:hover {\n    top: 0;\n}\n", ""]);
 
 // exports
 
@@ -104306,6 +104381,7 @@ exports.push([module.i, "\n.navbar[data-v-95a591c6] {\n  padding: 0;\n}\nnav[dat
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -104354,7 +104430,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	props: {},
-	components: {},
+	components: {
+		'logo': __webpack_require__(12)
+	},
 	watch: {}
 
 });
@@ -104367,30 +104445,12 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("nav", { staticClass: "navbar navbar-default navbar-static-top" }, [
-    _c("div", { attrs: { id: "nav-color" } }),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "nav-links" } }, [
-      _c(
-        "div",
-        { staticClass: "navbar-header " },
-        [
-          _c(
-            "router-link",
-            { staticClass: "btn btn-primary", attrs: { to: "/" } },
-            [_vm._v("about")]
-          ),
-          _vm._v(" "),
-          _c(
-            "router-link",
-            { staticClass: "btn btn-primary", attrs: { to: "/contact" } },
-            [_vm._v("contact")]
-          )
-        ],
-        1
-      )
-    ])
-  ])
+  return _c(
+    "div",
+    { staticClass: "navbar navbar-default navbar-static-top" },
+    [_c("logo", { staticStyle: { top: "-38px" } })],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -104437,7 +104497,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "/*@import \"~material-design-icons\";*/\n/*position: fixed;*/\n/*bottom: 0px;*/\n/*display: flex;*/\n/*flex-direction: column;*/\na[data-v-96898ade]:hover {\n  cursor: pointer !important;\n  text-decoration: underline !important;\n}\n#footer[data-v-96898ade] {\n  /*position: absolute;*/\n  width: 100%;\n  height: auto;\n  padding: 15px;\n  background: #65499c;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n#footer .column a[data-v-96898ade] {\n    display: block;\n    color: white;\n}\n#footer .column.left[data-v-96898ade] {\n    text-align: right;\n}\n#footer .column.right[data-v-96898ade] {\n    text-align: left;\n}\n#footer .vr[data-v-96898ade] {\n    border: 1px solid #c7a4ff;\n    width: 1px;\n    margin: 5px;\n    padding: 15px 0;\n}\n#bottom[data-v-96898ade] {\n  background-color: black;\n}\n#contact-form[data-v-96898ade] {\n  z-index: 2;\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  /*height: auto;*/\n  background: #4b636e;\n  background: #4b636e;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n      -ms-flex-pack: space-evenly;\n          justify-content: space-evenly;\n  color: #c7a4ff;\n  padding: 30px;\n}\n#contact-form div[data-v-96898ade] {\n    min-width: 350px;\n}\n#contact-form i[data-v-96898ade] {\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    font-size: 41px;\n}\n#contact-form input[data-v-96898ade], #contact-form textarea[data-v-96898ade] {\n    border: none;\n    border-bottom: 1px solid white;\n    border-radius: 0;\n    background-color: inherit;\n    color: white;\n}\n#contact-form button[data-v-96898ade] {\n    border-radius: 0;\n}\n#contact-form #contact-form-input[data-v-96898ade] {\n    width: 50vw;\n    display: inherit;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding-left: 55px;\n}\n#contact-form #contact-form-input label[data-v-96898ade] {\n      width: 100%;\n}\n@media (max-width: 850px) {\n#contact-form #contact-form-input[data-v-96898ade] {\n        width: 75vw;\n}\n}\n#contact-form #contact-form-text[data-v-96898ade] {\n    width: 50vw;\n    display: inherit;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    text-align: right;\n    padding-right: 55px;\n    border-right: 1px solid aliceblue;\n}\n@media (max-width: 600px) {\n#contact-form[data-v-96898ade] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n}\n}\n", ""]);
+exports.push([module.i, "/*@import \"~material-design-icons\";*/\n/*position: fixed;*/\n/*bottom: 0px;*/\n/*display: flex;*/\n/*flex-direction: column;*/\na[data-v-96898ade]:hover {\n  cursor: pointer !important;\n  text-decoration: underline !important;\n}\n#footer[data-v-96898ade] {\n  /*position: absolute;*/\n  width: 100%;\n  height: auto;\n  padding: 15px;\n  background: #4b636e;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n#footer .column a[data-v-96898ade] {\n    display: block;\n    color: white;\n}\n#footer .column.left[data-v-96898ade] {\n    text-align: right;\n}\n#footer .column.right[data-v-96898ade] {\n    text-align: left;\n}\n#footer .vr[data-v-96898ade] {\n    border: 1px solid #a7c0cd;\n    width: 1px;\n    margin: 5px;\n    padding: 15px 0;\n}\n#bottom[data-v-96898ade] {\n  background-color: black;\n}\n#contact-form[data-v-96898ade] {\n  z-index: 2;\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  /*height: auto;*/\n  background: #b53d00;\n  background: #4b636e;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n      -ms-flex-pack: space-evenly;\n          justify-content: space-evenly;\n  color: #a7c0cd;\n  padding: 30px;\n}\n#contact-form div[data-v-96898ade] {\n    min-width: 350px;\n}\n#contact-form i[data-v-96898ade] {\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    font-size: 41px;\n}\n#contact-form input[data-v-96898ade], #contact-form textarea[data-v-96898ade] {\n    border: none;\n    border-bottom: 1px solid white;\n    border-radius: 0;\n    background-color: inherit;\n    color: white;\n}\n#contact-form button[data-v-96898ade] {\n    border-radius: 0;\n}\n#contact-form #contact-form-input[data-v-96898ade] {\n    width: 50vw;\n    display: inherit;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding-left: 55px;\n}\n#contact-form #contact-form-input label[data-v-96898ade] {\n      width: 100%;\n}\n@media (max-width: 850px) {\n#contact-form #contact-form-input[data-v-96898ade] {\n        width: 75vw;\n}\n}\n#contact-form #contact-form-text[data-v-96898ade] {\n    width: 50vw;\n    display: inherit;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    text-align: right;\n    padding-right: 55px;\n    border-right: 1px solid aliceblue;\n}\n@media (max-width: 600px) {\n#contact-form[data-v-96898ade] {\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n}\n}\n", ""]);
 
 // exports
 
@@ -104699,6 +104759,7 @@ var render = function() {
           _c(
             "a",
             {
+              staticClass: "no-select",
               on: {
                 click: function($event) {
                   _vm.$store.commit("toggleContactForm")
@@ -104898,6 +104959,8 @@ var render = function() {
   return _c(
     "div",
     [
+      _c("navbar"),
+      _vm._v(" "),
       _c("router-view", { attrs: { id: "router-view" } }),
       _vm._v(" "),
       _c("bottom")
@@ -104963,7 +105026,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n#logo {\n    background-color: black;\n    width: 0;\n    position: relative;\n    margin: 0 auto;\n    left:-26px;\n}\n#logo1 {\n    font-size: 40px;\n    position: absolute;\n    left: -101px;\n}\n#logo2 {\n    font-size: 40px;\n    position: absolute;\n}\n#logo3 {\n    color:#ffffff00;\n    font-size: 20px;\n    font-variant-caps: all-petite-caps;\n    position: absolute;\n    top: 34px;\n    left: -99px;\n\n    -webkit-transition: left 1s, color 1s;\n    transition: left 1s, color 1s;\n}\n#logo-bar {\n    height: 1px;\n    width: 0;\n    border-bottom: solid 2px black;\n    position: absolute;\n    left: -98px;\n    top: 45px;\n\n    -webkit-transition: left 1s, width 1s;\n    transition: left 1s, width 1s;\n}\n", ""]);
+exports.push([module.i, "\n#logo {\n    background-color: black;\n    width: 0;\n    position: relative;\n    margin: 0 auto;\n    left:-26px;\n    color:black;\n}\n#logo1 {\n    font-size: 40px;\n    position: absolute;\n    left: -101px;\n}\n#logo2 {\n    font-size: 40px;\n    position: absolute;\n}\n#logo3 {\n    color:#ffffff00;\n    font-size: 20px;\n    font-variant-caps: all-petite-caps;\n    position: absolute;\n    top: 34px;\n    left: -99px;\n\n    -webkit-transition: left 1s, color 1s;\n    transition: left 1s, color 1s;\n}\n#logo-bar {\n    height: 1px;\n    width: 0;\n    border-bottom: solid 2px black;\n    position: absolute;\n    left: -98px;\n    top: 45px;\n\n    -webkit-transition: left 1s, width 1s;\n    transition: left 1s, width 1s;\n}\n", ""]);
 
 // exports
 
@@ -105002,6 +105065,180 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-21adbbbe", module.exports)
+  }
+}
+
+/***/ }),
+/* 416 */,
+/* 417 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Brace.jpg?7ed72a82d282738f7caac1dca55bd571";
+
+/***/ }),
+/* 418 */,
+/* 419 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(420)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(422)
+/* template */
+var __vue_template__ = __webpack_require__(423)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-dced4940"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/partials/Hyperlink.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-dced4940", Component.options)
+  } else {
+    hotAPI.reload("data-v-dced4940", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 420 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(421);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("771cd162", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dced4940\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Hyperlink.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dced4940\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Hyperlink.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 421 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 422 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	name: "Hyperlink",
+	data: function data() {
+		return {
+			//
+		};
+	},
+	beforeCreate: function beforeCreate() {},
+	created: function created() {
+		//
+	},
+	beforeMount: function beforeMount() {},
+	mounted: function mounted() {
+		//
+	},
+	beforeUpdate: function beforeUpdate() {},
+	updated: function updated() {},
+	activated: function activated() {},
+	deactivated: function deactivated() {},
+	beforeDestroy: function beforeDestroy() {},
+	destroyed: function destroyed() {},
+
+	methods: {
+		//
+	},
+	computed: {
+		//
+	},
+
+	props: {
+		to: {
+			default: '/'
+		}
+	},
+	components: {},
+	watch: {}
+
+});
+
+/***/ }),
+/* 423 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "a",
+    { attrs: { href: _vm.to } },
+    [_vm._t("default", [_vm._v(_vm._s(_vm.to))])],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-dced4940", module.exports)
   }
 }
 

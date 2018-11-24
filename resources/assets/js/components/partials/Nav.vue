@@ -1,16 +1,17 @@
 <template>
-    <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar navbar-default navbar-static-top">
 
+        <logo style="top: -38px;"/>
 
-        <div id="nav-color"></div>
-        <div id="nav-links">
-            <div class="navbar-header ">
-                <router-link to="/" class="btn btn-primary">about</router-link>
-                <router-link to="/contact" class="btn btn-primary">contact</router-link>
+        <!--<div id="nav-color"></div>-->
+        <!--<div id="nav-links">-->
+        <!--<div class="navbar-header ">-->
+        <!--<router-link to="/" class="btn btn-primary">about</router-link>-->
+        <!--<router-link to="/contact" class="btn btn-primary">contact</router-link>-->
 
-            </div>
-        </div>
-    </nav>
+        <!--</div>-->
+        <!--</div>-->
+    </div>
 </template>
 
 <script>
@@ -47,7 +48,9 @@
 		},
 
 		props: {},
-		components: {},
+		components: {
+			'logo': require('./Logo'),
+		},
 		watch: {},
 
 	};
@@ -63,6 +66,13 @@
 
     .navbar {
         padding: 0;
+        width: 100%;
+        background: #ef6c00;
+        height: 63px;
+        position: fixed;
+        top: 0;
+        z-index:10;
+        box-shadow: 0 1px 51px -6px black;
     }
 
     nav {
@@ -86,11 +96,11 @@
             top: -$nav-height;
             background: #ffffff9e;
             justify-content: center;
-            width:auto;
-            margin:0 auto;
+            width: auto;
+            margin: 0 auto;
         }
 
-        #logo{
+        #logo {
             position: absolute;
         }
 
@@ -109,6 +119,6 @@
             top: 0;
         }
     }
-    
+
 
 </style>

@@ -132,7 +132,8 @@ git push
 
 
 @task('migrate')
-	php artisan migrate
+	cd {{ $var_www_releases_APP_NAME }}/"{{ $release }}";
+	php artisan migrate --force
 @endtask
 
 

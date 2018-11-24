@@ -1,21 +1,23 @@
+// Colors
+$color-primary:#ef6c00;
+$color-primary-dark:#b53d00;
+$color-primary-light:#ff9d3f;
+
+$color-secondary:#78909c;
+$color-secondary-dark:#4b636e;
+$color-secondary-light:#a7c0cd;
+
+
 
 // Body
-$body-bg: #a7c0cd;
+$body-bg: $color-primary;
+$body-text: black;
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
 $list-group-border-color: $laravel-border-color;
 
 $card-border-color: $laravel-border-color;
-
-$color-primary:#78909c;
-$color-primary-dark:#4b636e;
-$color-primary-light:#a7c0cd;
-
-$color-secondary:#9575cd;
-$color-secondary-dark:#65499c;
-$color-secondary-light:#c7a4ff;
-
 
 // Brands
 $primary: $color-primary;
@@ -45,3 +47,14 @@ $medium-screen:850px;
 $small-screen:550px;
 // view heights
 //$footer-min
+
+//:export {
+//  colorPrimary:$color-primary;
+//  colorPrimaryDark:$color-primary-dark;
+//  colorPrimaryLight:$color-primary-light;
+//
+//  colorSecondary:$color-secondary;
+//  colorSecondaryDark:$color-secondary-dark;
+//  colorSecondaryLight:$color-secondary-light;
+//
+// }

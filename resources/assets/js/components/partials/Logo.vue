@@ -62,7 +62,10 @@
 		},
 
 		props: {
-            size: 'medium'
+            size: 'medium',
+            'background-color':{
+            	default:'inherit'
+            },
         },
 		components: {},
 		watch: {},
@@ -77,6 +80,7 @@
         position: relative;
         margin: 0 auto;
         left:-26px;
+        color:black;
     }
 
     #logo1 {
